@@ -23,4 +23,11 @@
         limit 10
     </select>
 
+    <select id="getStrategyListByStrategyId" resultType="cn.bugstack.infrastructure.persistent.po.StrategyAward"
+            parameterType="java.lang.Long">
+        select strategy_id, award_id, award_count, award_count_surplus, award_rate
+        from strategy_award
+        where strategy_id = #{strategyId}
+    </select>
+
 </mapper>

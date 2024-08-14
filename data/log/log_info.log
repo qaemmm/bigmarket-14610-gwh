@@ -1,0 +1,11 @@
+24-08-14.11:28:26.215 [main            ] INFO  Application            - Starting Application using Java 1.8.0_421 on GUOWEIHONG with PID 4272 (D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app\target\classes started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh)
+24-08-14.11:28:26.217 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+24-08-14.11:28:27.208 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+24-08-14.11:28:27.214 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+24-08-14.11:28:27.215 [main            ] INFO  StandardService        - Starting service [Tomcat]
+24-08-14.11:28:27.215 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+24-08-14.11:28:27.394 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+24-08-14.11:28:27.394 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1131 ms
+24-08-14.11:28:27.852 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+24-08-14.11:28:27.865 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
+24-08-14.11:28:27.872 [main            ] INFO  Application            - Started Application in 2.114 seconds (JVM running for 3.475)
