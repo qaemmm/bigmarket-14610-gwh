@@ -3198,3 +3198,21 @@ Caused by: java.lang.ClassNotFoundException: Cannot find class: dataMap
 24-08-16.15:28:25.599 [main            ] INFO  StrategyTest           - 测试结果：106 - 6000奖品ID值
 24-08-16.15:28:25.712 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
 24-08-16.15:28:25.873 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-08-16.15:38:21.303 [main            ] INFO  StrategyTest           - Starting StrategyTest using Java 1.8.0_421 on GUOWEIHONG with PID 776 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-08-16.15:38:21.305 [main            ] INFO  StrategyTest           - The following 1 profile is active: "dev"
+24-08-16.15:38:22.182 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-08-16.15:38:22.185 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-08-16.15:38:22.211 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+24-08-16.15:38:23.572 [main            ] INFO  Version                - Redisson 3.23.4
+24-08-16.15:38:24.314 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-08-16.15:38:24.508 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-08-16.15:38:26.217 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-08-16.15:38:26.274 [main            ] INFO  StrategyTest           - Started StrategyTest in 5.363 seconds (JVM running for 6.145)
+24-08-16.15:38:26.792 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-08-16.15:38:27.518 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-08-16.15:38:27.733 [main            ] INFO  StrategyTest           - 测试结果:true
+24-08-16.15:38:27.774 [main            ] INFO  StrategyTest           - 测试结果：104 - 4000奖品ID值
+24-08-16.15:38:27.815 [main            ] INFO  StrategyTest           - 测试结果：102 - 5000奖品ID值
+24-08-16.15:38:27.857 [main            ] INFO  StrategyTest           - 测试结果：103 - 6000奖品ID值
+24-08-16.15:38:27.959 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-08-16.15:38:28.183 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
