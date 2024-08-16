@@ -11,7 +11,6 @@ import java.util.Date;
  * @create 2023-12-16 13:21
  */
 @Data
-
 public class Award {
 
     /** 自增ID */

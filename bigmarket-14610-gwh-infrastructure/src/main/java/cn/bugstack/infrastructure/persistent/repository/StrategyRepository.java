@@ -1,9 +1,15 @@
 package cn.bugstack.infrastructure.persistent.repository;
 
 import cn.bugstack.domain.strategy.model.entity.StrategyAwardEntity;
+import cn.bugstack.domain.strategy.model.entity.StrategyEntity;
+import cn.bugstack.domain.strategy.model.entity.StrategyRuleEntity;
 import cn.bugstack.domain.strategy.repository.IStrategyRepository;
 import cn.bugstack.infrastructure.persistent.dao.IStrategyAwardDao;
+import cn.bugstack.infrastructure.persistent.dao.IStrategyDao;
+import cn.bugstack.infrastructure.persistent.dao.IStrategyRuleDao;
+import cn.bugstack.infrastructure.persistent.po.Strategy;
 import cn.bugstack.infrastructure.persistent.po.StrategyAward;
+import cn.bugstack.infrastructure.persistent.po.StrategyRule;
 import cn.bugstack.infrastructure.persistent.redis.IRedisService;
 import cn.bugstack.types.common.Constants;
 import org.checkerframework.checker.units.qual.C;
@@ -53,19 +59,58 @@ public class StrategyRepository implements IStrategyRepository {
     }
 
     @Override
-    public void storeStrategyAwardSearchRateTable(Long strategyId, Integer rateRange, Map<Integer, Integer> shuffleStrategyAwardSearchRateTable) {
-        redisService.setValue(Constants.RedisKey.STRATEGY_RATE_RANGE_KEY+strategyId, rateRange);
-        Map<Integer,Integer> cacheRateTable = redisService.getMap(Constants.RedisKey.STRATEGY_RATE_TABLE_KEY + strategyId);
+    public void storeStrategyAwardSearchRateTable(String key, Integer rateRange, Map<Integer, Integer> shuffleStrategyAwardSearchRateTable) {
+        redisService.setValue(Constants.RedisKey.STRATEGY_RATE_RANGE_KEY+ key, rateRange);
+        Map<Integer,Integer> cacheRateTable = redisService.getMap(Constants.RedisKey.STRATEGY_RATE_TABLE_KEY + key);
         cacheRateTable.putAll(shuffleStrategyAwardSearchRateTable);
     }
 
     @Override
-    public Integer getStrategyAwardAssemble(Long strategyId, Integer rateKey) {
-        return redisService.getFromMap(Constants.RedisKey.STRATEGY_RATE_TABLE_KEY + strategyId, rateKey);
+    public Integer getStrategyAwardAssemble(String key, Integer rateKey) {
+        return redisService.getFromMap(Constants.RedisKey.STRATEGY_RATE_TABLE_KEY + key, rateKey);
+    }
+
+    @Override
+    public int getRateRange(String key) {
+        return redisService.getValue(Constants.RedisKey.STRATEGY_RATE_RANGE_KEY + key);
     }
 
     @Override
     public int getRateRange(Long StragegyId) {
-        return redisService.getValue(Constants.RedisKey.STRATEGY_RATE_RANGE_KEY+StragegyId);
+
+        return getRateRange(String.valueOf(StragegyId));
+    }
+
+    @Resource
+    private IStrategyDao strategyDao;
+
+    @Override
+    public StrategyEntity queryStrategyEntityByStrategyId(Long strategyId) {
+        Strategy strategy =  strategyDao.queryStrategyByStrategyId(strategyId);
+        if(null!=strategy){
+            StrategyEntity strategyEntity = new StrategyEntity();
+            strategyEntity.setRuleModels(strategy.getRuleModels());
+            strategyEntity.setStrategyDesc(strategyEntity.getStrategyDesc());
+            strategyEntity.setStrategyId(strategyEntity.getStrategyId());
+            return strategyEntity;
+        }
+        return null;
+    }
+
+    @Resource
+    private IStrategyRuleDao strategyRuleDao;
+    @Override
+    public StrategyRuleEntity queryStrategyRule(Long strategyId, String ruleWeight) {
+        StrategyRule strategyRule = strategyRuleDao.queryStrategyRule(strategyId,ruleWeight);
+        if(null!=strategyRule){
+            StrategyRuleEntity strategyRuleEntity = new StrategyRuleEntity();
+            strategyRuleEntity.setRuleDesc(strategyRule.getRuleDesc());
+            strategyRuleEntity.setRuleModel(strategyRule.getRuleModel());
+            strategyRuleEntity.setRuleType(strategyRule.getRuleType());
+            strategyRuleEntity.setRuleValue(strategyRule.getRuleValue());
+            strategyRuleEntity.setStrategyId(strategyRule.getStrategyId());
+            return strategyRuleEntity;
+        }
+        return null;
     }
 }

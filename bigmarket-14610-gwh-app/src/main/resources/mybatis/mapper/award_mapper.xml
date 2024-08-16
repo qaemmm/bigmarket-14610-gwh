@@ -11,6 +11,11 @@
         <result column="create_time" property="createTime"/>
         <result column="update_time" property="updateTime"/>
     </resultMap>
+    <delete id="deleteAwardById" parameterType="java.lang.Integer">
+        delete from award
+        where award_id = #{award_id}
+
+    </delete>
 
     <select id="queryAwardList" resultMap="dataMap">
         select award_id, award_key, award_config, award_desc
@@ -18,12 +23,12 @@
         limit 10
     </select>
 
-<!--    queryAwardById-->
-<!--    <select id="queryAwardById" resultType="cn.bugstack.infrastructure.persistent.po.Award">-->
-<!--        select *-->
-<!--        from award-->
-<!--        where id = #{Id}-->
-<!--    </select>-->
+
+    <select id="queryAwardById" parameterType="java.lang.Integer" resultMap="dataMap">
+        select award_id, award_key, award_config, award_desc, create_time, update_time
+        from award
+        where award_id = #{awardId}
+    </select>
 <!--    <select id="queryAwardByAwardId" resultType="cn.bugstack.infrastructure.persistent.po.Award">-->
 <!--        select *-->
 <!--        from award-->

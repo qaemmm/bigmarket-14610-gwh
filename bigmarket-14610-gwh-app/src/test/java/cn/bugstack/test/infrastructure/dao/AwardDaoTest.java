@@ -1,7 +1,9 @@
 package cn.bugstack.test.infrastructure.dao;
 
 import cn.bugstack.infrastructure.persistent.dao.IAwardDao;
+import cn.bugstack.infrastructure.persistent.dao.IStrategyAwardDao;
 import cn.bugstack.infrastructure.persistent.po.Award;
+import cn.bugstack.infrastructure.persistent.po.StrategyAward;
 import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
@@ -30,11 +32,22 @@ public class AwardDaoTest {
     public void test_queryAwardList() {
         List<Award> awards = awardDao.queryAwardList();
         log.info("测试结果：{}", JSON.toJSONString(awards));
+        Award award = awardDao.queryAwardById(102);
+        log.info("测试结果：{}", award);
 
-//        Award award = new Award(100l,1111,"测试","测试","测试",null,null);
-//        awardDao.insert(award);
-//
-//        log.info("测试结果：{}", JSON.toJSONString(awardDao.queryAwardByAwardId(1111)));
+
     }
 
+    @Resource
+    private IStrategyAwardDao strategyAwardDao;
+
+    @Test
+    public void test_strategyAwardDao(){
+        List<StrategyAward> strategyListByStrategyId = strategyAwardDao.getStrategyListByStrategyId(100001L);
+        for (StrategyAward strategyAward : strategyListByStrategyId){
+            log.info("测试结果：{}", JSON.toJSONString(strategyAward.getAwardId()));
+            log.info("测试结果：{}", JSON.toJSONString(strategyAward.getAwardRate()));
+        }
+        log.info("测试结果：{}", JSON.toJSONString(strategyListByStrategyId));
+    }
 }
