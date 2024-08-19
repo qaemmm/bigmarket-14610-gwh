@@ -46,8 +46,6 @@ public class StrategyTest {
         log.info("测试结果：{} - 4000奖品ID值", strategyDispatch.getRandomAwardId(100001L, "4000:102,103,104,105"));
         log.info("测试结果：{} - 5000奖品ID值", strategyDispatch.getRandomAwardId(100001L, "5000:102,103,104,105,106,107"));
         log.info("测试结果：{} - 6000奖品ID值", strategyDispatch.getRandomAwardId(100001L, "6000:102,103,104,105,106,107,108,109"));
-
-
     }
 
     @Test

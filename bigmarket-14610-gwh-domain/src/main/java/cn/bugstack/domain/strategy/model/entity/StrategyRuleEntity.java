@@ -53,7 +53,9 @@ public class StrategyRuleEntity {
      * 数据案例：4000:102,103,104,105 5000:102,103,104,105,106,107 6000:102,103,104,105,106,107,108,109
      */
     public Map<String, List<Integer>> getRuleValues(){
-        if(!"rule_weight".equals(ruleModel))return null;
+        if(!"rule_weight".equals(ruleModel)) {
+            return null;
+        }
         String[] ruleWeightsGroups = ruleValue.split(Constants.SPACE);
         Map<String,List<Integer>> resultMap = new HashMap<>();
         for(String ruleWeightsGroup : ruleWeightsGroups){

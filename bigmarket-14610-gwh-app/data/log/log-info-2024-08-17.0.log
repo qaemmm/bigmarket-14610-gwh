@@ -1,0 +1,30 @@
+24-08-17.11:00:16.127 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_421 on GUOWEIHONG with PID 19940 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-08-17.11:00:16.128 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-08-17.11:00:17.348 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-08-17.11:00:17.351 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-08-17.11:00:17.379 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+24-08-17.11:00:19.111 [main            ] INFO  Version                - Redisson 3.23.4
+24-08-17.11:00:19.703 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-08-17.11:00:19.872 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-08-17.11:00:21.715 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-08-17.11:00:21.799 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 6.105 seconds (JVM running for 8.74)
+24-08-17.11:00:22.143 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-08-17.11:00:24.608 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-08-17.11:00:24.678 [main            ] INFO  RuleBackListLogicFilter - 规则过滤-黑名单 userId:xiaofuge strategyId:100001 ruleModel:rule_blacklist
+24-08-17.11:00:24.880 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-08-17.11:00:25.085 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-08-17.11:00:52.987 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_421 on GUOWEIHONG with PID 17472 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-08-17.11:00:52.987 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-08-17.11:00:53.749 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-08-17.11:00:53.752 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-08-17.11:00:53.784 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+24-08-17.11:00:54.959 [main            ] INFO  Version                - Redisson 3.23.4
+24-08-17.11:00:55.429 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-08-17.11:00:55.640 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-08-17.11:00:57.297 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-08-17.11:00:57.370 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 4.685 seconds (JVM running for 5.628)
+24-08-17.11:00:57.644 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-08-17.11:00:58.535 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-08-17.11:00:58.610 [main            ] INFO  RuleBackListLogicFilter - 规则过滤-黑名单 userId:xiaofuge strategyId:100001 ruleModel:rule_blacklist
+24-08-17.11:00:58.769 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-08-17.11:00:58.966 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.

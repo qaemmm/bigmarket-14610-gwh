@@ -9,5 +9,13 @@ public interface IStrategyDispatch {
      */
     Integer getRandomAwardId(Long strategyId);
 
+    /**
+     *
+     * 获得特定的ruleWeightValue权重的抽奖结果
+     * @param strategyId
+     * @param ruleWeightValue :{通常可以如下 4000:102,103,104,105}
+     * @return
+     */
+
     Integer getRandomAwardId(Long strategyId,String ruleWeightValue);
 }
