@@ -61,6 +61,7 @@ public class StrategyArmoryDispatch implements IStrategyArmory,IStrategyDispatch
     }
 
     public void assembleLotteryStrategy(String key, List<StrategyAwardEntity> strategyAwardEntities) {
+       if(strategyAwardEntities == null||strategyAwardEntities.isEmpty())return;
         //获取最小概率值
         BigDecimal minAwardRate = strategyAwardEntities.stream()
                 .map(StrategyAwardEntity::getAwardRate)

@@ -24,4 +24,7 @@ public class RaffleAwardEntity {
      * 抽奖奖品ID - 内部流转使用
      */
     private Integer awardId;
+
+
+    private String awardDesc;
 }
