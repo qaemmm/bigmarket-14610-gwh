@@ -1,4 +1,4 @@
-package cn.bugstack.domain.strategy.service.rule.factory;
+package cn.bugstack.domain.strategy.service.rule.filter.factory;
 
 import cn.bugstack.domain.strategy.model.entity.RuleActionEntity;
 import cn.bugstack.domain.strategy.service.annotation.LogicStrategy;

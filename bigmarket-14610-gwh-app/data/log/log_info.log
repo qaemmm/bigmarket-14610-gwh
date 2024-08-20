@@ -325,3 +325,81 @@ org.redisson.client.RedisTimeoutException: Command execution timeout for command
 24-08-20.10:19:24.005 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardId":107}
 24-08-20.10:19:24.097 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
 24-08-20.10:19:24.228 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-08-20.10:27:00.414 [main            ] INFO  RaffleStrategyTest     - Starting RaffleStrategyTest using Java 1.8.0_421 on GUOWEIHONG with PID 9112 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-08-20.10:27:00.416 [main            ] INFO  RaffleStrategyTest     - The following 1 profile is active: "dev"
+24-08-20.10:27:01.138 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-08-20.10:27:01.141 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-08-20.10:27:01.169 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+24-08-20.10:27:02.171 [main            ] INFO  Version                - Redisson 3.23.4
+24-08-20.10:27:02.619 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-08-20.10:27:02.760 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-08-20.10:27:03.891 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-08-20.10:27:03.929 [main            ] INFO  RaffleStrategyTest     - Started RaffleStrategyTest in 3.82 seconds (JVM running for 4.458)
+24-08-20.10:27:04.339 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-08-20.10:27:05.006 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-08-20.10:27:05.197 [main            ] INFO  RaffleStrategyTest     - 测试结果 true
+24-08-20.10:27:05.285 [main            ] INFO  RaffleStrategyTest     - 测试结果 true
+24-08-20.10:27:05.369 [main            ] INFO  RaffleStrategyTest     - 测试结果 true
+24-08-20.10:27:05.462 [main            ] INFO  RuleLockLogicFilter    - 规则过滤权重范围：userId:gwh strategyId:100003 ruleMode:rule_lock
+24-08-20.10:27:05.493 [main            ] INFO  DefaultRaffleStrategy  - 抽奖中规则过滤 userId: gwh ruleModel: rule_lock code: 0001 info: 接管；后续的流程，受规则引擎执行结果影响
+24-08-20.10:27:05.494 [main            ] INFO  AbstractRaffleStrategy - [临时日志]中奖中规则拦截，通过抽奖后规则rule_luck_award 走兜底奖励
+24-08-20.10:27:05.618 [main            ] INFO  RaffleStrategyTest     - 请求参数：{"strategyId":100003,"userId":"gwh"}
+24-08-20.10:27:05.619 [main            ] INFO  RaffleStrategyTest     - 测试结果：{"awardDesc":"中奖中规则拦截，通过抽奖后规则 rule_luck_award 走兜底奖励。"}
+24-08-20.10:27:05.664 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-08-20.10:27:05.815 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-08-20.11:46:42.267 [main            ] INFO  LogicChainTest         - Starting LogicChainTest using Java 1.8.0_421 on GUOWEIHONG with PID 22544 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-08-20.11:46:42.269 [main            ] INFO  LogicChainTest         - The following 1 profile is active: "dev"
+24-08-20.11:46:43.347 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-08-20.11:46:43.350 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-08-20.11:46:43.383 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+24-08-20.11:46:44.774 [main            ] INFO  Version                - Redisson 3.23.4
+24-08-20.11:46:45.271 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-08-20.11:46:45.393 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-08-20.11:46:46.620 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-08-20.11:46:46.666 [main            ] INFO  LogicChainTest         - Started LogicChainTest in 4.739 seconds (JVM running for 5.58)
+24-08-20.11:46:46.980 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-08-20.11:46:47.881 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-08-20.11:46:47.936 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重规则开始 userId: user001 strategyId: 100001 ruleModel: rule_weight
+24-08-20.11:46:47.976 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重放行 userId: user001 strategyId: 100001 ruleModel: rule_weight
+24-08-20.11:46:47.976 [main            ] INFO  BackListLogicChain     - 抽奖责任链-黑名单开始 userId: user001 strategyId: 100001 ruleModel: rule_blacklist
+24-08-20.11:46:47.999 [main            ] INFO  BackListLogicChain     - 抽奖责任链-黑名单接管 userId: user001 strategyId: 100001 ruleModel: rule_blacklist awardId: 100
+24-08-20.11:46:48.000 [main            ] INFO  LogicChainTest         - 测试结果:100
+24-08-20.11:46:48.041 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-08-20.11:46:48.257 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-08-20.11:47:14.008 [main            ] INFO  LogicChainTest         - Starting LogicChainTest using Java 1.8.0_421 on GUOWEIHONG with PID 19228 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-08-20.11:47:14.009 [main            ] INFO  LogicChainTest         - The following 1 profile is active: "dev"
+24-08-20.11:47:14.581 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-08-20.11:47:14.584 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-08-20.11:47:14.610 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+24-08-20.11:47:15.540 [main            ] INFO  Version                - Redisson 3.23.4
+24-08-20.11:47:15.932 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-08-20.11:47:16.076 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-08-20.11:47:17.136 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-08-20.11:47:17.174 [main            ] INFO  LogicChainTest         - Started LogicChainTest in 3.446 seconds (JVM running for 4.026)
+24-08-20.11:47:17.444 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-08-20.11:47:18.077 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-08-20.11:47:18.130 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重规则开始 userId: gwh strategyId: 100001 ruleModel: rule_weight
+24-08-20.11:47:18.255 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重接管 userId: gwh strategyId: 100001 ruleModel: rule_weight awardId: 109
+24-08-20.11:47:18.256 [main            ] INFO  LogicChainTest         - 测试结果:109
+24-08-20.11:47:18.301 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-08-20.11:47:18.412 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
+24-08-20.13:36:09.652 [main            ] INFO  LogicChainTest         - Starting LogicChainTest using Java 1.8.0_421 on GUOWEIHONG with PID 17520 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-08-20.13:36:09.653 [main            ] INFO  LogicChainTest         - The following 1 profile is active: "dev"
+24-08-20.13:36:10.280 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-08-20.13:36:10.283 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-08-20.13:36:10.304 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+24-08-20.13:36:11.278 [main            ] INFO  Version                - Redisson 3.23.4
+24-08-20.13:36:11.670 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-08-20.13:36:11.832 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-08-20.13:36:12.893 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-08-20.13:36:12.942 [main            ] INFO  LogicChainTest         - Started LogicChainTest in 3.571 seconds (JVM running for 4.131)
+24-08-20.13:36:13.216 [main            ] INFO  HikariDataSource       - HikariPool-1 - Starting...
+24-08-20.13:36:13.902 [main            ] INFO  HikariDataSource       - HikariPool-1 - Start completed.
+24-08-20.13:36:13.960 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重规则开始 userId: gwh strategyId: 100001 ruleModel: rule_weight
+24-08-20.13:36:13.995 [main            ] INFO  RuleWeightLogicChain   - 抽奖责任链-权重放行 userId: gwh strategyId: 100001 ruleModel: rule_weight
+24-08-20.13:36:13.995 [main            ] INFO  BackListLogicChain     - 抽奖责任链-黑名单开始 userId: gwh strategyId: 100001 ruleModel: rule_blacklist
+24-08-20.13:36:14.017 [main            ] INFO  BackListLogicChain     - 抽奖责任链-黑名单放行userId:gwh strategyId:100001 ruleModel:rule_blacklist 
+24-08-20.13:36:14.103 [main            ] INFO  DefaultLogicChain      - 抽奖责任链-默认处理 userId: gwh strategyId: 100001 ruleModel: default awardId: 104
+24-08-20.13:36:14.103 [main            ] INFO  LogicChainTest         - 测试结果：104
+24-08-20.13:36:14.155 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-08-20.13:36:14.268 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.

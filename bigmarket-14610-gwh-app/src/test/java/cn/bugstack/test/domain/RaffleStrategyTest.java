@@ -4,8 +4,8 @@ import cn.bugstack.domain.strategy.model.entity.RaffleAwardEntity;
 import cn.bugstack.domain.strategy.model.entity.RaffleFactorEntity;
 import cn.bugstack.domain.strategy.service.IRaffleStrategy;
 import cn.bugstack.domain.strategy.service.armory.StrategyArmoryDispatch;
-import cn.bugstack.domain.strategy.service.rule.impl.RuleLockLogicFilter;
-import cn.bugstack.domain.strategy.service.rule.impl.RuleWeightLogicFilter;
+import cn.bugstack.domain.strategy.service.rule.filter.impl.RuleLockLogicFilter;
+import cn.bugstack.domain.strategy.service.rule.filter.impl.RuleWeightLogicFilter;
 import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Before;
@@ -48,9 +48,9 @@ public class RaffleStrategyTest {
         log.info("测试结果 {}", strategyArmory.assembleLotteryStrategy(100003L));
         //通过反射mock规则中的值
         ReflectionTestUtils.setField(ruleWeightLogicFilter, "userScore", 40500L);
-//        ReflectionTestUtils.setField(ruleLockLogicFilter, "userRaffleCount", 0L);
+        ReflectionTestUtils.setField(ruleLockLogicFilter, "userRaffleCount", 0L);
 //抽奖默认是10次
-    ReflectionTestUtils.setField(ruleLockLogicFilter, "userRaffleCount", 10L);
+//    ReflectionTestUtils.setField(ruleLockLogicFilter, "userRaffleCount", 10L);
     }
 
 

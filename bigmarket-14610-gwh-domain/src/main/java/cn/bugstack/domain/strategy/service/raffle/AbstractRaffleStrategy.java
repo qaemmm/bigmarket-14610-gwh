@@ -9,11 +9,15 @@ import cn.bugstack.domain.strategy.model.valobj.StrategyAwardRuleModelVO;
 import cn.bugstack.domain.strategy.repository.IStrategyRepository;
 import cn.bugstack.domain.strategy.service.IRaffleStrategy;
 import cn.bugstack.domain.strategy.service.armory.IStrategyDispatch;
-import cn.bugstack.domain.strategy.service.rule.factory.DefaultLogicFactory;
+import cn.bugstack.domain.strategy.service.rule.chain.ILogicChain;
+import cn.bugstack.domain.strategy.service.rule.chain.factory.DefaultChainFactory;
+import cn.bugstack.domain.strategy.service.rule.filter.factory.DefaultLogicFactory;
 import cn.bugstack.types.enums.ResponseCode;
 import cn.bugstack.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
+
+import javax.annotation.Resource;
 
 /**
  * @author fuzhouling
@@ -33,6 +37,8 @@ public abstract class AbstractRaffleStrategy implements IRaffleStrategy {
         this.strategyDispatch =strategyDispatch;
     }
 
+    @Resource
+    protected DefaultChainFactory chainFactory;
     // TODO -- 抽象类里能这么写吗？？？？？
     // 抽象类重写抽奖接口，通过这样的方式来定义抽奖的标准流程。之后过滤抽奖规则，并根据结果处理奖品结果
     @Override
@@ -44,37 +50,41 @@ public abstract class AbstractRaffleStrategy implements IRaffleStrategy {
         if(null == strategyId || StringUtils.isBlank(userId)){
             throw new AppException(ResponseCode.ILLEGAL_PARAMETER.getCode(), ResponseCode.ILLEGAL_PARAMETER.getInfo());
         }
+
         // 2. 策略查询
-        StrategyEntity strategy = repository.queryStrategyEntityByStrategyId(strategyId);
+        ILogicChain iLogicChain = chainFactory.openLogicChain(strategyId);
+        Integer awardId = iLogicChain.logic(userId, strategyId);
 
-        //TODO 太难看懂了 3. 抽奖前 - 规则过滤
-        RuleActionEntity<RuleActionEntity.RaffleBeforeEntity> ruleActionEntity =
-                this.doCheckRaffleBeforeLogic(RaffleFactorEntity
-                        .builder()
-                        .userId(userId)
-                        .strategyId(strategyId)
-                        .build()
-                        , strategy.ruleModels());
+//        StrategyEntity strategy = repository.queryStrategyEntityByStrategyId(strategyId);
 
-        if(RuleLogicCheckTypeVO.TAKE_OVER.getCode().equals(ruleActionEntity.getCode())){
-            if(DefaultLogicFactory.LogicModel.RULE_BLACKLIST.getCode().equals(ruleActionEntity.getRuleModel())){
-                // 如果是黑名单返回固定的奖品ID
-                return RaffleAwardEntity.builder()
-                        .awardId(ruleActionEntity.getData().getAwardId())
-                        .build();
-                // 如果是权重过滤则返回对应
-            }else if(DefaultLogicFactory.LogicModel.RULE_WIGHT.getCode().equals(ruleActionEntity.getRuleModel())){
-                RuleActionEntity.RaffleBeforeEntity raffleBeforeEntity = ruleActionEntity.getData();
-                Integer awardId = strategyDispatch.getRandomAwardId(raffleBeforeEntity.getStrategyId()
-                        //
-                        ,raffleBeforeEntity.getRuleWeightValueKey());
-                return RaffleAwardEntity.builder()
-                        .awardId(awardId)
-                        .build();
-            }
-        }
-        // 4. 默认抽奖流程
-        Integer awardId = strategyDispatch.getRandomAwardId(strategyId);
+//        //TODO 太难看懂了 3. 抽奖前 - 规则过滤
+//        RuleActionEntity<RuleActionEntity.RaffleBeforeEntity> ruleActionEntity =
+//                this.doCheckRaffleBeforeLogic(RaffleFactorEntity
+//                        .builder()
+//                        .userId(userId)
+//                        .strategyId(strategyId)
+//                        .build()
+//                        , strategy.ruleModels());
+//
+//        if(RuleLogicCheckTypeVO.TAKE_OVER.getCode().equals(ruleActionEntity.getCode())){
+//            if(DefaultLogicFactory.LogicModel.RULE_BLACKLIST.getCode().equals(ruleActionEntity.getRuleModel())){
+//                // 如果是黑名单返回固定的奖品ID
+//                return RaffleAwardEntity.builder()
+//                        .awardId(ruleActionEntity.getData().getAwardId())
+//                        .build();
+//                // 如果是权重过滤则返回对应
+//            }else if(DefaultLogicFactory.LogicModel.RULE_WIGHT.getCode().equals(ruleActionEntity.getRuleModel())){
+//                RuleActionEntity.RaffleBeforeEntity raffleBeforeEntity = ruleActionEntity.getData();
+//                Integer awardId = strategyDispatch.getRandomAwardId(raffleBeforeEntity.getStrategyId()
+//                        //
+//                        ,raffleBeforeEntity.getRuleWeightValueKey());
+//                return RaffleAwardEntity.builder()
+//                        .awardId(awardId)
+//                        .build();
+//            }
+//        }
+//        // 4. 默认抽奖流程
+//        Integer awardId = strategyDispatch.getRandomAwardId(strategyId);
 
         // 5. 查询奖品规则「抽奖中（拿到奖品ID时，过滤规则）、抽奖后（扣减完奖品库存后过滤，抽奖中拦截和无库存则走兜底）」
         StrategyAwardRuleModelVO strategyAwardRuleModelVO = repository.queryStrategyAwardRuleModel(strategyId,awardId);
