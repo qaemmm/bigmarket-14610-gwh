@@ -5,7 +5,7 @@ package cn.bugstack.domain.strategy.service.armory;
 public interface IStrategyArmory {
 
     /**
-     * 构建彩票策略
+     * 构建抽奖策略
      *
      * @param strategyId 策略ID
      * @return 是否

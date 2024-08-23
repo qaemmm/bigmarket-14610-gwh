@@ -5,6 +5,7 @@ import cn.bugstack.domain.strategy.model.entity.StrategyEntity;
 import cn.bugstack.domain.strategy.model.entity.StrategyRuleEntity;
 import cn.bugstack.domain.strategy.model.valobj.RuleTreeVO;
 import cn.bugstack.domain.strategy.model.valobj.StrategyAwardRuleModelVO;
+import cn.bugstack.domain.strategy.model.valobj.StrategyAwardStockVO;
 
 import java.util.List;
 import java.util.Map;
@@ -40,4 +41,17 @@ public interface IStrategyRepository {
     StrategyAwardRuleModelVO queryStrategyAwardRuleModel(Long strategyId, Integer awardId);
 
     RuleTreeVO queryRuleTreeVoByTreeId(String treeId);
+
+    /**
+     * 提前将库存丢入redis中进行预热
+     * */
+     void cacheStrategyAwardCount(String cacheKey, Integer awardCount);
+
+    boolean subtractAwardStock(String cacheKey);
+
+    void awardStockConsumeSendQueue(StrategyAwardStockVO strategyAwardStockVO);
+
+    StrategyAwardStockVO takeQueue();
+
+    void updateStrategyAwardStock(Long strategyId, Integer awardId);
 }

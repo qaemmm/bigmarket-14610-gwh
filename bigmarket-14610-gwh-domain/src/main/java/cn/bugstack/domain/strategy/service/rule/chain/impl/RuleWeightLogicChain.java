@@ -35,8 +35,6 @@ public class RuleWeightLogicChain extends AbstractLogicChain {
 
     public Long userScore = 0L;
 
-
-
     @Override
     public DefaultChainFactory.StrategyAwardVO logic(String userId, Long strategyId) {
         log.info("抽奖责任链-权重规则开始 userId: {} strategyId: {} ruleModel: {}",

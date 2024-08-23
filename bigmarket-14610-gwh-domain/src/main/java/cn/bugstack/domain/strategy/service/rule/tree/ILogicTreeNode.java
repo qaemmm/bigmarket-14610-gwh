@@ -7,5 +7,5 @@ import cn.bugstack.domain.strategy.service.rule.tree.factory.DefaultTreeFactory;
  * @author 郭伟鸿
  */
 public interface ILogicTreeNode {
-    DefaultTreeFactory.TreeActionEntity logic(String userId, Long strategyId, Integer awardId);
+    DefaultTreeFactory.TreeActionEntity logic(String userId, Long strategyId, Integer awardId,String ruleValue);
 }

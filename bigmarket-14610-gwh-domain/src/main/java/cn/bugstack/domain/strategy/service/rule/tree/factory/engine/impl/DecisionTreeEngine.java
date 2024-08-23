@@ -20,7 +20,7 @@ import java.util.Map;
  * @description 决策树引擎
  **/
 @Slf4j
-//@Service 这一块为什么不用加，加了好像报错了，回头看看了解一下
+//@Service 这一块确实不用加，因为在DefaultTreeFactory中已经加了 new DecisionTreeEngine通过构造函数注入
 public class DecisionTreeEngine implements IDecisionTreeEngine {
 
     private final Map<String, ILogicTreeNode> logicTreeNodeGroup;
@@ -32,10 +32,10 @@ public class DecisionTreeEngine implements IDecisionTreeEngine {
         this.ruleTreeVO = ruleTreeVO;
     }
 
-    //todo 代码没看懂
+
     @Override
     public DefaultTreeFactory.StrategyAwardVO process(String userId, Long strategyId, Integer awardId) {
-        DefaultTreeFactory.StrategyAwardVO strategyAwardData = null;
+        DefaultTreeFactory.StrategyAwardVO strategyAwardVO = null;
         // 获取基础信息
         String nextNode = ruleTreeVO.getTreeRootRuleNode();
         Map<String, RuleTreeNodeVO> treeNodeMap = ruleTreeVO.getTreeNodeMap();
@@ -46,16 +46,16 @@ public class DecisionTreeEngine implements IDecisionTreeEngine {
             // 获取决策节点
             ILogicTreeNode logicTreeNode = logicTreeNodeGroup.get(ruleTreeNode.getRuleKey());
             // 决策节点计算
-            DefaultTreeFactory.TreeActionEntity logicEntity = logicTreeNode.logic(userId, strategyId, awardId);
+            DefaultTreeFactory.TreeActionEntity logicEntity = logicTreeNode.logic(userId, strategyId, awardId, ruleTreeNode.getRuleValue());
             RuleLogicCheckTypeVO ruleLogicCheckType = logicEntity.getRuleLogicCheckType();
-            strategyAwardData = logicEntity.getStrategyAwardVO();
+            strategyAwardVO = logicEntity.getStrategyAwardVO();
             log.info("决策树引擎【{}】treeId:{} node:{} code:{}",
                     ruleTreeVO.getTreeName(), ruleTreeVO.getTreeId(), nextNode, ruleLogicCheckType.getCode());
             // 获取下个节点
             nextNode = nextNode(ruleLogicCheckType.getCode(), ruleTreeNode.getTreeNodeLineVOList());
             ruleTreeNode = treeNodeMap.get(nextNode);
         }
-        return strategyAwardData;
+        return strategyAwardVO;
 
     }
 

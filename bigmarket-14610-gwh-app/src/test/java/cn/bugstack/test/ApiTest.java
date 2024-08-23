@@ -19,7 +19,10 @@ public class ApiTest {
     public void test() {
         log.info("测试完成");
         Object k1 = redisService.getValue("k2");
-        System.out.println(k1);
+        redisService.setValue("k2", 1);
+        long k2 = redisService.incr("k2");
+        System.out.println(k2);
+
     }
 
 }

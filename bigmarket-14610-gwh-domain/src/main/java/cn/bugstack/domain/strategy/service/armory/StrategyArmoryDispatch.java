@@ -4,6 +4,7 @@ import cn.bugstack.domain.strategy.model.entity.StrategyAwardEntity;
 import cn.bugstack.domain.strategy.model.entity.StrategyEntity;
 import cn.bugstack.domain.strategy.model.entity.StrategyRuleEntity;
 import cn.bugstack.domain.strategy.repository.IStrategyRepository;
+import cn.bugstack.types.common.Constants;
 import cn.bugstack.types.enums.ResponseCode;
 import cn.bugstack.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;
@@ -39,6 +40,13 @@ public class StrategyArmoryDispatch implements IStrategyArmory,IStrategyDispatch
         List<StrategyAwardEntity> strategyAwardEntities = repository.queryStrategyAwardList(strategyId);
         assembleLotteryStrategy(String.valueOf(strategyId),strategyAwardEntities);
 
+        for(StrategyAwardEntity strategyAwardEntity : strategyAwardEntities){
+            //优先去db中查奖品、策略的库存，然后把库存放到redis中线进行加载
+            assembleLotteryStrategy(strategyId, strategyAwardEntity.getAwardId(),strategyAwardEntity.getAwardCount());
+        }
+
+
+
         //2、权重策略配置 - 适用于 rule_weight 权重规则配置
         StrategyEntity strategyEntity = repository.queryStrategyEntityByStrategyId(strategyId);
         String ruleWeight = strategyEntity.getRuleModels();
@@ -59,6 +67,8 @@ public class StrategyArmoryDispatch implements IStrategyArmory,IStrategyDispatch
         }
         return true;
     }
+
+
 
     public void assembleLotteryStrategy(String key, List<StrategyAwardEntity> strategyAwardEntities) {
        if(strategyAwardEntities == null||strategyAwardEntities.isEmpty())return;
@@ -118,5 +128,17 @@ public class StrategyArmoryDispatch implements IStrategyArmory,IStrategyDispatch
         // 通过生成的随机值，获取概率值奖品查找表的结果
         return repository.getStrategyAwardAssemble(key, new SecureRandom().nextInt(rateRange));
 
+    }
+
+    public void assembleLotteryStrategy(Long strategyId, Integer awardId, Integer awardCount) {
+        String cacheKey = Constants.RedisKey.STRATEGY_AWARD_COUNT_KEY + strategyId + Constants.UNDERLINE + awardId;
+        repository.cacheStrategyAwardCount(cacheKey, awardCount);
+        log.info("策略奖品库存初始化成功，策略ID：{}，奖品ID：{}，库存：{}，缓存key：{}", strategyId, awardId, awardCount,cacheKey);
+
+    }
+    @Override
+    public boolean subtractAwardStock(Long strategyId, Integer awardId) {
+        String cacheKey = Constants.RedisKey.STRATEGY_AWARD_COUNT_KEY+strategyId+Constants.UNDERLINE+ awardId;
+        return repository.subtractAwardStock(cacheKey);
     }
 }
