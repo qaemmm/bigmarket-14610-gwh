@@ -1,5 +1,9 @@
-24-08-24.10:18:43.698 [main            ] ERROR StrategyRepository     - 执行DECR命令时出错，cacheKey: strategy_award_count_key_100006_102, error: ERR value is not an integer or out of range. channel: [id: 0x2a91ddf4, L:/10.11.25.150:30705 - R:124.70.185.116/124.70.185.116:6379] command: (DECR), promise: java.util.concurrent.CompletableFuture@232d2559[Not completed, 1 dependents], params: [strategy_award_count_key_100006_102]
 24-08-24.10:18:43.698 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16h39m42s154ms393µs600ns).
+24-08-24.10:18:43.698 [main            ] ERROR StrategyRepository     - 执行DECR命令时出错，cacheKey: strategy_award_count_key_100006_102, error: ERR value is not an integer or out of range. channel: [id: 0x2a91ddf4, L:/10.11.25.150:30705 - R:124.70.185.116/124.70.185.116:6379] command: (DECR), promise: java.util.concurrent.CompletableFuture@232d2559[Not completed, 1 dependents], params: [strategy_award_count_key_100006_102]
+24-08-24.10:18:43.707 [main            ] INFO  RuleStockLogicTreeNode - 规则过滤-库存扣减-告警，库存不足 userId:gwh strategyId:100006 awardId:102 
+24-08-24.10:18:43.710 [main            ] INFO  DecisionTreeEngine     - 决策树引擎【规则树】treeId:tree_lock node:rule_stock code:0000
+24-08-24.10:18:43.711 [main            ] INFO  RuleLuckAwardLogicTreeNode - 规则过滤-兜底奖品 userId:gwh strategyId:100006 awardId:102 ruleValue:101:1,100
+24-08-24.10:18:43.739 [main            ] INFO  RuleLuckAwardLogicTreeNode - 规则过滤-兜底奖品 userId:gwh strategyId:100006 awardId:101 awardRuleValue:1,100
 24-08-24.10:18:43.790 [redisson-netty-2-10] ERROR ErrorsLoggingHandler   - Exception occured. Channel: [id: 0xc57464d2, L:/10.11.25.150:30704 - R:124.70.185.116/124.70.185.116:6379]
 java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 	at sun.nio.ch.SocketDispatcher.read0(Native Method)
@@ -114,3 +118,5 @@ java.io.IOException: 远程主机强迫关闭了一个现有的连接。
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.lang.Thread.run(Thread.java:750)
+24-08-24.10:18:43.987 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown initiated...
+24-08-24.10:18:44.104 [SpringApplicationShutdownHook] INFO  HikariDataSource       - HikariPool-1 - Shutdown completed.
