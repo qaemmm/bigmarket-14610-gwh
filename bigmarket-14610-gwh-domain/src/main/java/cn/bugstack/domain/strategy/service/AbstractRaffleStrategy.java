@@ -2,21 +2,14 @@ package cn.bugstack.domain.strategy.service;
 
 import cn.bugstack.domain.strategy.model.entity.RaffleAwardEntity;
 import cn.bugstack.domain.strategy.model.entity.RaffleFactorEntity;
-import cn.bugstack.domain.strategy.model.entity.RuleActionEntity;
-import cn.bugstack.domain.strategy.model.valobj.RuleLogicCheckTypeVO;
-import cn.bugstack.domain.strategy.model.valobj.RuleTreeVO;
-import cn.bugstack.domain.strategy.model.valobj.StrategyAwardRuleModelVO;
 import cn.bugstack.domain.strategy.repository.IStrategyRepository;
 import cn.bugstack.domain.strategy.service.armory.IStrategyDispatch;
-import cn.bugstack.domain.strategy.service.rule.chain.ILogicChain;
 import cn.bugstack.domain.strategy.service.rule.chain.factory.DefaultChainFactory;
 import cn.bugstack.domain.strategy.service.rule.tree.factory.DefaultTreeFactory;
 import cn.bugstack.types.enums.ResponseCode;
 import cn.bugstack.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
-
-import javax.annotation.Resource;
 
 /**
  * @author fuzhouling
@@ -25,7 +18,7 @@ import javax.annotation.Resource;
  * @description  抽象抽奖策略
  **/
 @Slf4j
-public abstract class AbstractRaffleStrategy implements IRaffleStrategy {
+public abstract class AbstractRaffleStrategy implements IRaffleStrategy, IRaffleStock {
     //策略仓储服务 -> domain像一个大厨，仓储提供米面粮油
     protected IStrategyRepository repository;
     // 策略调度服务 -> 只负责抽奖处理，通过新增接口的方式，隔离职责，不需要使用方关心或者调用抽奖的初始化
@@ -54,21 +47,19 @@ public abstract class AbstractRaffleStrategy implements IRaffleStrategy {
             throw new AppException(ResponseCode.ILLEGAL_PARAMETER.getCode(), ResponseCode.ILLEGAL_PARAMETER.getInfo());
         }
 
-        //将这俩个方法进一步地封装，体会一下
-//        ILogicChain iLogicChain = chainFactory.openLogicChain(strategyId);
-//        DefaultChainFactory.StrategyAwardVO strategyAwardVO =  iLogicChain.logic(userId, strategyId);
 
         // 2. 责任链抽奖计算【这步拿到的是初步的抽奖ID，之后需要根据ID处理抽奖】注意；黑名单、权重等非默认抽奖的直接返回抽奖结果
         DefaultChainFactory.StrategyAwardVO chainStrategyAwardVO = raffleLogicChain(userId,strategyId);
         log.info("责任链{} {} {} {}",strategyId,userId,chainStrategyAwardVO.getAwardId(),chainStrategyAwardVO.getAwardRuleValue());
-        if(!DefaultChainFactory.LogicModel.RULE_DEFAULT.equals(chainStrategyAwardVO.getAwardRuleValue())){
+        log.info("DefaultChainFactory.LogicModel.RULE_DEFAULT:{}", DefaultChainFactory.LogicModel.RULE_DEFAULT);
+        if(!DefaultChainFactory.LogicModel.RULE_DEFAULT.getCode().equals(chainStrategyAwardVO.getAwardRuleValue())){
             return RaffleAwardEntity.builder()
                     .awardId(chainStrategyAwardVO.getAwardId())
                     .build();
         }
 
         DefaultTreeFactory.StrategyAwardVO treeStrategyAwardVO = raffleLogicTree(userId,strategyId,chainStrategyAwardVO.getAwardId());
-        log.info("决策树{} {} {} {}", strategyId, userId, treeStrategyAwardVO.getAwardId(), treeStrategyAwardVO.getAwardRuleValue());
+//        log.info("决策树{} {} {}", strategyId, userId, treeStrategyAwardVO.getAwardRuleValue());
 
 
         return RaffleAwardEntity.builder()

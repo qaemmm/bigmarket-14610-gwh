@@ -18,8 +18,12 @@ public class ApiTest {
     @Test
     public void test() {
         log.info("测试完成");
-        Object k1 = redisService.getValue("k2");
-        System.out.println(k1);
+        Integer value = (Integer)redisService.getValue("k2");
+        log.info("测试{}", value);
+        redisService.setValue("k2", 1);
+        long k2 = redisService.incr("k2");
+        System.out.println(k2);
+
     }
 
 }

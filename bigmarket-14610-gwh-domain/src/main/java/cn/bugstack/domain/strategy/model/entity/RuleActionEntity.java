@@ -22,7 +22,9 @@ import lombok.NoArgsConstructor;
 public class RuleActionEntity<T extends RuleActionEntity.RaffleEntity> {
 
 
+    @Builder.Default
     private String code = RuleLogicCheckTypeVO.ALLOW.getCode();
+    @Builder.Default
     private String info = RuleLogicCheckTypeVO.ALLOW.getInfo();
     private String ruleModel;
     private T data;
