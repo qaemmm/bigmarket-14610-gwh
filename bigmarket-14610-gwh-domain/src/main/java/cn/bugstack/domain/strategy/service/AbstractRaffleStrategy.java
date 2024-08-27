@@ -2,21 +2,14 @@ package cn.bugstack.domain.strategy.service;
 
 import cn.bugstack.domain.strategy.model.entity.RaffleAwardEntity;
 import cn.bugstack.domain.strategy.model.entity.RaffleFactorEntity;
-import cn.bugstack.domain.strategy.model.entity.RuleActionEntity;
-import cn.bugstack.domain.strategy.model.valobj.RuleLogicCheckTypeVO;
-import cn.bugstack.domain.strategy.model.valobj.RuleTreeVO;
-import cn.bugstack.domain.strategy.model.valobj.StrategyAwardRuleModelVO;
 import cn.bugstack.domain.strategy.repository.IStrategyRepository;
 import cn.bugstack.domain.strategy.service.armory.IStrategyDispatch;
-import cn.bugstack.domain.strategy.service.rule.chain.ILogicChain;
 import cn.bugstack.domain.strategy.service.rule.chain.factory.DefaultChainFactory;
 import cn.bugstack.domain.strategy.service.rule.tree.factory.DefaultTreeFactory;
 import cn.bugstack.types.enums.ResponseCode;
 import cn.bugstack.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
-
-import javax.annotation.Resource;
 
 /**
  * @author fuzhouling
@@ -66,7 +59,7 @@ public abstract class AbstractRaffleStrategy implements IRaffleStrategy, IRaffle
         }
 
         DefaultTreeFactory.StrategyAwardVO treeStrategyAwardVO = raffleLogicTree(userId,strategyId,chainStrategyAwardVO.getAwardId());
-        log.info("决策树{} {} {} {}", strategyId, userId, treeStrategyAwardVO.getAwardId(), treeStrategyAwardVO.getAwardRuleValue());
+//        log.info("决策树{} {} {}", strategyId, userId, treeStrategyAwardVO.getAwardRuleValue());
 
 
         return RaffleAwardEntity.builder()

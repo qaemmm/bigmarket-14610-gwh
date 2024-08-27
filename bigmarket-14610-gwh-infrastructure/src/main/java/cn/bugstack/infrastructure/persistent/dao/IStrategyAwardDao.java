@@ -1,8 +1,5 @@
 package cn.bugstack.infrastructure.persistent.dao;
 
-import cn.bugstack.domain.strategy.model.entity.StrategyEntity;
-import cn.bugstack.infrastructure.persistent.po.Award;
-import cn.bugstack.infrastructure.persistent.po.Strategy;
 import cn.bugstack.infrastructure.persistent.po.StrategyAward;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;

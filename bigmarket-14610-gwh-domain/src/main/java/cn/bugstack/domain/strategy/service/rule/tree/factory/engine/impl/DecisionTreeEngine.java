@@ -33,6 +33,7 @@ public class DecisionTreeEngine implements IDecisionTreeEngine {
     }
 
 
+    //todo 代码忘了，不知道这么process，是干嘛的？
     @Override
     public DefaultTreeFactory.StrategyAwardVO process(String userId, Long strategyId, Integer awardId) {
         DefaultTreeFactory.StrategyAwardVO strategyAwardVO = null;
@@ -60,13 +61,17 @@ public class DecisionTreeEngine implements IDecisionTreeEngine {
     }
 
     private String nextNode(String code, List<RuleTreeNodeLineVO> treeNodeLineVOList) {
+        //1、没有线即没有下一个节点，返回null
         if (null == treeNodeLineVOList || treeNodeLineVOList.isEmpty()) return null;
+        //2、遍历线，找到符合条件的线
         for (RuleTreeNodeLineVO nodeLine : treeNodeLineVOList) {
             if (decisionLogic(code, nodeLine)) {
-                return nodeLine.getRuleNodeTo();
+                return nodeLine.getRuleNodeTo();//返回线的终点，即下一个节点
             }
         }
-        throw new RuntimeException("决策树引擎，nextNode计算失败，未找到可执行的节点！");
+        //执行到这里，说明有线连接到下一个节点，但是每个节点都无法到达，属于特殊情况，直接抛异常
+          //  throw new RuntimeException("决策树引擎，nextNode计算失败，未找到可执行的节点！");
+        return null;
     }
 
     public boolean decisionLogic(String matterValue, RuleTreeNodeLineVO nodeLine){

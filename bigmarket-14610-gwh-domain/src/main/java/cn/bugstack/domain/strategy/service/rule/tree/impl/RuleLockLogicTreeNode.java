@@ -22,7 +22,7 @@ public class RuleLockLogicTreeNode implements ILogicTreeNode {
         //次数锁
         log.info("规则过滤-次数锁 userId:{} strategyId:{} awardId:{} ruleValue:{}", userId, strategyId, awardId, ruleValue);
 
-        long raffleCount = 0l;
+        long raffleCount = 0L;
         try {
             raffleCount = Long.parseLong(ruleValue);
         } catch (Exception e) {

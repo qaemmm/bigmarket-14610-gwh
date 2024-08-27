@@ -60,6 +60,8 @@ public class StrategyRepository implements IStrategyRepository {
         String cacheKey = Constants.RedisKey.STRATEGY_AWARD_KEY+ strategyId;
         List<StrategyAwardEntity> strategiesAwardEntities =  redisService.getValue(cacheKey);
         if(null!= strategiesAwardEntities&&!strategiesAwardEntities.isEmpty()){
+            log.info("从缓存中获取策略奖品: strategiesAwardEntities：{}", strategiesAwardEntities);
+            log.info("从缓存中获取策略奖品: strategiesAwardEntities的类型：{}", strategiesAwardEntities.getClass());
             return strategiesAwardEntities;
         }
         //查询数据库
