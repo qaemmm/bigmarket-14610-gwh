@@ -36,6 +36,11 @@
             <groupId>cn.bugstack</groupId>
             <artifactId>bigmarket-14610-gwh-domain</artifactId>
         </dependency>
+        <dependency>
+            <groupId>cn.bugstack</groupId>
+            <artifactId>bigmarket-14610-gwh-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <build>

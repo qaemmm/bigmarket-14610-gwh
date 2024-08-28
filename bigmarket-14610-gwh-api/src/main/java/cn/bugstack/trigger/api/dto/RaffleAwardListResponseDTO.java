@@ -1,4 +1,4 @@
-package cn.bugstack.domain.strategy.model.entity;
+package cn.bugstack.trigger.api.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -7,26 +7,22 @@ import lombok.NoArgsConstructor;
 
 /**
  * @author fuzhouling
- * @date 2024/08/16
+ * @date 2024/08/28
  * @program bigmarket-14610-gwh
- * @description todo desc...
+ * @description 抽奖奖品列表，
  **/
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class RaffleAwardEntity {
-    /**
-     * 奖品ID
-     */
+public class RaffleAwardListResponseDTO {
+    //奖品id
     private Integer awardId;
-    /**
-     * 奖品配置信息
-     */
-    private String awardConfig;
-    /**
-     * 奖品顺序号
-     */
+    //奖品名称
+    private String awardTitle;
+    //奖品副标题
+    private String awardSubtitle;
+    //奖品排序
     private Integer sort;
 
 }

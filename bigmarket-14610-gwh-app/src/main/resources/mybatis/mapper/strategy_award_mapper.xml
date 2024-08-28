@@ -31,13 +31,18 @@
 
     <select id="getStrategyListByStrategyId" resultMap="dataMap"
             parameterType="java.lang.Long">
-        select id,strategy_id, award_id, award_count, award_count_surplus, award_rate
+        select id,strategy_id, award_id,award_title, award_subtitle, award_count, award_count_surplus, award_rate,sort
         from strategy_award
         where strategy_id = #{strategyId}
     </select>
     <select id="queryStrategyAwardRuleModel" parameterType="cn.bugstack.infrastructure.persistent.po.StrategyAward"
             resultType="java.lang.String">
         select rule_models
+        from strategy_award
+        where strategy_id = #{strategyId} and award_id = #{awardId}
+    </select>
+    <select id="queryStrategyAwardEntity" resultMap="dataMap">
+        select *
         from strategy_award
         where strategy_id = #{strategyId} and award_id = #{awardId}
     </select>

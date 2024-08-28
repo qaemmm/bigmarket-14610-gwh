@@ -13,6 +13,7 @@
         <module>bigmarket-14610-gwh-trigger</module>
         <module>bigmarket-14610-gwh-infrastructure</module>
         <module>bigmarket-14610-gwh-types</module>
+        <module>bigmarket-14610-gwh-api</module>
     </modules>
 
     <repositories>

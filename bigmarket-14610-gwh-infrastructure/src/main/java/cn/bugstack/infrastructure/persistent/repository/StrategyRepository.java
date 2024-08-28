@@ -25,6 +25,8 @@ import cn.bugstack.infrastructure.persistent.po.StrategyAward;
 import cn.bugstack.infrastructure.persistent.po.StrategyRule;
 import cn.bugstack.infrastructure.persistent.redis.IRedisService;
 import cn.bugstack.types.common.Constants;
+import cn.bugstack.types.enums.ResponseCode;
+import cn.bugstack.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;
 import org.checkerframework.checker.units.qual.C;
 import org.redisson.api.RAtomicLong;
@@ -39,6 +41,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
+
 
 /**
  * @author fuzhouling
@@ -70,6 +73,9 @@ public class StrategyRepository implements IStrategyRepository {
         for (StrategyAward strategyAward : strategyAwards) {
             StrategyAwardEntity strategyAwardEntity = StrategyAwardEntity.builder()
                     .awardCount(strategyAward.getAwardCount())
+                    .awardTitle(strategyAward.getAwardTitle())
+                    .awardSubtitle(strategyAward.getAwardSubtitle())
+                    .sort(strategyAward.getSort())
                     .awardCountSurplus(strategyAward.getAwardCountSurplus())
                     .awardId(strategyAward.getAwardId())
                     .awardRate(strategyAward.getAwardRate())
@@ -94,13 +100,17 @@ public class StrategyRepository implements IStrategyRepository {
 
     @Override
     public int getRateRange(String key) {
+        String cacheKey = Constants.RedisKey.STRATEGY_RATE_RANGE_KEY + key;
+        //在通过缓存获取抽奖范围值时，如果忘记初始化策略到缓存中会抛异常。所以新增加了判断代码，增强健壮性。
+        if (!redisService.isExists(Constants.RedisKey.STRATEGY_RATE_RANGE_KEY + key)) {
+            throw new AppException(ResponseCode.UN_ASSEMBLED_STRATEGY_ARMORY.getCode(), cacheKey + Constants.COLON + ResponseCode.UN_ASSEMBLED_STRATEGY_ARMORY.getInfo());
+        }
         return redisService.getValue(Constants.RedisKey.STRATEGY_RATE_RANGE_KEY + key);
     }
 
     @Override
-    public int getRateRange(Long StragegyId) {
-
-        return getRateRange(String.valueOf(StragegyId));
+    public int getRateRange(Long StrategyId) {
+        return getRateRange(String.valueOf(StrategyId));
     }
 
     @Resource
@@ -293,6 +303,36 @@ public class StrategyRepository implements IStrategyRepository {
         strategyAward.setStrategyId(strategyId);
         strategyAward.setAwardId(awardId);
         strategyAwardDao.updateStrategyAwardStock(strategyAward);
+    }
+
+    @Override
+    public StrategyAwardEntity queryStrategyAwardEntity(Long strategyId, Integer awardId) {
+        String cacheKey = Constants.RedisKey.STRATEGY_AWARD_KEY+ strategyId+Constants.UNDERLINE+awardId;
+        StrategyAwardEntity strategyAwardEntity =  redisService.getValue(cacheKey);
+        if(null!= strategyAwardEntity){
+            return strategyAwardEntity;
+        }
+        // 查询数据
+        StrategyAward strategyAwardReq = new StrategyAward();
+        strategyAwardReq.setStrategyId(strategyId);
+        strategyAwardReq.setAwardId(awardId);
+
+        StrategyAward strategyAwardRes = strategyAwardDao.queryStrategyAwardEntity(strategyAwardReq);
+        // 转换数据
+         strategyAwardEntity = StrategyAwardEntity.builder()
+                .strategyId(strategyAwardRes.getStrategyId())
+                .awardId(strategyAwardRes.getAwardId())
+                .awardTitle(strategyAwardRes.getAwardTitle())
+                .awardSubtitle(strategyAwardRes.getAwardSubtitle())
+                .awardCount(strategyAwardRes.getAwardCount())
+                .awardCountSurplus(strategyAwardRes.getAwardCountSurplus())
+                .awardRate(strategyAwardRes.getAwardRate())
+                .sort(strategyAwardRes.getSort())
+                .build();
+
+        redisService.setValue(cacheKey,strategyAwardEntity);
+
+        return strategyAwardEntity;
     }
 
 
