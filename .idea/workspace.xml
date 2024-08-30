@@ -5,28 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4f64b9b-9926-43c6-9cf6-26b240c3c8dd" name="Changes" comment="合并代码">
-      <change afterPath="$PROJECT_DIR$/big-market-front/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/big-market-front/build.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/big-market-front/src/app/components/StrategyArmory.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/big-market-front/apis/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/big-market-front/src/apis/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/big-market-front/app/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/big-market-front/src/app/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/big-market-front/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/big-market-front/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/big-market-front/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/big-market-front/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/big-market-front/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/big-market-front/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/big-market-front/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/big-market-front/next.config.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/big-market-front/public/lucky/lucky-grid-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/big-market-front/src/app/pages/lucky/lucky-grid-page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/big-market-front/public/lucky/lucky-wheel-page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/big-market-front/src/app/pages/lucky/lucky-wheel-page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/big-market-front/types/RaffleAwardVO.ts" beforeDir="false" afterPath="$PROJECT_DIR$/big-market-front/src/types/RaffleAwardVO.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-api/src/main/java/cn/bugstack/trigger/api/dto/RaffleAwardListRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-api/src/main/java/cn/bugstack/trigger/api/dto/RaffleAwardListRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/strategy/service/armory/StrategyArmoryDispatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/strategy/service/armory/StrategyArmoryDispatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/strategy/service/rule/tree/factory/engine/impl/DecisionTreeEngine.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/strategy/service/rule/tree/factory/engine/impl/DecisionTreeEngine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/strategy/service/rule/tree/impl/RuleLockLogicTreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/strategy/service/rule/tree/impl/RuleLockLogicTreeNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/strategy/service/rule/tree/impl/RuleLuckAwardLogicTreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/strategy/service/rule/tree/impl/RuleLuckAwardLogicTreeNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/strategy/service/rule/tree/impl/RuleStockLogicTreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/strategy/service/rule/tree/impl/RuleStockLogicTreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/big-market-front/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/big-market-front/build.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/big-market-front/src/apis/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/big-market-front/src/apis/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/build.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/main/resources/application-prod.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/main/resources/application-prod.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-trigger/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-trigger/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/log/log_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/log/log_error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/log/log_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/log/log_info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dev-ops/docker-compose-app.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/docker-compose-app.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dev-ops/docker-compose-environment.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/docker-compose-environment.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dev-ops/mysql/20240819_规则过滤中的sql/20240819.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dev-ops/mysql/sql/big_market.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dev-ops/mysql/sql/xfg-frame-archetype.sql" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +37,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -64,8 +61,20 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Docker.dev-ops/docker-compose-app.yml: Compose Deployment.executor": "Run",
+    "Docker.dev-ops/docker-compose-environment.yml: Compose Deployment.executor": "Run",
     "JUnit.ApiTest.test.executor": "Run",
     "JUnit.RaffleStrategyTest.test_performance.executor": "Run",
+    "Maven.bigmarket-14610-gwh [clean].executor": "Run",
+    "Maven.bigmarket-14610-gwh [install].executor": "Run",
+    "Maven.bigmarket-14610-gwh-app [clean].executor": "Run",
+    "Maven.bigmarket-14610-gwh-app [install].executor": "Run",
+    "Maven.bigmarket-14610-gwh-infrastructure [clean].executor": "Run",
+    "Maven.bigmarket-14610-gwh-infrastructure [install].executor": "Run",
+    "Maven.bigmarket-14610-gwh-trigger [clean].executor": "Run",
+    "Maven.bigmarket-14610-gwh-trigger [install].executor": "Run",
+    "Maven.bigmarket-14610-gwh-types [clean].executor": "Run",
+    "Maven.bigmarket-14610-gwh-types [install].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
     "RequestMappingsPanelWidth0": "75",
@@ -82,17 +91,17 @@
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "D:/JAVA_Project/bigmarket-14610-gwh/bigmarket-14610-gwh-api/src/main/java/cn/bugstack/Main.java",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "project.structure.side.proportion": "0.31034482",
+    "settings.editor.selected.configurable": "terminal",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
+  <component name="RunManager" selected="Docker.dev-ops/docker-compose-app.yml: Compose Deployment">
     <configuration name="ApiTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bigmarket-14610-gwh-app" />
       <extension name="coverage">
@@ -132,8 +141,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml" />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev-ops/docker-compose-app.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docs/dev-ops/docker-compose-app.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="dev-ops/docker-compose-environment.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docs/dev-ops/docker-compose-environment.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.dev-ops/docker-compose-app.yml: Compose Deployment" />
+        <item itemvalue="Docker.dev-ops/docker-compose-environment.yml: Compose Deployment" />
         <item itemvalue="JUnit.RaffleStrategyTest.test_performance" />
         <item itemvalue="JUnit.ApiTest.test" />
       </list>
@@ -160,7 +191,7 @@
       <workItem from="1724805676034" duration="143000" />
       <workItem from="1724816241352" duration="13531000" />
       <workItem from="1724918741791" duration="1613000" />
-      <workItem from="1724920921050" duration="5886000" />
+      <workItem from="1724920921050" duration="12674000" />
     </task>
     <task id="LOCAL-00001" summary="合并代码">
       <option name="closed" value="true" />
@@ -194,5 +225,9 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -1,5 +1,5 @@
 // 请求地址
-const apiHostUrl = process.env.API_HOST_URL ? process.env.API_HOST_URL : "http://124.70.185.116:8091";
+const apiHostUrl = process.env.API_HOST_URL ? process.env.API_HOST_URL : "http://localhost:8091";
 
 /**
  * 装配抽奖
