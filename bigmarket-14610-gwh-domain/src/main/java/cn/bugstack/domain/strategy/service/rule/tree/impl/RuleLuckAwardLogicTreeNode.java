@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
  * @author fuzhouling
  * @date 2024/08/20
  * @program bigmarket-14610-gwh
- * @description
+ * @description 兜底奖品逻辑
  **/
 @Slf4j
 @Component("rule_luck_award")

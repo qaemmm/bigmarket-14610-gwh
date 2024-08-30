@@ -31,12 +31,20 @@ public class RuleLockLogicTreeNode implements ILogicTreeNode {
         if (userRaffleCount >= raffleCount) {
             return DefaultTreeFactory.TreeActionEntity.builder()
                     .ruleLogicCheckType(RuleLogicCheckTypeVO.ALLOW)
+                    .strategyAwardVO(DefaultTreeFactory.StrategyAwardVO.builder()
+                            .awardId(awardId)
+                            .awardRuleValue(ruleValue)
+                            .build())
                     .build();
         }
 
         //用户抽奖次数小于规则限定值，规则要接管，做兜底处理
         return DefaultTreeFactory.TreeActionEntity.builder()
                 .ruleLogicCheckType(RuleLogicCheckTypeVO.TAKE_OVER)
+//                .strategyAwardVO(DefaultTreeFactory.StrategyAwardVO.builder()
+//                        .awardId(awardId)
+//                        .awardRuleValue(ruleValue)
+//                        .build())
                 .build();
 
 

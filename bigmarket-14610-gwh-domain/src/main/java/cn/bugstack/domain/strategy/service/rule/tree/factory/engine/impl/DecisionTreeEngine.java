@@ -33,30 +33,30 @@ public class DecisionTreeEngine implements IDecisionTreeEngine {
     }
 
 
-    //todo 代码忘了，不知道这么process，是干嘛的？
+    //todo 这一块有问题，后续看看！！！
     @Override
     public DefaultTreeFactory.StrategyAwardVO process(String userId, Long strategyId, Integer awardId) {
-        DefaultTreeFactory.StrategyAwardVO strategyAwardVO = null;
+        DefaultTreeFactory.StrategyAwardVO strategyAwardData = null;
         // 获取基础信息
         String nextNode = ruleTreeVO.getTreeRootRuleNode();
         Map<String, RuleTreeNodeVO> treeNodeMap = ruleTreeVO.getTreeNodeMap();
         // 获取起始节点「根节点记录了第一个要执行的规则」
         RuleTreeNodeVO ruleTreeNode = treeNodeMap.get(nextNode);
-
-        while(null!=nextNode){
+        while (null != nextNode) {
             // 获取决策节点
             ILogicTreeNode logicTreeNode = logicTreeNodeGroup.get(ruleTreeNode.getRuleKey());
+            String ruleValue = ruleTreeNode.getRuleValue();
             // 决策节点计算
-            DefaultTreeFactory.TreeActionEntity logicEntity = logicTreeNode.logic(userId, strategyId, awardId, ruleTreeNode.getRuleValue());
-            RuleLogicCheckTypeVO ruleLogicCheckType = logicEntity.getRuleLogicCheckType();
-            strategyAwardVO = logicEntity.getStrategyAwardVO();
-            log.info("决策树引擎【{}】treeId:{} node:{} code:{}",
-                    ruleTreeVO.getTreeName(), ruleTreeVO.getTreeId(), nextNode, ruleLogicCheckType.getCode());
+            DefaultTreeFactory.TreeActionEntity logicEntity = logicTreeNode.logic(userId, strategyId, awardId, ruleValue);
+            RuleLogicCheckTypeVO ruleLogicCheckTypeVO = logicEntity.getRuleLogicCheckType();
+            strategyAwardData = logicEntity.getStrategyAwardVO();
+            log.info("决策树引擎【{}】treeId:{} node:{} code:{}", ruleTreeVO.getTreeName(), ruleTreeVO.getTreeId(), nextNode, ruleLogicCheckTypeVO.getCode());
             // 获取下个节点
-            nextNode = nextNode(ruleLogicCheckType.getCode(), ruleTreeNode.getTreeNodeLineVOList());
+            nextNode = nextNode(ruleLogicCheckTypeVO.getCode(), ruleTreeNode.getTreeNodeLineVOList());
             ruleTreeNode = treeNodeMap.get(nextNode);
         }
-        return strategyAwardVO;
+        // 返回最终结果
+        return strategyAwardData;
 
     }
 
@@ -83,7 +83,8 @@ public class DecisionTreeEngine implements IDecisionTreeEngine {
             case LT:
             case GE:
             case LE:
-            default:return false;
+            default:
+                return false;
         }
     }
 }

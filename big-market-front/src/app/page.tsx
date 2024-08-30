@@ -1,9 +1,13 @@
+"use client";
 // @ts-ignore
-import {LuckyWheelPage} from "@/public/lucky/lucky-wheel-page";
-// @ts-ignore
-import {LuckyGridPage} from "@/public/lucky/lucky-grid-page";
+import dynamic from "next/dynamic";
+import {LuckyWheelPage} from "@/src/app/pages/lucky/lucky-wheel-page";
+import {LuckyGridPage} from "@/src/app/pages/lucky/lucky-grid-page";
+
+const StrategyArmoryButton = dynamic(async()=>(await import("./components/StrategyArmory")).StrategyArmory)
 
 export default function Home() {
+
     return (
         <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
             {/* 头部文案 */}
@@ -11,17 +15,20 @@ export default function Home() {
                 大营销平台 - 抽奖展示
             </header>
 
+            {/* 装配抽奖 */}
+            <StrategyArmoryButton/>
+
             {/* 中间的两个div元素 */}
             <div className="flex flex-col md:flex-row gap-4 mb-8">
                 <div className="w-full md:w-1/2 p-6 bg-white shadow-lg rounded-lg">
-                    <p className="text-gray-700">
+                    <div className="text-gray-700">
                         <LuckyWheelPage/>
-                    </p>
+                    </div>
                 </div>
                 <div className="w-full md:w-1/2 p-6 bg-white shadow-lg rounded-lg">
-                    <p className="text-gray-700">
+                    <div className="text-gray-700">
                         <LuckyGridPage/>
-                    </p>
+                    </div>
                 </div>
             </div>
 

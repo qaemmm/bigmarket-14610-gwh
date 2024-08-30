@@ -38,8 +38,13 @@ public class RuleStockLogicTreeNode implements ILogicTreeNode{
                     .awardId(awardId)
                     .strategyId(strategyId)
                     .build());
+
             return DefaultTreeFactory.TreeActionEntity.builder()
                     .ruleLogicCheckType(RuleLogicCheckTypeVO.TAKE_OVER)
+                    .strategyAwardVO(DefaultTreeFactory.StrategyAwardVO.builder()
+                            .awardId(awardId)
+                            .awardRuleValue(ruleValue)
+                            .build())
                     .build();
         }
         // 如果库存不足，则直接返回放行
