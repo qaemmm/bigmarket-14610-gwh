@@ -6,7 +6,7 @@ import lombok.Data;
 import java.util.Date;
 
 /**
- * @author Fuzhengwei bugstack.cn @小傅哥
+ * @author Fuzhengwei 
  * @description 奖品表
  * @create 2023-12-16 13:21
  */

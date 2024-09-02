@@ -5,7 +5,7 @@ import org.redisson.api.*;
 /**
  * Redis 服务
  *
- * @author Fuzhengwei bugstack.cn @小傅哥
+ * @author Fuzhengwei 
  */
 public interface IRedisService {
 

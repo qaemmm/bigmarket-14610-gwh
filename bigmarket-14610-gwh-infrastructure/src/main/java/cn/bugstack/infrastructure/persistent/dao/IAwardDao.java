@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.List;
 
 /**
- * @author Fuzhengwei bugstack.cn @小傅哥
+ * @author Fuzhengwei 
  * @description 奖品表DAO
  * @create 2023-12-16 13:23
  */

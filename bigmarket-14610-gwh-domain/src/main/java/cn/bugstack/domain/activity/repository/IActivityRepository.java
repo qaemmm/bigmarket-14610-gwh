@@ -1,0 +1,19 @@
+package cn.bugstack.domain.activity.repository;
+
+import cn.bugstack.domain.activity.model.entity.ActivityCountEntity;
+import cn.bugstack.domain.activity.model.entity.ActivityEntity;
+import cn.bugstack.domain.activity.model.entity.ActivitySkuEntity;
+
+/**
+ * @author fuzhouling
+ * @date 2024/09/02
+ * @program bigmarket-14610-gwh
+ * @description todo desc...
+ **/
+public interface IActivityRepository {
+    ActivitySkuEntity queryActivityBySku(Long sku);
+
+    ActivityCountEntity queryActivityCountByActivityCountId(Long activityCountId);
+
+    ActivityEntity queryRaffleActivityByActivityId(Long activityId);
+}
