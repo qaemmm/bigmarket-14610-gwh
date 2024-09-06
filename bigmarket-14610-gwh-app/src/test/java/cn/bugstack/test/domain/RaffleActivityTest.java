@@ -2,7 +2,9 @@ package cn.bugstack.test.domain;
 
 import cn.bugstack.domain.activity.model.entity.ActivityOrderEntity;
 import cn.bugstack.domain.activity.model.entity.ActivityShopCartEntity;
-import cn.bugstack.domain.activity.service.RaffleActivity;
+import cn.bugstack.domain.activity.model.entity.SkuRechargeEntity;
+import cn.bugstack.domain.activity.service.IRaffleOrder;
+import cn.bugstack.domain.activity.service.RaffleActivityService;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -22,7 +24,9 @@ import javax.annotation.Resource;
 @Slf4j
 public class RaffleActivityTest {
     @Resource
-    private RaffleActivity raffleActivity;
+    private RaffleActivityService raffleActivity;
+    @Resource
+    private IRaffleOrder raffleOrder;
 
     @Test
     public void test_raffle_activity_order(){
@@ -31,5 +35,16 @@ public class RaffleActivityTest {
         activityShopCartEntity.setSku(9011L);
         ActivityOrderEntity activityOrderEntity = raffleActivity.createRaffleActivityOrder(activityShopCartEntity);
         log.info("测试结果 {}", activityOrderEntity);
+    }
+
+    @Test
+    public void test_createSkuRechargeOrder(){
+        SkuRechargeEntity skuRechargeEntity = new SkuRechargeEntity();
+        skuRechargeEntity.setUserId("xiaofuge");
+        skuRechargeEntity.setSku(9011L);
+        // outBusinessNo 作为幂等仿重使用，同一个业务单号2次使用会抛出索引冲突 Duplicate entry '700091009111' for key 'uq_out_business_no' 确保唯一性。
+        skuRechargeEntity.setOutBusinessNo("700091009111");
+        String skuRechargeOrder = raffleOrder.createSkuRechargeOrder(skuRechargeEntity);
+        log.info("测试结果 {}", skuRechargeOrder);
     }
 }

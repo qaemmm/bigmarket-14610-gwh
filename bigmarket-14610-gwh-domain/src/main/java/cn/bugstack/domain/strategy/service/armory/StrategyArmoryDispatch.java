@@ -59,15 +59,13 @@ public class StrategyArmoryDispatch implements IStrategyArmory,IStrategyDispatch
         for (String key : keys){
             //4000:102,103,104,105 单个value --- 4000 102 103 104 105
             List<Integer> ruleWeightValues = ruleValueMap.get(key);
-            //TODO -- 为什么要这个？ 这里就是克隆一个对象，然后不属于当前策略的移除掉
+            //TODO 后续可以学习一下这种处理方法 lambada -- 为什么要这个？ 这里就是克隆一个对象，然后不属于当前策略的移除掉
             ArrayList<StrategyAwardEntity> strategyAwardEntitiesClone = new ArrayList<>(strategyAwardEntities);
             strategyAwardEntitiesClone.removeIf(entity -> !ruleWeightValues.contains(entity.getAwardId()));
             assembleLotteryStrategy(String.valueOf(strategyId).concat("_").concat(key), strategyAwardEntitiesClone);
         }
         return true;
     }
-
-
 
     public void assembleLotteryStrategy(String key, List<StrategyAwardEntity> strategyAwardEntities) {
        if(strategyAwardEntities == null||strategyAwardEntities.isEmpty())return;
@@ -85,7 +83,7 @@ public class StrategyArmoryDispatch implements IStrategyArmory,IStrategyDispatch
         BigDecimal rateRange = totalAwardRate.divide(minAwardRate, 0, RoundingMode.CEILING);
 //        BigDecimal rateRange = BigDecimal.valueOf(convert(minAwardRate.doubleValue()));
 
-        //TODO 生成策略奖品概率查找表「这里指需要在list集合中，存放上对应的奖品占位即可，占位越多等于概率越高」--后面再看看
+        //TODO ！！（补充学习） 生成策略奖品概率查找表「这里指需要在list集合中，存放上对应的奖品占位即可，占位越多等于概率越高」--后面再看看
         List<Integer> strategyAwardSearchRateTables = new ArrayList<>(totalAwardRate.intValue());
         for (StrategyAwardEntity strategyAward : strategyAwardEntities) {
             Integer awardId = strategyAward.getAwardId();

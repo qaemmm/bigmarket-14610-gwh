@@ -178,7 +178,7 @@ public class StrategyRepository implements IStrategyRepository {
     @Resource
     private IRuleTreeNodeLineDao ruleTreeNodeLineDao;
 
-    // TODO 这一块代码看不懂啊
+    // TODO ！！ 这一块代码是构建一个决策树，有时间可以拿出来手写一遍
     @Override
     public RuleTreeVO queryRuleTreeVoByTreeId(String treeId) {
         // 优先从缓存获取
@@ -246,19 +246,9 @@ public class StrategyRepository implements IStrategyRepository {
 
     @Override
     public boolean subtractAwardStock(String cacheKey) {
-//        log.info("策略奖品库存扣减后剩余库存{}", cacheKey);
-        //扣减库存，需要对库存进行校验
-        // 获取当前库存值
-        Integer stockValue = redisService.getValue(cacheKey);
         // 检查库存值是否为整数
         long stockCount;
-        try {
-            stockCount = stockValue;
-            log.info("库存值为整数，cacheKey: {}, value: {},stockCount:{}", cacheKey, stockValue,stockCount);
-        } catch (NumberFormatException e) {
-            log.error("库存值不是整数，cacheKey: {}, value: {}", cacheKey, stockValue);
-            return false;
-        }
+
         // 扣减库存
         try {
             stockCount = redisService.decr(cacheKey);
@@ -286,6 +276,7 @@ public class StrategyRepository implements IStrategyRepository {
         String cacheKey = Constants.RedisKey.STRATEGY_AWARD_COUNT_QUERY_KEY ;
         RBlockingQueue<StrategyAwardStockVO> blockingQueue = redisService.getBlockingQueue(cacheKey);
         RDelayedQueue<StrategyAwardStockVO> delayQueue = redisService.getDelayedQueue(blockingQueue);
+        //todo ！！（补充学习） 这一块的延时队列起到什么样的效果？
         delayQueue.offer(strategyAwardStockVO,3, TimeUnit.SECONDS);
     }
 

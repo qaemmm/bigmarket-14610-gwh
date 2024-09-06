@@ -17,7 +17,7 @@ import java.util.Map;
  * @author fuzhouling
  * @date 2024/08/20
  * @program bigmarket-14610-gwh
- * @description todo desc...
+ * @description 抽奖策略责任链工厂
  **/
 @CommonsLog
 @Service

@@ -1,310 +1,262 @@
-24-09-02.09:50:08.534 [main            ] INFO  RaffleActivityDaoTest  - Starting RaffleActivityDaoTest using Java 1.8.0_421 on GUOWEIHONG with PID 14732 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
-24-09-02.09:50:08.535 [main            ] INFO  RaffleActivityDaoTest  - The following 1 profile is active: "dev"
-24-09-02.09:50:10.629 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-09-02.09:50:10.634 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-09-02.09:50:10.678 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
-24-09-02.09:50:12.190 [main            ] INFO  Version                - Redisson 3.23.4
-24-09-02.09:50:12.567 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.09:50:12.701 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.09:50:14.419 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-09-02.09:50:14.482 [main            ] INFO  RaffleActivityDaoTest  - Started RaffleActivityDaoTest in 6.363 seconds (JVM running for 7.342)
-24-09-02.09:50:14.843 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-24-09-02.09:50:15.553 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-24-09-02.09:50:15.765 [main            ] INFO  RaffleActivityDaoTest  - 测试结果 [{"activityId":100301,"activityName":"测试活动","createTime":"2024-03-09 19:25:36","id":1,"orderId":"314745789987","orderTime":"2024-03-09 11:25:37","state":"not_used","strategyId":100006,"updateTime":"2024-03-09 19:25:36","userId":"VLhpfQGTMDYpsBZxvfBoeygjb"},{"activityId":100301,"activityName":"测试活动","createTime":"2024-03-09 22:26:19","id":2,"orderId":"802678186818","orderTime":"2024-03-09 14:26:20","state":"not_used","strategyId":100006,"updateTime":"2024-03-09 22:26:19","userId":"VLhpfQGTMDYpsBZxvfBoeygjb"}]
-24-09-02.09:53:09.173 [main            ] INFO  RaffleActivityDaoTest  - Starting RaffleActivityDaoTest using Java 1.8.0_421 on GUOWEIHONG with PID 34288 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
-24-09-02.09:53:09.175 [main            ] INFO  RaffleActivityDaoTest  - The following 1 profile is active: "dev"
-24-09-02.09:53:09.971 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-09-02.09:53:09.974 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-09-02.09:53:10.008 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
-24-09-02.09:53:11.498 [main            ] INFO  Version                - Redisson 3.23.4
-24-09-02.09:53:11.945 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.09:53:12.082 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.09:53:13.800 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-09-02.09:53:13.854 [main            ] INFO  RaffleActivityDaoTest  - Started RaffleActivityDaoTest in 5.074 seconds (JVM running for 5.816)
-24-09-02.09:53:14.176 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-24-09-02.09:53:14.814 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-24-09-02.09:53:15.011 [main            ] INFO  RaffleActivityDaoTest  - 测试结果 [{"activityId":100301,"activityName":"测试活动","createTime":"2024-03-09 19:15:49","id":3,"orderId":"88675199","orderTime":"2024-03-09 11:15:49","state":"not_used","strategyId":100006,"updateTime":"2024-03-09 19:15:49","userId":"xiaofuge"},{"activityId":100301,"activityName":"测试活动","createTime":"2024-03-09 22:24:15","id":5,"orderId":"382877096957","orderTime":"2024-03-09 14:24:14","state":"not_used","strategyId":100006,"updateTime":"2024-03-09 22:24:15","userId":"xiaofuge"}]
-24-09-02.09:53:56.197 [main            ] INFO  RaffleActivityDaoTest  - Starting RaffleActivityDaoTest using Java 1.8.0_421 on GUOWEIHONG with PID 28520 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
-24-09-02.09:53:56.199 [main            ] INFO  RaffleActivityDaoTest  - The following 1 profile is active: "dev"
-24-09-02.09:53:56.877 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-09-02.09:53:56.880 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-09-02.09:53:56.907 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
-24-09-02.09:53:58.306 [main            ] INFO  Version                - Redisson 3.23.4
-24-09-02.09:53:58.727 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.09:53:58.890 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.09:54:00.314 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-09-02.09:54:00.354 [main            ] INFO  RaffleActivityDaoTest  - Started RaffleActivityDaoTest in 4.472 seconds (JVM running for 5.083)
-24-09-02.09:54:00.545 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-24-09-02.09:54:01.237 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-24-09-02.09:54:01.455 [main            ] INFO  RaffleActivityDaoTest  - 测试结果 [{"activityId":100301,"activityName":"测试活动","createTime":"2024-03-09 19:15:49","id":3,"orderId":"88675199","orderTime":"2024-03-09 11:15:49","state":"not_used","strategyId":100006,"updateTime":"2024-03-09 19:15:49","userId":"xiaofuge"},{"activityId":100301,"activityName":"测试活动","createTime":"2024-03-09 22:24:15","id":5,"orderId":"382877096957","orderTime":"2024-03-09 14:24:14","state":"not_used","strategyId":100006,"updateTime":"2024-03-09 22:24:15","userId":"xiaofuge"}]
-24-09-02.09:56:10.136 [main            ] INFO  RaffleActivityDaoTest  - Starting RaffleActivityDaoTest using Java 1.8.0_421 on GUOWEIHONG with PID 15128 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
-24-09-02.09:56:10.137 [main            ] INFO  RaffleActivityDaoTest  - The following 1 profile is active: "dev"
-24-09-02.09:56:10.943 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-09-02.09:56:10.946 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-09-02.09:56:10.979 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
-24-09-02.09:56:12.586 [main            ] INFO  Version                - Redisson 3.23.4
-24-09-02.09:56:12.981 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.09:56:13.117 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.09:56:14.796 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-09-02.09:56:14.838 [main            ] INFO  RaffleActivityDaoTest  - Started RaffleActivityDaoTest in 5.066 seconds (JVM running for 5.825)
-24-09-02.09:56:15.094 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-24-09-02.09:56:15.899 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-24-09-02.09:56:16.115 [main            ] INFO  RaffleActivityDaoTest  - 测试结果 [{"activityId":100301,"activityName":"测试活动","createTime":"2024-03-09 19:15:49","id":3,"orderId":"88675199","orderTime":"2024-03-09 11:15:49","state":"not_used","strategyId":100006,"updateTime":"2024-03-09 19:15:49","userId":"xiaofuge"},{"activityId":100301,"activityName":"测试活动","createTime":"2024-03-09 22:24:15","id":5,"orderId":"382877096957","orderTime":"2024-03-09 14:24:14","state":"not_used","strategyId":100006,"updateTime":"2024-03-09 22:24:15","userId":"xiaofuge"}]
-24-09-02.09:56:58.593 [main            ] INFO  RaffleActivityDaoTest  - Starting RaffleActivityDaoTest using Java 1.8.0_421 on GUOWEIHONG with PID 9064 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
-24-09-02.09:56:58.594 [main            ] INFO  RaffleActivityDaoTest  - The following 1 profile is active: "dev"
-24-09-02.09:56:59.367 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-09-02.09:56:59.371 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-09-02.09:56:59.406 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
-24-09-02.09:57:00.935 [main            ] INFO  Version                - Redisson 3.23.4
-24-09-02.09:57:01.356 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.09:57:01.486 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.09:57:03.285 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-09-02.09:57:03.337 [main            ] INFO  RaffleActivityDaoTest  - Started RaffleActivityDaoTest in 5.141 seconds (JVM running for 5.839)
-24-09-02.09:57:03.604 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-24-09-02.09:57:04.326 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-24-09-02.09:57:37.799 [main            ] INFO  RaffleActivityDaoTest  - Starting RaffleActivityDaoTest using Java 1.8.0_421 on GUOWEIHONG with PID 27328 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
-24-09-02.09:57:37.800 [main            ] INFO  RaffleActivityDaoTest  - The following 1 profile is active: "dev"
-24-09-02.09:57:38.651 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-09-02.09:57:38.653 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-09-02.09:57:38.695 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 0 Redis repository interfaces.
-24-09-02.09:57:40.116 [main            ] INFO  Version                - Redisson 3.23.4
-24-09-02.09:57:40.523 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.09:57:40.673 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.09:57:42.175 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-09-02.09:57:42.215 [main            ] INFO  RaffleActivityDaoTest  - Started RaffleActivityDaoTest in 4.735 seconds (JVM running for 5.388)
-24-09-02.09:57:42.413 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-24-09-02.09:57:43.120 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-24-09-02.09:57:43.365 [main            ] INFO  RaffleActivityDaoTest  - 测试结果 [{"activityId":6,"activityName":"测试活动","createTime":"2024-09-02 17:56:16","id":12,"orderId":"314745789987","orderTime":"2024-09-02 09:56:16","state":"OKK","strategyId":100006,"updateTime":"2024-09-02 17:56:16","userId":"gwh"},{"activityId":6,"activityName":"测试活动","createTime":"2024-09-02 17:57:43","id":14,"orderId":"6666","orderTime":"2024-09-02 09:57:42","state":"OKK","strategyId":100006,"updateTime":"2024-09-02 17:57:43","userId":"gwh"}]
-24-09-02.10:00:05.114 [main            ] INFO  RaffleActivityOrderDaoTest - Starting RaffleActivityOrderDaoTest using Java 1.8.0_421 on GUOWEIHONG with PID 9344 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
-24-09-02.10:00:05.115 [main            ] INFO  RaffleActivityOrderDaoTest - The following 1 profile is active: "dev"
-24-09-02.10:00:05.877 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-09-02.10:00:05.880 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-09-02.10:00:05.913 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
-24-09-02.10:00:07.356 [main            ] INFO  Version                - Redisson 3.23.4
-24-09-02.10:00:07.822 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.10:00:07.993 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.10:00:09.646 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-09-02.10:00:09.696 [main            ] INFO  RaffleActivityOrderDaoTest - Started RaffleActivityOrderDaoTest in 4.927 seconds (JVM running for 5.636)
-24-09-02.10:00:09.925 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-24-09-02.10:00:10.680 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-24-09-02.10:00:20.414 [main            ] INFO  RaffleActivityOrderDaoTest - Starting RaffleActivityOrderDaoTest using Java 1.8.0_421 on GUOWEIHONG with PID 16876 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
-24-09-02.10:00:20.416 [main            ] INFO  RaffleActivityOrderDaoTest - The following 1 profile is active: "dev"
-24-09-02.10:00:21.233 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-09-02.10:00:21.238 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-09-02.10:00:21.267 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
-24-09-02.10:00:22.682 [main            ] INFO  Version                - Redisson 3.23.4
-24-09-02.10:00:23.083 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.10:00:23.213 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.10:00:24.928 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-09-02.10:00:24.988 [main            ] INFO  RaffleActivityOrderDaoTest - Started RaffleActivityOrderDaoTest in 4.896 seconds (JVM running for 5.615)
-24-09-02.10:00:25.196 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-24-09-02.10:00:25.906 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-24-09-02.10:00:26.102 [main            ] INFO  RaffleActivityOrderDaoTest - 测试结果 [{"activityId":6,"activityName":"测试活动","createTime":"2024-09-02 17:56:16","id":12,"orderId":"314745789987","orderTime":"2024-09-02 09:56:16","state":"OKK","strategyId":100006,"updateTime":"2024-09-02 17:56:16","userId":"gwh"},{"activityId":6,"activityName":"测试活动","createTime":"2024-09-02 17:57:43","id":14,"orderId":"6666","orderTime":"2024-09-02 09:57:42","state":"OKK","strategyId":100006,"updateTime":"2024-09-02 17:57:43","userId":"gwh"},{"activityId":6,"activityName":"测试活动","createTime":"2024-09-02 18:00:10","id":15,"orderId":"tj8lAepWJOpk","orderTime":"2024-09-02 10:00:10","state":"OKK","strategyId":100006,"updateTime":"2024-09-02 18:00:10","userId":"gwh"}]
-24-09-02.10:26:25.525 [main            ] INFO  RaffleActivityOrderDaoTest - Starting RaffleActivityOrderDaoTest using Java 1.8.0_421 on GUOWEIHONG with PID 21180 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
-24-09-02.10:26:25.526 [main            ] INFO  RaffleActivityOrderDaoTest - The following 1 profile is active: "dev"
-24-09-02.10:26:26.492 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-09-02.10:26:26.495 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-09-02.10:26:26.531 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
-24-09-02.10:26:29.124 [main            ] INFO  Version                - Redisson 3.23.4
-24-09-02.10:26:29.866 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.10:26:30.016 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.10:26:32.989 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-09-02.10:26:33.077 [main            ] INFO  RaffleActivityOrderDaoTest - Started RaffleActivityOrderDaoTest in 7.969 seconds (JVM running for 9.413)
-24-09-02.10:27:19.775 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-24-09-02.10:27:23.271 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-24-09-02.10:27:52.221 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=58s949ms905µs300ns).
-24-09-02.10:28:31.382 [main            ] INFO  RaffleActivityOrderDaoTest - 测试结果 [{"activityId":6,"activityName":"测试活动","createTime":"2024-09-02 17:56:16","id":12,"orderId":"314745789987","orderTime":"2024-09-02 09:56:16","state":"OKK","strategyId":100006,"updateTime":"2024-09-02 17:56:16","userId":"gwh"},{"activityId":6,"activityName":"测试活动","createTime":"2024-09-02 17:57:43","id":14,"orderId":"6666","orderTime":"2024-09-02 09:57:42","state":"OKK","strategyId":100006,"updateTime":"2024-09-02 17:57:43","userId":"gwh"},{"activityId":6,"activityName":"测试活动","createTime":"2024-09-02 18:00:10","id":15,"orderId":"tj8lAepWJOpk","orderTime":"2024-09-02 10:00:10","state":"OKK","strategyId":100006,"updateTime":"2024-09-02 18:00:10","userId":"gwh"}]
-24-09-02.11:33:51.380 [main            ] INFO  RaffleActivityDaoTest  - Starting RaffleActivityDaoTest using Java 1.8.0_421 on GUOWEIHONG with PID 19700 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
-24-09-02.11:33:51.381 [main            ] INFO  RaffleActivityDaoTest  - The following 1 profile is active: "dev"
-24-09-02.11:33:52.299 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-09-02.11:33:52.302 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-09-02.11:33:52.335 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
-24-09-02.11:33:53.859 [main            ] INFO  Version                - Redisson 3.23.4
-24-09-02.11:33:54.255 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.11:33:54.381 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.11:33:56.030 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-09-02.11:33:56.072 [main            ] INFO  RaffleActivityDaoTest  - Started RaffleActivityDaoTest in 5.057 seconds (JVM running for 5.771)
-24-09-02.11:33:56.331 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-24-09-02.11:33:57.043 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-24-09-02.11:33:57.243 [main            ] INFO  RaffleActivityDaoTest  - 测试结果 {"activityDesc":"测试活动","activityId":100301,"activityName":"测试活动","beginDateTime":"2024-03-09 18:15:10","createTime":"2024-03-09 18:15:10","endDateTime":"2034-03-09 18:15:10","id":2,"state":"0","strategyId":100006,"updateTime":"2024-03-09 18:15:17"}
-24-09-02.15:01:37.941 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 15248 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
-24-09-02.15:01:37.942 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
-24-09-02.15:01:40.484 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-09-02.15:01:40.488 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-09-02.15:01:40.540 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 0 Redis repository interfaces.
-24-09-02.15:01:42.959 [main            ] INFO  Version                - Redisson 3.23.4
-24-09-02.15:01:43.473 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.15:01:43.641 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.15:01:46.743 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-09-02.15:01:46.832 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 9.408 seconds (JVM running for 10.571)
-24-09-02.15:01:58.088 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 31924 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
-24-09-02.15:01:58.091 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
-24-09-02.15:01:59.227 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-09-02.15:01:59.229 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-09-02.15:01:59.274 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27 ms. Found 0 Redis repository interfaces.
-24-09-02.15:02:00.984 [main            ] INFO  Version                - Redisson 3.23.4
-24-09-02.15:02:01.426 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.15:02:01.576 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.15:02:03.842 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-09-02.15:02:03.911 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 6.321 seconds (JVM running for 7.137)
-24-09-02.15:02:19.459 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 22324 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
-24-09-02.15:02:19.461 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
-24-09-02.15:02:20.563 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-09-02.15:02:20.566 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-09-02.15:02:20.620 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 0 Redis repository interfaces.
-24-09-02.15:02:23.517 [main            ] INFO  Version                - Redisson 3.23.4
-24-09-02.15:02:24.063 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.15:02:24.269 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.15:02:27.184 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-09-02.15:02:27.263 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 8.307 seconds (JVM running for 9.426)
-24-09-02.15:03:18.292 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 9668 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
-24-09-02.15:03:18.293 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
-24-09-02.15:03:19.271 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-09-02.15:03:19.275 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-09-02.15:03:19.330 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 0 Redis repository interfaces.
-24-09-02.15:03:21.114 [main            ] INFO  Version                - Redisson 3.23.4
-24-09-02.15:03:21.514 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.15:03:21.660 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.15:03:23.390 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-09-02.15:03:23.445 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 5.64 seconds (JVM running for 6.486)
-24-09-02.15:03:23.707 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-24-09-02.15:03:24.782 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-24-09-02.15:04:26.672 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 28416 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
-24-09-02.15:04:26.673 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
-24-09-02.15:04:27.555 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-09-02.15:04:27.557 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-09-02.15:04:27.597 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
-24-09-02.15:04:29.135 [main            ] INFO  Version                - Redisson 3.23.4
-24-09-02.15:04:29.487 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.15:04:29.651 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.15:04:31.699 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-09-02.15:04:31.764 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 5.482 seconds (JVM running for 6.259)
-24-09-02.15:04:32.049 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-24-09-02.15:04:32.831 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-24-09-02.15:04:58.628 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 35456 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
-24-09-02.15:04:58.629 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
-24-09-02.15:04:59.542 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-09-02.15:04:59.545 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-09-02.15:04:59.584 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
-24-09-02.15:05:01.135 [main            ] INFO  Version                - Redisson 3.23.4
-24-09-02.15:05:01.512 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.15:05:01.666 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.15:05:03.672 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-09-02.15:05:03.722 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 5.527 seconds (JVM running for 6.368)
-24-09-02.15:05:03.977 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-24-09-02.15:05:04.671 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-24-09-02.15:08:51.529 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 18612 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
-24-09-02.15:08:51.531 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
-24-09-02.15:08:52.889 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-09-02.15:08:52.894 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-09-02.15:08:52.945 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 0 Redis repository interfaces.
-24-09-02.15:08:55.209 [main            ] INFO  Version                - Redisson 3.23.4
-24-09-02.15:08:55.702 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.15:08:55.852 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.15:08:58.578 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-09-02.15:08:58.640 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 7.627 seconds (JVM running for 8.561)
-24-09-02.15:08:59.038 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-24-09-02.15:09:00.091 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-24-09-02.15:10:04.387 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 35040 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
-24-09-02.15:10:04.389 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
-24-09-02.15:10:05.299 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-09-02.15:10:05.301 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-09-02.15:10:05.343 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 0 Redis repository interfaces.
-24-09-02.15:10:07.022 [main            ] INFO  Version                - Redisson 3.23.4
-24-09-02.15:10:07.413 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.15:10:07.546 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.15:10:09.420 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-09-02.15:10:09.486 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 5.546 seconds (JVM running for 6.421)
-24-09-02.15:10:09.718 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-24-09-02.15:10:10.501 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-24-09-02.15:10:53.224 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 28520 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
-24-09-02.15:10:53.226 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
-24-09-02.15:10:54.326 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-09-02.15:10:54.330 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-09-02.15:10:54.366 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
-24-09-02.15:10:56.195 [main            ] INFO  Version                - Redisson 3.23.4
-24-09-02.15:10:56.602 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.15:10:56.731 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.15:10:58.771 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-09-02.15:10:58.829 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 6.124 seconds (JVM running for 7.149)
-24-09-02.15:10:59.100 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-24-09-02.15:11:00.009 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-24-09-02.15:11:41.834 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 15468 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
-24-09-02.15:11:41.837 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
-24-09-02.15:11:42.885 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-09-02.15:11:42.888 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-09-02.15:11:42.932 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 0 Redis repository interfaces.
-24-09-02.15:11:45.723 [main            ] INFO  Version                - Redisson 3.23.4
-24-09-02.15:11:46.488 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.15:11:46.634 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.15:11:49.769 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-09-02.15:11:49.848 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 8.502 seconds (JVM running for 9.581)
-24-09-02.15:11:59.548 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-24-09-02.15:12:04.319 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-24-09-02.15:13:24.913 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 10452 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
-24-09-02.15:13:24.915 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
-24-09-02.15:13:25.988 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-09-02.15:13:25.993 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-09-02.15:13:26.043 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 0 Redis repository interfaces.
-24-09-02.15:13:28.444 [main            ] INFO  Version                - Redisson 3.23.4
-24-09-02.15:13:28.965 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.15:13:29.130 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.15:13:32.079 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-09-02.15:13:32.161 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 7.721 seconds (JVM running for 8.789)
-24-09-02.15:13:36.767 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-24-09-02.15:13:38.104 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-24-09-02.15:14:09.230 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=58s426ms678µs600ns).
-24-09-02.15:15:43.787 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=1m37s254ms488µs).
-24-09-02.15:15:47.045 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 23248 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
-24-09-02.15:15:47.047 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
-24-09-02.15:15:48.007 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-09-02.15:15:48.014 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-09-02.15:15:48.064 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 0 Redis repository interfaces.
-24-09-02.15:15:50.494 [main            ] INFO  Version                - Redisson 3.23.4
-24-09-02.15:15:51.181 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.15:15:51.320 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.15:15:54.492 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-09-02.15:15:54.580 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 7.975 seconds (JVM running for 9.109)
-24-09-02.15:16:08.653 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-24-09-02.15:16:09.909 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-24-09-02.15:16:31.763 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=51s854ms782µs200ns).
-24-09-02.15:21:37.052 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=5m5s288ms920µs).
-24-09-02.15:21:45.381 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 12540 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
-24-09-02.15:21:45.382 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
-24-09-02.15:21:46.670 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-09-02.15:21:46.676 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-09-02.15:21:46.724 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 0 Redis repository interfaces.
-24-09-02.15:21:48.622 [main            ] INFO  Version                - Redisson 3.23.4
-24-09-02.15:21:49.106 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.15:21:49.261 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.15:21:51.595 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-09-02.15:21:51.662 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 6.732 seconds (JVM running for 7.706)
-24-09-02.15:21:51.980 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-24-09-02.15:21:52.944 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-24-09-02.15:22:24.726 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 22132 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
-24-09-02.15:22:24.727 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
-24-09-02.15:22:25.797 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-09-02.15:22:25.800 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-09-02.15:22:25.846 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 0 Redis repository interfaces.
-24-09-02.15:22:28.478 [main            ] INFO  Version                - Redisson 3.23.4
-24-09-02.15:22:29.055 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.15:22:29.223 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.15:22:32.670 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-09-02.15:22:32.769 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 8.547 seconds (JVM running for 9.684)
-24-09-02.15:22:35.568 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-24-09-02.15:22:36.923 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-24-09-02.15:25:18.859 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=2m39s873ms491µs200ns).
-24-09-02.15:25:22.272 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 27744 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
-24-09-02.15:25:22.273 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
-24-09-02.15:25:23.294 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-24-09-02.15:25:23.297 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-24-09-02.15:25:23.342 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 0 Redis repository interfaces.
-24-09-02.15:25:25.305 [main            ] INFO  Version                - Redisson 3.23.4
-24-09-02.15:25:25.794 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.15:25:25.956 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
-24-09-02.15:25:28.247 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
-24-09-02.15:25:28.315 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 6.497 seconds (JVM running for 7.314)
-24-09-02.15:25:28.582 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
-24-09-02.15:25:29.457 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
-24-09-02.15:25:29.909 [main            ] INFO  AbstractRaffleActivity - 用户参与活动次数信息：activitySkuEntity {"activityCountId":11101,"activityId":100301,"stockCount":0,"stockCountSurplus":0} activityEntity {"activityDesc":"测试活动","activityId":100301,"activityName":"测试活动","beginDateTime":"2024-03-09 18:15:10","endDateTime":"2034-03-09 18:15:10","strategyId":100006} activityCountEntity {"activityCountId":11101,"dayCount":1,"monthCount":1,"totalCount":1}
-24-09-02.15:25:29.910 [main            ] INFO  RaffleActivityTest     - 测试结果 ActivityOrderEntity(userId=null, activityId=null, activityName=null, strategyId=null, orderId=null, orderTime=null, totalCount=null, dayCount=null, monthCount=null, state=null)
+24-09-03.10:30:31.802 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 13592 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-03.10:30:31.803 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-03.10:30:34.376 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-03.10:30:34.382 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-03.10:30:34.445 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 0 Redis repository interfaces.
+24-09-03.10:30:36.883 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-03.10:30:37.420 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-03.10:30:37.540 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-03.10:30:40.025 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-03.10:30:40.091 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 8.7 seconds (JVM running for 15.233)
+24-09-03.10:31:18.694 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-03.10:31:19.925 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-03.10:33:49.913 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=2m59s988ms224µs).
+24-09-03.10:34:31.991 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态】校验开始。
+24-09-03.10:34:31.991 [main            ] INFO  ActivitySkuStockActionChain - 动责任链-商品库存处理【校验&扣减】开始。
+24-09-03.10:35:03.317 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 1876 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-03.10:35:03.319 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-03.10:35:04.018 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-03.10:35:04.021 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-03.10:35:04.055 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+24-09-03.10:35:05.893 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-03.10:35:06.359 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-03.10:35:06.514 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-03.10:35:08.905 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-03.10:35:08.972 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 5.987 seconds (JVM running for 6.836)
+24-09-03.10:35:12.836 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-03.10:35:13.768 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-03.10:37:56.898 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态】校验开始。
+24-09-03.10:37:56.900 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=2m39s164ms709µs700ns).
+24-09-03.10:37:56.900 [main            ] INFO  ActivitySkuStockActionChain - 动责任链-商品库存处理【校验&扣减】开始。
+24-09-03.10:38:03.643 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 9080 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-03.10:38:03.643 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-03.10:38:04.457 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-03.10:38:04.460 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-03.10:38:04.496 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+24-09-03.10:38:06.483 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-03.10:38:07.095 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-03.10:38:07.220 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-03.10:38:09.605 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-03.10:38:09.681 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 6.433 seconds (JVM running for 7.49)
+24-09-03.10:38:12.673 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-03.10:38:13.593 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-03.10:38:16.691 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态】校验开始。
+24-09-03.10:38:16.692 [main            ] INFO  ActivitySkuStockActionChain - 动责任链-商品库存处理【校验&扣减】开始。
+24-09-03.10:45:22.771 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 20564 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-03.10:45:22.771 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-03.10:45:23.538 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-03.10:45:23.542 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-03.10:45:23.569 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+24-09-03.10:45:25.414 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-03.10:45:25.922 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-03.10:45:26.048 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-03.10:45:28.217 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-03.10:45:28.277 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 5.877 seconds (JVM running for 6.695)
+24-09-03.10:46:14.880 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-03.10:46:15.792 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-03.10:46:19.439 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态】校验开始。
+24-09-03.10:46:19.439 [main            ] INFO  ActivitySkuStockActionChain - 动责任链-商品库存处理【校验&扣减】开始。
+24-09-03.10:49:04.180 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=2m48s273ms588µs400ns).
+24-09-03.10:49:08.658 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 24896 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-03.10:49:08.659 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-03.10:49:09.407 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-03.10:49:09.410 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-03.10:49:09.440 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+24-09-03.10:49:11.723 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-03.10:49:12.225 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-03.10:49:12.368 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-03.10:49:14.860 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-03.10:49:14.933 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 6.616 seconds (JVM running for 7.552)
+24-09-03.10:49:20.692 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-03.10:49:21.533 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-03.10:49:21.716 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态】校验开始。
+24-09-03.10:49:21.717 [main            ] INFO  ActivitySkuStockActionChain - 动责任链-商品库存处理【校验&扣减】开始。
+24-09-03.10:49:53.124 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-03.10:49:53.391 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-03.10:51:43.597 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 22132 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-03.10:51:43.599 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-03.10:51:44.271 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-03.10:51:44.274 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-03.10:51:44.307 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+24-09-03.10:51:45.546 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-03.10:51:45.913 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-03.10:51:46.051 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-03.10:51:47.560 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-03.10:51:47.600 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 4.286 seconds (JVM running for 4.904)
+24-09-03.10:51:47.770 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-03.10:51:48.453 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-03.10:51:48.575 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态】校验开始。
+24-09-03.10:51:48.575 [main            ] INFO  ActivitySkuStockActionChain - 动责任链-商品库存处理【校验&扣减】开始。
+24-09-03.10:51:48.578 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-03.10:51:48.849 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-03.10:54:04.671 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 29136 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-03.10:54:04.672 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-03.10:54:05.363 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-03.10:54:05.366 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-03.10:54:05.393 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+24-09-03.10:54:06.682 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-03.10:54:07.164 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-03.10:54:07.948 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-03.10:54:09.333 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-03.10:54:09.376 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 4.986 seconds (JVM running for 5.567)
+24-09-03.10:54:09.553 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-03.10:54:10.286 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-03.10:54:10.419 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态】校验开始。
+24-09-03.10:54:10.419 [main            ] INFO  ActivitySkuStockActionChain - 动责任链-商品库存处理【校验&扣减】开始。
+24-09-03.10:54:10.423 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-03.10:54:10.943 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-03.10:54:39.760 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 12360 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-03.10:54:39.761 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-03.10:54:40.406 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-03.10:54:40.409 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-03.10:54:40.436 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+24-09-03.10:54:41.636 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-03.10:54:41.964 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-03.10:54:42.097 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-03.10:54:43.511 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-03.10:54:43.551 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 4.077 seconds (JVM running for 4.646)
+24-09-03.10:54:43.731 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-03.10:54:44.388 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-03.10:54:44.505 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态】校验开始。
+24-09-03.10:54:44.506 [main            ] INFO  ActivitySkuStockActionChain - 动责任链-商品库存处理【校验&扣减】开始。
+24-09-03.10:54:44.511 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-03.10:54:44.726 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-03.11:17:49.639 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 12284 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-03.11:17:49.640 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-03.11:17:50.312 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-03.11:17:50.314 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-03.11:17:50.341 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+24-09-03.11:17:51.588 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-03.11:17:51.933 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-03.11:17:52.067 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-03.11:17:53.415 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-03.11:17:53.453 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 4.091 seconds (JVM running for 4.657)
+24-09-03.11:17:53.619 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-03.11:17:54.275 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-03.11:17:54.401 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态】校验开始。
+24-09-03.11:17:54.401 [main            ] INFO  ActivitySkuStockActionChain - 动责任链-商品库存处理【校验&扣减】开始。
+24-09-03.11:17:54.405 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-03.11:17:54.656 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-03.11:17:54.800 [main            ] INFO  RaffleActivityTest     - 测试结果 196317111539
+24-09-03.14:01:05.866 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 10600 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-03.14:01:05.866 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-03.14:01:06.665 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-03.14:01:06.665 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-03.14:01:06.697 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+24-09-03.14:01:08.159 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-03.14:01:08.573 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-03.14:01:08.704 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-03.14:01:10.092 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-03.14:01:10.129 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 4.588 seconds (JVM running for 5.288)
+24-09-03.14:01:10.346 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-03.14:01:11.009 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-03.14:01:11.139 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态】校验开始。
+24-09-03.14:01:11.139 [main            ] INFO  ActivitySkuStockActionChain - 动责任链-商品库存处理【校验&扣减】开始。
+24-09-03.14:01:11.143 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-03.14:01:11.354 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-03.14:01:11.451 [main            ] ERROR ActivityRepository     - 写入订单记录，唯一索引冲突 userId: xiaofuge activityId: 100301 sku: 9011
+org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '700091009111' for key 'raffle_activity_order_001.uq_out_business_no'
+### The error may exist in file [D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app\target\classes\mybatis\mapper\raffle_activity_order_mapper.xml]
+### The error may involve cn.bugstack.infrastructure.persistent.dao.IRaffleActivityOrderDao.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into raffle_activity_order_001 ( user_id,sku, activity_id, activity_name, strategy_id, order_id, order_time,total_count, day_count, month_count, state,out_business_no, create_time, update_time)         values (?, ?,?, ?, ?, ?, ?, ?,?,?,?, ?,now(), now())
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '700091009111' for key 'raffle_activity_order_001.uq_out_business_no'
+; Duplicate entry '700091009111' for key 'raffle_activity_order_001.uq_out_business_no'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '700091009111' for key 'raffle_activity_order_001.uq_out_business_no'
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:247)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:91)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441)
+	at com.sun.proxy.$Proxy102.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy117.insert(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:220)
+	at com.sun.proxy.$Proxy118.insert(Unknown Source)
+	at cn.bugstack.infrastructure.persistent.repository.ActivityRepository.lambda$doSaveOrder$0(ActivityRepository.java:151)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at cn.bugstack.infrastructure.persistent.repository.ActivityRepository.doSaveOrder(ActivityRepository.java:148)
+	at cn.bugstack.infrastructure.persistent.repository.ActivityRepository$$FastClassBySpringCGLIB$$5fc4459a.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at cn.bugstack.infrastructure.persistent.repository.ActivityRepository$$EnhancerBySpringCGLIB$$b4d99896.doSaveOrder(<generated>)
+	at cn.bugstack.domain.activity.service.RaffleActivityService.doSaveOrder(RaffleActivityService.java:63)
+	at cn.bugstack.domain.activity.service.AbstractRaffleActivity.createSkuRechargeOrder(AbstractRaffleActivity.java:71)
+	at cn.bugstack.test.domain.RaffleActivityTest.test_createSkuRechargeOrder(RaffleActivityTest.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '700091009111' for key 'raffle_activity_order_001.uq_out_business_no'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy176.update(Unknown Source)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	... 66 common frames omitted

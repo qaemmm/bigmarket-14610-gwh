@@ -12,7 +12,7 @@ import javax.annotation.Resource;
  * @author fuzhouling
  * @date 2024/08/20
  * @program bigmarket-14610-gwh
- * @description todo desc...
+ * @description 抽奖策略默认规则
  **/
 @Slf4j
 @Component("default")

@@ -21,7 +21,7 @@ import java.util.Set;
  * @author fuzhouling
  * @date 2024/08/20
  * @program bigmarket-14610-gwh
- * @description todo desc...
+ * @description 抽奖策略权重规则
  **/
 @Slf4j
 @Component("rule_weight")

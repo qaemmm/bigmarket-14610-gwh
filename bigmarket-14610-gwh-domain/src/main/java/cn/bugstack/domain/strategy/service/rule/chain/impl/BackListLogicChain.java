@@ -14,7 +14,7 @@ import javax.annotation.Resource;
  * @author fuzhouling
  * @date 2024/08/20
  * @program bigmarket-14610-gwh
- * @description todo desc...
+ * @description 抽奖策略黑名单
  **/
 @Slf4j
 @Component("rule_blacklist")
@@ -27,7 +27,6 @@ public class BackListLogicChain extends AbstractLogicChain {
         log.info("抽奖责任链-黑名单开始 userId: {} strategyId: {} ruleModel: {}",
                 userId, strategyId, ruleModel());
         String ruleValue = repository.queryStrategyRuleValue(strategyId, null, ruleModel());
-        //todo 需要做校验吗？
 
         String[] part = ruleValue.split(Constants.COLON);
         Integer awardId = Integer.parseInt(part[0]);

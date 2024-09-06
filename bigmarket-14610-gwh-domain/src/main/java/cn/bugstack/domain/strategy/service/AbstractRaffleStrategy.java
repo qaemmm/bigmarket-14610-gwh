@@ -36,7 +36,7 @@ public abstract class AbstractRaffleStrategy implements IRaffleStrategy{
         this.treeFactory = treeFactory;
     }
 
-    // TODO -- 抽象类里能这么写吗？？？？？
+    //  抽象类里能这么写吗？？？？？
     // 抽象类重写抽奖接口，通过这样的方式来定义抽奖的标准流程。之后过滤抽奖规则，并根据结果处理奖品结果
     @Override
     public RaffleAwardEntity performRaffle(RaffleFactorEntity raffleFactorEntity) {
