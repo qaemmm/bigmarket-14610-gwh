@@ -99,8 +99,7 @@ public class ActivityRepository implements IActivityRepository {
                 .activityDesc(raffleActivity.getActivityDesc())
                 .activityName(raffleActivity.getActivityName())
                 .activityId(raffleActivity.getActivityId())
-
-//                .state(ActivityStateVO.valueOf(raffleActivity.getState()))
+                .state(ActivityStateVO.valueOf(raffleActivity.getState()))
                 .beginDateTime(raffleActivity.getBeginDateTime())
                 .endDateTime(raffleActivity.getEndDateTime())
                 .strategyId(raffleActivity.getStrategyId())

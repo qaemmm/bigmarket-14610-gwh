@@ -83,7 +83,7 @@ Caused by: java.lang.NullPointerException: null
 	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
 	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211)
 	... 61 common frames omitted
-24-09-02.18:32:05.367 [main            ] ERROR TestContextManager     - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@12a94400] to prepare test instance [cn.bugstack.test.domain.RaffleActivityTest@23d0944b]
+24-09-02.18:32:05.367 [main            ] ERROR TestContextManager     - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@12a94400] to prepare test instance [cn.bugstack.test.domain.activity.RaffleActivityTest@23d0944b]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98)
 	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)

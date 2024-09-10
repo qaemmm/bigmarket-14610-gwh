@@ -1,4 +1,4 @@
-package cn.bugstack.test.domain;
+package cn.bugstack.test.domain.strategy;
 
 import cn.bugstack.domain.strategy.service.rule.chain.ILogicChain;
 import cn.bugstack.domain.strategy.service.rule.chain.factory.DefaultChainFactory;

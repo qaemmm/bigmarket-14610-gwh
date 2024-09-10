@@ -430,7 +430,7 @@ Action:
 
 Consider defining a bean of type 'cn.bugstack.domain.strategy.model.valobj.RuleTreeVO' in your configuration.
 
-24-08-20.15:49:25.279 [main            ] ERROR TestContextManager     - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@78a773fd] to prepare test instance [cn.bugstack.test.domain.LogicTreeTest@71ad959b]
+24-08-20.15:49:25.279 [main            ] ERROR TestContextManager     - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@78a773fd] to prepare test instance [cn.bugstack.test.domain.strategy.LogicTreeTest@71ad959b]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98)
 	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
@@ -515,7 +515,7 @@ Action:
 
 Consider defining a bean of type 'cn.bugstack.domain.strategy.model.valobj.RuleTreeVO' in your configuration.
 
-24-08-20.15:52:26.189 [main            ] ERROR TestContextManager     - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@57c03d88] to prepare test instance [cn.bugstack.test.domain.LogicTreeTest@1d7c9811]
+24-08-20.15:52:26.189 [main            ] ERROR TestContextManager     - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@57c03d88] to prepare test instance [cn.bugstack.test.domain.strategy.LogicTreeTest@1d7c9811]
 java.lang.IllegalStateException: Failed to load ApplicationContext
 	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98)
 	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
