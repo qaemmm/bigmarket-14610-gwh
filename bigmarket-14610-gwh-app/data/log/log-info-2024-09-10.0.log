@@ -1,0 +1,1065 @@
+24-09-03.10:30:31.802 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 13592 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-03.10:30:31.803 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-03.10:30:34.376 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-03.10:30:34.382 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-03.10:30:34.445 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 33 ms. Found 0 Redis repository interfaces.
+24-09-03.10:30:36.883 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-03.10:30:37.420 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-03.10:30:37.540 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-03.10:30:40.025 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-03.10:30:40.091 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 8.7 seconds (JVM running for 15.233)
+24-09-03.10:31:18.694 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-03.10:31:19.925 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-03.10:33:49.913 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=2m59s988ms224µs).
+24-09-03.10:34:31.991 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态】校验开始。
+24-09-03.10:34:31.991 [main            ] INFO  ActivitySkuStockActionChain - 动责任链-商品库存处理【校验&扣减】开始。
+24-09-03.10:35:03.317 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 1876 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-03.10:35:03.319 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-03.10:35:04.018 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-03.10:35:04.021 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-03.10:35:04.055 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+24-09-03.10:35:05.893 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-03.10:35:06.359 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-03.10:35:06.514 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-03.10:35:08.905 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-03.10:35:08.972 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 5.987 seconds (JVM running for 6.836)
+24-09-03.10:35:12.836 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-03.10:35:13.768 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-03.10:37:56.898 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态】校验开始。
+24-09-03.10:37:56.900 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=2m39s164ms709µs700ns).
+24-09-03.10:37:56.900 [main            ] INFO  ActivitySkuStockActionChain - 动责任链-商品库存处理【校验&扣减】开始。
+24-09-03.10:38:03.643 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 9080 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-03.10:38:03.643 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-03.10:38:04.457 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-03.10:38:04.460 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-03.10:38:04.496 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+24-09-03.10:38:06.483 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-03.10:38:07.095 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-03.10:38:07.220 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-03.10:38:09.605 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-03.10:38:09.681 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 6.433 seconds (JVM running for 7.49)
+24-09-03.10:38:12.673 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-03.10:38:13.593 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-03.10:38:16.691 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态】校验开始。
+24-09-03.10:38:16.692 [main            ] INFO  ActivitySkuStockActionChain - 动责任链-商品库存处理【校验&扣减】开始。
+24-09-03.10:45:22.771 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 20564 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-03.10:45:22.771 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-03.10:45:23.538 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-03.10:45:23.542 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-03.10:45:23.569 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+24-09-03.10:45:25.414 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-03.10:45:25.922 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-03.10:45:26.048 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-03.10:45:28.217 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-03.10:45:28.277 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 5.877 seconds (JVM running for 6.695)
+24-09-03.10:46:14.880 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-03.10:46:15.792 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-03.10:46:19.439 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态】校验开始。
+24-09-03.10:46:19.439 [main            ] INFO  ActivitySkuStockActionChain - 动责任链-商品库存处理【校验&扣减】开始。
+24-09-03.10:49:04.180 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=2m48s273ms588µs400ns).
+24-09-03.10:49:08.658 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 24896 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-03.10:49:08.659 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-03.10:49:09.407 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-03.10:49:09.410 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-03.10:49:09.440 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+24-09-03.10:49:11.723 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-03.10:49:12.225 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-03.10:49:12.368 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-03.10:49:14.860 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-03.10:49:14.933 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 6.616 seconds (JVM running for 7.552)
+24-09-03.10:49:20.692 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-03.10:49:21.533 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-03.10:49:21.716 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态】校验开始。
+24-09-03.10:49:21.717 [main            ] INFO  ActivitySkuStockActionChain - 动责任链-商品库存处理【校验&扣减】开始。
+24-09-03.10:49:53.124 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-03.10:49:53.391 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-03.10:51:43.597 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 22132 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-03.10:51:43.599 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-03.10:51:44.271 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-03.10:51:44.274 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-03.10:51:44.307 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+24-09-03.10:51:45.546 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-03.10:51:45.913 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-03.10:51:46.051 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-03.10:51:47.560 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-03.10:51:47.600 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 4.286 seconds (JVM running for 4.904)
+24-09-03.10:51:47.770 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-03.10:51:48.453 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-03.10:51:48.575 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态】校验开始。
+24-09-03.10:51:48.575 [main            ] INFO  ActivitySkuStockActionChain - 动责任链-商品库存处理【校验&扣减】开始。
+24-09-03.10:51:48.578 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-03.10:51:48.849 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-03.10:54:04.671 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 29136 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-03.10:54:04.672 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-03.10:54:05.363 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-03.10:54:05.366 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-03.10:54:05.393 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+24-09-03.10:54:06.682 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-03.10:54:07.164 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-03.10:54:07.948 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-03.10:54:09.333 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-03.10:54:09.376 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 4.986 seconds (JVM running for 5.567)
+24-09-03.10:54:09.553 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-03.10:54:10.286 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-03.10:54:10.419 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态】校验开始。
+24-09-03.10:54:10.419 [main            ] INFO  ActivitySkuStockActionChain - 动责任链-商品库存处理【校验&扣减】开始。
+24-09-03.10:54:10.423 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-03.10:54:10.943 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-03.10:54:39.760 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 12360 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-03.10:54:39.761 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-03.10:54:40.406 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-03.10:54:40.409 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-03.10:54:40.436 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+24-09-03.10:54:41.636 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-03.10:54:41.964 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-03.10:54:42.097 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-03.10:54:43.511 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-03.10:54:43.551 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 4.077 seconds (JVM running for 4.646)
+24-09-03.10:54:43.731 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-03.10:54:44.388 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-03.10:54:44.505 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态】校验开始。
+24-09-03.10:54:44.506 [main            ] INFO  ActivitySkuStockActionChain - 动责任链-商品库存处理【校验&扣减】开始。
+24-09-03.10:54:44.511 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-03.10:54:44.726 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-03.11:17:49.639 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 12284 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-03.11:17:49.640 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-03.11:17:50.312 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-03.11:17:50.314 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-03.11:17:50.341 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+24-09-03.11:17:51.588 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-03.11:17:51.933 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-03.11:17:52.067 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-03.11:17:53.415 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-03.11:17:53.453 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 4.091 seconds (JVM running for 4.657)
+24-09-03.11:17:53.619 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-03.11:17:54.275 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-03.11:17:54.401 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态】校验开始。
+24-09-03.11:17:54.401 [main            ] INFO  ActivitySkuStockActionChain - 动责任链-商品库存处理【校验&扣减】开始。
+24-09-03.11:17:54.405 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-03.11:17:54.656 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-03.11:17:54.800 [main            ] INFO  RaffleActivityTest     - 测试结果 196317111539
+24-09-03.14:01:05.866 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 10600 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-03.14:01:05.866 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-03.14:01:06.665 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-03.14:01:06.665 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-03.14:01:06.697 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+24-09-03.14:01:08.159 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-03.14:01:08.573 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-03.14:01:08.704 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-03.14:01:10.092 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-03.14:01:10.129 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 4.588 seconds (JVM running for 5.288)
+24-09-03.14:01:10.346 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-03.14:01:11.009 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-03.14:01:11.139 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态】校验开始。
+24-09-03.14:01:11.139 [main            ] INFO  ActivitySkuStockActionChain - 动责任链-商品库存处理【校验&扣减】开始。
+24-09-03.14:01:11.143 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-03.14:01:11.354 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-03.14:01:11.451 [main            ] ERROR ActivityRepository     - 写入订单记录，唯一索引冲突 userId: xiaofuge activityId: 100301 sku: 9011
+org.springframework.dao.DuplicateKeyException: 
+### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '700091009111' for key 'raffle_activity_order_001.uq_out_business_no'
+### The error may exist in file [D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app\target\classes\mybatis\mapper\raffle_activity_order_mapper.xml]
+### The error may involve cn.bugstack.infrastructure.persistent.dao.IRaffleActivityOrderDao.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into raffle_activity_order_001 ( user_id,sku, activity_id, activity_name, strategy_id, order_id, order_time,total_count, day_count, month_count, state,out_business_no, create_time, update_time)         values (?, ?,?, ?, ?, ?, ?, ?,?,?,?, ?,now(), now())
+### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '700091009111' for key 'raffle_activity_order_001.uq_out_business_no'
+; Duplicate entry '700091009111' for key 'raffle_activity_order_001.uq_out_business_no'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '700091009111' for key 'raffle_activity_order_001.uq_out_business_no'
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:247)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:91)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441)
+	at com.sun.proxy.$Proxy102.insert(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:272)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:62)
+	at org.apache.ibatis.binding.MapperProxy$PlainMethodInvoker.invoke(MapperProxy.java:152)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:85)
+	at com.sun.proxy.$Proxy117.insert(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:220)
+	at com.sun.proxy.$Proxy118.insert(Unknown Source)
+	at cn.bugstack.infrastructure.persistent.repository.ActivityRepository.lambda$doSaveOrder$0(ActivityRepository.java:151)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at cn.bugstack.infrastructure.persistent.repository.ActivityRepository.doSaveOrder(ActivityRepository.java:148)
+	at cn.bugstack.infrastructure.persistent.repository.ActivityRepository$$FastClassBySpringCGLIB$$5fc4459a.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at cn.bugstack.infrastructure.persistent.repository.ActivityRepository$$EnhancerBySpringCGLIB$$b4d99896.doSaveOrder(<generated>)
+	at cn.bugstack.domain.activity.service.RaffleActivityService.doSaveOrder(RaffleActivityService.java:63)
+	at cn.bugstack.domain.activity.service.AbstractRaffleActivity.createSkuRechargeOrder(AbstractRaffleActivity.java:71)
+	at cn.bugstack.test.domain.activity.RaffleActivityTest.test_createSkuRechargeOrder(RaffleActivityTest.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestExecutionCallbacks.evaluate(RunBeforeTestExecutionCallbacks.java:74)
+	at org.springframework.test.context.junit4.statements.RunAfterTestExecutionCallbacks.evaluate(RunAfterTestExecutionCallbacks.java:84)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:75)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:86)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:84)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:251)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry '700091009111' for key 'raffle_activity_order_001.uq_out_business_no'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63)
+	at com.sun.proxy.$Proxy176.update(Unknown Source)
+	at org.apache.ibatis.executor.SimpleExecutor.doUpdate(SimpleExecutor.java:50)
+	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117)
+	at org.apache.ibatis.executor.CachingExecutor.update(CachingExecutor.java:76)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427)
+	... 66 common frames omitted
+24-09-10.15:00:56.523 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 31864 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-10.15:00:56.523 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-10.15:00:58.229 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-10.15:00:58.233 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-10.15:00:58.266 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+24-09-10.15:00:59.815 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-10.15:01:00.193 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.15:01:00.338 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.15:01:01.848 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-10.15:01:01.892 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 5.726 seconds (JVM running for 6.542)
+24-09-10.15:01:02.119 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-10.15:01:02.982 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-10.15:01:03.106 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态】校验开始。
+24-09-10.15:03:54.479 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 32716 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-10.15:03:54.480 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-10.15:03:55.274 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-10.15:03:55.276 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-10.15:03:55.326 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31 ms. Found 0 Redis repository interfaces.
+24-09-10.15:03:57.336 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-10.15:03:57.880 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.15:03:58.003 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.15:04:00.561 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-10.15:04:00.638 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 6.501 seconds (JVM running for 7.364)
+24-09-10.15:04:04.140 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-10.15:04:05.065 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-10.15:04:05.259 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态】校验开始。
+24-09-10.15:04:47.198 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 7992 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-10.15:04:47.199 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-10.15:04:47.977 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-10.15:04:47.981 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-10.15:04:48.010 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+24-09-10.15:04:49.984 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-10.15:04:50.478 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.15:04:50.600 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.15:04:52.932 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-10.15:04:52.994 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 6.176 seconds (JVM running for 7.037)
+24-09-10.15:05:06.681 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-10.15:05:07.585 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-10.15:05:17.489 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态】校验开始。
+24-09-10.15:06:27.133 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=1m16s108ms826µs600ns).
+24-09-10.15:06:30.139 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 30416 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-10.15:06:30.140 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-10.15:06:30.915 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-10.15:06:30.921 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-10.15:06:30.959 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+24-09-10.15:06:32.993 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-10.15:06:33.547 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.15:06:33.677 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.15:06:36.328 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-10.15:06:36.394 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 6.593 seconds (JVM running for 7.422)
+24-09-10.15:07:02.640 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-10.15:07:05.252 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 34412 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-10.15:07:05.253 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-10.15:07:06.143 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-10.15:07:06.146 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-10.15:07:06.184 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+24-09-10.15:07:08.351 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-10.15:07:08.970 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.15:07:09.178 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.15:07:11.789 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-10.15:07:11.868 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 6.988 seconds (JVM running for 7.866)
+24-09-10.15:07:14.207 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-10.15:07:15.192 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-10.15:07:37.454 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态】校验开始。
+24-09-10.15:07:41.353 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【校验&扣减】开始。
+24-09-10.15:07:41.354 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【校验&扣减】失败，库存不足。
+24-09-10.15:08:37.602 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=45s157ms576µs200ns).
+24-09-10.15:08:59.421 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-10.15:08:59.683 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-10.15:09:32.425 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=54s823ms316µs600ns).
+24-09-10.15:09:32.426 [main            ] INFO  RaffleActivityTest     - 测试结果 851428078054
+24-09-10.17:55:37.935 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 52656 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-10.17:55:37.936 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-10.17:55:39.616 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-10.17:55:39.619 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-10.17:55:39.669 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 29 ms. Found 0 Redis repository interfaces.
+24-09-10.17:55:41.966 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-10.17:55:42.413 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.17:55:42.553 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.17:55:43.472 [main            ] WARN  GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'updateActivitySkuStockJob': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'raffleActivityService' defined in file [D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-domain\target\classes\cn\bugstack\domain\activity\service\RaffleActivityService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activityRepository': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activitySkuStockZeroMessageEvent': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.rabbitmq.topic.activity_sku_stock_zero' in value "${spring.rabbitmq.topic.activity_sku_stock_zero}"
+24-09-10.17:55:43.538 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+24-09-10.17:55:43.566 [main            ] ERROR SpringApplication      - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'updateActivitySkuStockJob': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'raffleActivityService' defined in file [D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-domain\target\classes\cn\bugstack\domain\activity\service\RaffleActivityService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activityRepository': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activitySkuStockZeroMessageEvent': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.rabbitmq.topic.activity_sku_stock_zero' in value "${spring.rabbitmq.topic.activity_sku_stock_zero}"
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'raffleActivityService' defined in file [D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-domain\target\classes\cn\bugstack\domain\activity\service\RaffleActivityService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activityRepository': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activitySkuStockZeroMessageEvent': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.rabbitmq.topic.activity_sku_stock_zero' in value "${spring.rabbitmq.topic.activity_sku_stock_zero}"
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:544)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 43 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activityRepository': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activitySkuStockZeroMessageEvent': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.rabbitmq.topic.activity_sku_stock_zero' in value "${spring.rabbitmq.topic.activity_sku_stock_zero}"
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 61 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activitySkuStockZeroMessageEvent': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.rabbitmq.topic.activity_sku_stock_zero' in value "${spring.rabbitmq.topic.activity_sku_stock_zero}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 73 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.rabbitmq.topic.activity_sku_stock_zero' in value "${spring.rabbitmq.topic.activity_sku_stock_zero}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:191)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1332)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 87 common frames omitted
+24-09-10.17:55:43.569 [main            ] ERROR TestContextManager     - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@616ac46a] to prepare test instance [cn.bugstack.test.domain.activity.RaffleActivityTest@5c930fc3]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'updateActivitySkuStockJob': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'raffleActivityService' defined in file [D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-domain\target\classes\cn\bugstack\domain\activity\service\RaffleActivityService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activityRepository': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activitySkuStockZeroMessageEvent': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.rabbitmq.topic.activity_sku_stock_zero' in value "${spring.rabbitmq.topic.activity_sku_stock_zero}"
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
+	... 27 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'raffleActivityService' defined in file [D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-domain\target\classes\cn\bugstack\domain\activity\service\RaffleActivityService.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activityRepository': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activitySkuStockZeroMessageEvent': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.rabbitmq.topic.activity_sku_stock_zero' in value "${spring.rabbitmq.topic.activity_sku_stock_zero}"
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:544)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 43 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activityRepository': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activitySkuStockZeroMessageEvent': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.rabbitmq.topic.activity_sku_stock_zero' in value "${spring.rabbitmq.topic.activity_sku_stock_zero}"
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:332)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 61 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activitySkuStockZeroMessageEvent': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.rabbitmq.topic.activity_sku_stock_zero' in value "${spring.rabbitmq.topic.activity_sku_stock_zero}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:550)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:520)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:673)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:228)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:329)
+	... 73 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.rabbitmq.topic.activity_sku_stock_zero' in value "${spring.rabbitmq.topic.activity_sku_stock_zero}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:191)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1332)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 87 common frames omitted
+24-09-10.18:04:33.349 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 54204 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-10.18:04:33.351 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-10.18:04:34.294 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-10.18:04:34.297 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-10.18:04:34.336 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+24-09-10.18:04:36.139 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-10.18:04:36.607 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.18:04:36.738 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.18:04:37.582 [main            ] WARN  GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activitySkuStoreZeroCustomer': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'activity.sku.store.zero.customer' in value "${activity.sku.store.zero.customer}"
+24-09-10.18:04:37.636 [main            ] INFO  ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+24-09-10.18:04:37.659 [main            ] ERROR SpringApplication      - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activitySkuStoreZeroCustomer': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'activity.sku.store.zero.customer' in value "${activity.sku.store.zero.customer}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'activity.sku.store.zero.customer' in value "${activity.sku.store.zero.customer}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:191)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1332)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 43 common frames omitted
+24-09-10.18:04:37.661 [main            ] ERROR TestContextManager     - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@616ac46a] to prepare test instance [cn.bugstack.test.domain.activity.RaffleActivityTest@36f05595]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:124)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'activitySkuStoreZeroCustomer': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'activity.sku.store.zero.customer' in value "${activity.sku.store.zero.customer}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:136)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:141)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:90)
+	... 27 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'activity.sku.store.zero.customer' in value "${activity.sku.store.zero.customer}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:191)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1332)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 43 common frames omitted
+24-09-10.18:06:30.169 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 53268 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-10.18:06:30.170 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-10.18:06:31.005 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-10.18:06:31.007 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-10.18:06:31.040 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+24-09-10.18:06:32.404 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-10.18:06:32.771 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.18:06:32.874 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.18:06:35.030 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-10.18:06:35.104 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+24-09-10.18:06:35.171 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#3c65f00e:0/SimpleConnection@3a012678 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 34559]
+24-09-10.18:06:35.239 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 5.385 seconds (JVM running for 6.007)
+24-09-10.18:06:35.514 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-10.18:06:35.992 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-10.18:06:36.172 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:null activityId:100301
+24-09-10.18:06:36.173 [main            ] WARN  RaffleActivityTest     - 业务异常，活动状态错误
+24-09-10.18:10:43.135 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+24-09-10.18:10:43.225 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+24-09-10.18:10:43.227 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+24-09-10.18:27:28.102 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 19360 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-10.18:27:28.103 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-10.18:27:29.235 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-10.18:27:29.239 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-10.18:27:29.284 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
+24-09-10.18:27:31.136 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-10.18:27:31.571 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.18:27:31.690 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.18:27:34.081 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-10.18:27:34.151 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+24-09-10.18:27:34.225 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#11ce9319:0/SimpleConnection@32f45e15 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 35645]
+24-09-10.18:27:34.314 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 6.599 seconds (JVM running for 7.51)
+24-09-10.18:27:34.632 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-10.18:27:35.093 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-10.18:27:35.239 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:null activityId:100301
+24-09-10.18:27:35.241 [main            ] WARN  RaffleActivityTest     - 业务异常，活动状态错误
+24-09-10.18:29:58.168 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+24-09-10.18:29:58.505 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+24-09-10.18:29:58.512 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+24-09-10.18:30:03.277 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 32392 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-10.18:30:03.278 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-10.18:30:04.137 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-10.18:30:04.139 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-10.18:30:04.173 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+24-09-10.18:30:05.927 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-10.18:30:06.346 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.18:30:06.467 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.18:30:08.692 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-10.18:30:08.768 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+24-09-10.18:30:08.829 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#36ecf9f6:0/SimpleConnection@3a012678 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 35944]
+24-09-10.18:30:08.898 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 5.971 seconds (JVM running for 6.691)
+24-09-10.18:30:09.204 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-10.18:30:09.649 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-10.18:30:09.831 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:null activityId:100301
+24-09-10.18:30:09.832 [main            ] WARN  RaffleActivityTest     - 业务异常，时间错误
+24-09-10.18:30:39.244 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+24-09-10.18:30:40.152 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+24-09-10.18:30:40.156 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+24-09-10.18:30:44.777 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 56196 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-10.18:30:44.779 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-10.18:30:45.653 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-10.18:30:45.657 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-10.18:30:45.750 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 75 ms. Found 0 Redis repository interfaces.
+24-09-10.18:30:47.429 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-10.18:30:47.831 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.18:30:47.943 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.18:30:50.295 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-10.18:30:50.386 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+24-09-10.18:30:50.478 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#36ecf9f6:0/SimpleConnection@3a012678 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 36110]
+24-09-10.18:30:50.562 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 6.305 seconds (JVM running for 7.289)
+24-09-10.18:30:50.829 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-10.18:30:51.280 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-10.18:30:51.431 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:null activityId:100301
+24-09-10.18:30:51.431 [main            ] WARN  RaffleActivityTest     - 业务异常，时间错误
+24-09-10.18:31:38.490 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+24-09-10.18:31:38.946 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+24-09-10.18:31:38.949 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+24-09-10.18:31:43.865 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 54568 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-10.18:31:43.867 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-10.18:31:44.735 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-10.18:31:44.737 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-10.18:31:44.770 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+24-09-10.18:31:46.501 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-10.18:31:46.965 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.18:31:47.086 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.18:31:50.049 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-10.18:31:50.160 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+24-09-10.18:31:50.277 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#70eb94d7:0/SimpleConnection@4d2f8ee7 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 36316]
+24-09-10.18:31:50.377 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 6.898 seconds (JVM running for 7.812)
+24-09-10.18:31:51.277 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-10.18:31:51.881 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-10.18:32:27.728 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:null activityId:100301
+24-09-10.18:32:27.729 [main            ] INFO  ActivityBaseActionChain - beginDateTime.before(new Date())false
+24-09-10.18:32:27.732 [main            ] WARN  RaffleActivityTest     - 业务异常，时间错误
+24-09-10.18:32:27.775 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+24-09-10.18:32:28.739 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+24-09-10.18:32:28.741 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+24-09-10.18:32:31.685 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 30360 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-10.18:32:31.687 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-10.18:32:32.654 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-10.18:32:32.659 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-10.18:32:32.701 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
+24-09-10.18:32:34.310 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-10.18:32:34.721 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.18:32:34.852 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.18:32:37.288 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-10.18:32:37.373 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+24-09-10.18:32:37.440 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#1e14b269:0/SimpleConnection@1d7f0cd0 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 36460]
+24-09-10.18:32:37.522 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 6.244 seconds (JVM running for 7.145)
+24-09-10.18:32:43.414 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-10.18:32:44.641 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-10.18:33:23.598 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=1m8s955ms813µs700ns).
+24-09-10.18:33:23.635 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+24-09-10.18:33:23.722 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:null activityId:100301
+24-09-10.18:33:23.722 [main            ] INFO  ActivityBaseActionChain - beginDateTime.before(new Date())false
+24-09-10.18:33:23.723 [main            ] WARN  RaffleActivityTest     - 业务异常，时间错误
+24-09-10.18:33:24.609 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+24-09-10.18:33:24.611 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+24-09-10.18:33:27.260 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 34260 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-10.18:33:27.261 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-10.18:33:28.098 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-10.18:33:28.101 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-10.18:33:28.131 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+24-09-10.18:33:29.729 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-10.18:33:30.138 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.18:33:30.270 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.18:33:32.702 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-10.18:33:32.806 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+24-09-10.18:33:32.877 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#1842dc39:0/SimpleConnection@32675dd4 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 36586]
+24-09-10.18:33:32.939 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 6.027 seconds (JVM running for 6.879)
+24-09-10.18:33:51.888 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-10.18:33:53.160 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-10.18:33:58.734 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+24-09-10.18:34:16.872 [main            ] INFO  ActivityBaseActionChain - beginDateTime.before(new Date())false
+24-09-10.18:34:16.874 [main            ] WARN  RaffleActivityTest     - 业务异常，时间错误
+24-09-10.18:34:16.913 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+24-09-10.18:34:17.887 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+24-09-10.18:34:17.890 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+24-09-10.18:34:22.432 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 50440 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-10.18:34:22.434 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-10.18:34:23.292 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-10.18:34:23.294 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-10.18:34:23.322 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+24-09-10.18:34:24.914 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-10.18:34:25.318 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.18:34:25.456 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.18:34:27.880 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-10.18:34:27.964 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+24-09-10.18:34:28.032 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#8636cf4:0/SimpleConnection@80b70fd [delegate=amqp://admin@127.0.0.1:5672/, localPort= 36709]
+24-09-10.18:34:28.107 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 6.048 seconds (JVM running for 7.197)
+24-09-10.18:34:28.354 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-10.18:34:28.794 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-10.18:34:31.552 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+24-09-10.18:34:48.820 [main            ] INFO  ActivityBaseActionChain - beginDateTime.before(new Date())false
+24-09-10.18:35:51.187 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=1m22s287ms581µs600ns).
+24-09-10.18:35:51.191 [main            ] WARN  RaffleActivityTest     - 业务异常，时间错误
+24-09-10.18:35:51.230 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+24-09-10.18:35:52.196 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+24-09-10.18:35:52.200 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+24-09-10.18:35:56.522 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 54280 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-10.18:35:56.523 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-10.18:35:57.410 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-10.18:35:57.413 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-10.18:35:57.446 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+24-09-10.18:35:58.914 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-10.18:35:59.308 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.18:35:59.432 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.18:36:01.810 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-10.18:36:01.888 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+24-09-10.18:36:01.946 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#1942a36e:0/SimpleConnection@235dacd7 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 36878]
+24-09-10.18:36:02.008 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 5.848 seconds (JVM running for 6.723)
+24-09-10.18:36:02.298 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-10.18:36:02.739 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-10.18:36:02.872 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+24-09-10.18:36:45.804 [main            ] INFO  ActivityBaseActionChain - beginDateTime.before(new Date())false
+24-09-10.18:36:45.816 [main            ] WARN  RaffleActivityTest     - 业务异常，时间错误
+24-09-10.18:36:45.860 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+24-09-10.18:36:46.839 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+24-09-10.18:36:46.849 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+24-09-10.18:36:50.110 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 54800 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-10.18:36:50.111 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-10.18:36:51.003 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-10.18:36:51.006 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-10.18:36:51.041 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+24-09-10.18:36:53.356 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-10.18:36:53.773 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.18:36:53.880 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.18:36:56.425 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-10.18:36:56.521 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+24-09-10.18:36:56.598 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#2f2dc407:0/SimpleConnection@14b4b25e [delegate=amqp://admin@127.0.0.1:5672/, localPort= 36998]
+24-09-10.18:36:56.674 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 6.926 seconds (JVM running for 7.819)
+24-09-10.18:36:56.982 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-10.18:36:57.391 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-10.18:37:02.524 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+24-09-10.18:37:29.886 [main            ] INFO  ActivityBaseActionChain - beginDateTime.before(new Date())false
+24-09-10.18:37:29.889 [main            ] WARN  RaffleActivityTest     - 业务异常，时间错误
+24-09-10.18:37:29.957 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+24-09-10.18:37:30.893 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+24-09-10.18:37:30.902 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+24-09-10.18:37:33.970 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 56284 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-10.18:37:33.971 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-10.18:37:35.170 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-10.18:37:35.174 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-10.18:37:35.220 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 28 ms. Found 0 Redis repository interfaces.
+24-09-10.18:37:36.997 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-10.18:37:37.413 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.18:37:37.535 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.18:37:40.283 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-10.18:37:40.390 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+24-09-10.18:37:40.464 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#5c7e55a4:0/SimpleConnection@f31b991 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 37121]
+24-09-10.18:37:40.541 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 7.078 seconds (JVM running for 8.078)
+24-09-10.18:37:40.842 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-10.18:37:41.325 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-10.18:37:45.216 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+24-09-10.18:37:45.216 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【校验&扣减】开始。9011
+24-09-10.18:37:45.253 [main            ] WARN  RaffleActivityTest     - 业务异常，活动库存错误
+24-09-10.18:39:09.940 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+24-09-10.18:39:09.968 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+24-09-10.18:39:09.971 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+24-09-10.18:39:12.673 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 52856 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-10.18:39:12.674 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-10.18:39:13.545 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-10.18:39:13.548 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-10.18:39:13.585 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+24-09-10.18:39:15.100 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-10.18:39:15.483 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.18:39:15.619 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.18:39:18.005 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-10.18:39:18.091 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+24-09-10.18:39:18.149 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#126d8659:0/SimpleConnection@28796d0e [delegate=amqp://admin@127.0.0.1:5672/, localPort= 37304]
+24-09-10.18:39:18.218 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 5.909 seconds (JVM running for 6.825)
+24-09-10.18:39:18.509 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-10.18:39:18.964 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-10.18:39:29.954 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+24-09-10.18:39:39.630 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【校验&扣减】开始。9011
+24-09-10.18:39:50.668 [main            ] WARN  RaffleActivityTest     - 业务异常，活动库存错误
+24-09-10.18:40:12.251 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+24-09-10.18:40:12.889 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+24-09-10.18:40:12.892 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+24-09-10.18:40:15.735 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 48236 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-10.18:40:15.736 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-10.18:40:16.624 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-10.18:40:16.627 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-10.18:40:16.668 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
+24-09-10.18:40:18.234 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-10.18:40:18.619 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.18:40:18.747 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.18:40:21.289 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-10.18:40:21.377 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+24-09-10.18:40:21.443 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#22846a1d:0/SimpleConnection@c7d173f [delegate=amqp://admin@127.0.0.1:5672/, localPort= 37433]
+24-09-10.18:40:21.511 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 6.193 seconds (JVM running for 7.208)
+24-09-10.18:40:21.737 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-10.18:40:22.578 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-10.18:40:28.351 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+24-09-10.18:40:29.594 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【校验&扣减】开始。9011
+24-09-10.18:41:22.245 [main            ] WARN  RaffleActivityTest     - 业务异常，活动库存错误
+24-09-10.18:41:22.296 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+24-09-10.18:41:23.252 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+24-09-10.18:41:23.257 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+24-09-10.18:41:26.444 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 54304 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-10.18:41:26.445 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-10.18:41:27.355 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-10.18:41:27.358 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-10.18:41:27.402 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 0 Redis repository interfaces.
+24-09-10.18:41:29.123 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-10.18:41:29.536 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.18:41:29.656 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.18:41:32.216 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-10.18:41:32.301 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+24-09-10.18:41:32.369 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#1f8d42d1:0/SimpleConnection@49c555c3 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 37585]
+24-09-10.18:41:32.434 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 6.349 seconds (JVM running for 7.255)
+24-09-10.18:41:32.690 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-10.18:41:33.081 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-10.18:41:33.205 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+24-09-10.18:41:36.459 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【校验&扣减】开始。9011
+24-09-10.18:43:25.380 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=1m52s193ms342µs).
+24-09-10.18:43:25.383 [main            ] WARN  RaffleActivityTest     - 业务异常，活动库存错误
+24-09-10.18:43:25.419 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+24-09-10.18:43:26.389 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+24-09-10.18:43:26.392 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+24-09-10.18:43:29.289 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 33816 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-10.18:43:29.290 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-10.18:43:30.166 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-10.18:43:30.169 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-10.18:43:30.207 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+24-09-10.18:43:31.811 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-10.18:43:32.268 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.18:43:32.401 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.18:43:35.316 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-10.18:43:35.426 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+24-09-10.18:43:35.512 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#74cd8c55:0/SimpleConnection@33997e07 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 37765]
+24-09-10.18:43:35.589 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 6.656 seconds (JVM running for 7.513)
+24-09-10.18:43:35.864 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-10.18:43:36.325 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-10.18:43:36.461 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+24-09-10.18:43:36.461 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【校验&扣减】开始。9011
+24-09-10.18:44:30.012 [Retail_HikariCP housekeeper] WARN  HikariPool             - Retail_HikariCP - Thread starvation or clock leap detected (housekeeper delta=53s573ms101µs300ns).
+24-09-10.18:44:30.049 [main            ] WARN  RaffleActivityTest     - 业务异常，活动库存错误
+24-09-10.18:44:35.727 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+24-09-10.18:44:36.096 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+24-09-10.18:44:36.099 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+24-09-10.18:44:39.396 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 49792 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-10.18:44:39.397 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-10.18:44:40.380 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-10.18:44:40.385 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-10.18:44:40.427 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+24-09-10.18:44:42.044 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-10.18:44:42.473 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.18:44:42.617 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.18:44:45.210 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-10.18:44:45.296 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+24-09-10.18:44:45.363 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#1d6a22dd:0/SimpleConnection@7af7c9aa [delegate=amqp://admin@127.0.0.1:5672/, localPort= 37923]
+24-09-10.18:44:45.435 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 6.415 seconds (JVM running for 7.42)
+24-09-10.18:44:45.709 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-10.18:44:46.173 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-10.18:44:46.399 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+24-09-10.18:44:46.399 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【校验&扣减】开始。9011
+24-09-10.18:44:55.175 [main            ] WARN  RaffleActivityTest     - 业务异常，活动库存错误
+24-09-10.18:44:55.203 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+24-09-10.18:44:56.160 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+24-09-10.18:44:56.165 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+24-09-10.18:44:58.917 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 41764 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-10.18:44:58.918 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-10.18:44:59.783 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-10.18:44:59.786 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-10.18:44:59.823 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+24-09-10.18:45:01.367 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-10.18:45:01.760 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.18:45:01.901 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.18:45:04.416 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-10.18:45:04.500 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+24-09-10.18:45:04.559 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#55c341d0:0/SimpleConnection@1ee126de [delegate=amqp://admin@127.0.0.1:5672/, localPort= 38017]
+24-09-10.18:45:04.621 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 6.055 seconds (JVM running for 6.941)
+24-09-10.18:45:04.896 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-10.18:45:05.353 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-10.18:45:05.486 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+24-09-10.18:45:05.486 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【校验&扣减】开始。9011
+24-09-10.18:45:43.190 [main            ] WARN  RaffleActivityTest     - 业务异常，活动库存错误
+24-09-10.18:45:43.200 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+24-09-10.18:45:44.174 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+24-09-10.18:45:44.178 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+24-09-10.18:45:47.701 [main            ] INFO  RaffleActivityTest     - Starting RaffleActivityTest using Java 1.8.0_421 on GUOWEIHONG with PID 48852 (started by 郭伟鸿 in D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app)
+24-09-10.18:45:47.702 [main            ] INFO  RaffleActivityTest     - The following 1 profile is active: "dev"
+24-09-10.18:45:48.645 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+24-09-10.18:45:48.648 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+24-09-10.18:45:48.687 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+24-09-10.18:45:50.394 [main            ] INFO  Version                - Redisson 3.23.4
+24-09-10.18:45:50.796 [redisson-netty-2-6] INFO  MasterPubSubConnectionPool - 1 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.18:45:50.916 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 124.70.185.116/124.70.185.116:6379
+24-09-10.18:45:53.954 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+24-09-10.18:45:54.034 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [127.0.0.1:5672]
+24-09-10.18:45:54.097 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#68543a35:0/SimpleConnection@113e6e06 [delegate=amqp://admin@127.0.0.1:5672/, localPort= 38140]
+24-09-10.18:45:54.164 [main            ] INFO  RaffleActivityTest     - Started RaffleActivityTest in 6.82 seconds (JVM running for 7.662)
+24-09-10.18:45:54.480 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+24-09-10.18:45:54.898 [main            ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+24-09-10.18:45:55.092 [main            ] INFO  ActivityBaseActionChain - 活动责任链-基础信息【有效期、状态、库存(sku)】校验开始。sku:9011 activityId:100301
+24-09-10.18:45:55.092 [main            ] INFO  ActivitySkuStockActionChain - 活动责任链-商品库存处理【校验&扣减】开始。9011

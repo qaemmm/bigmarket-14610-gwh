@@ -13,4 +13,8 @@ import org.apache.ibatis.annotations.Mapper;
 public interface IRaffleActivitySkuDao {
 
     RaffleActivitySku queryActivityBySku(Long sku);
+
+    void clearActivitySkuStock(Long sku);
+
+    void updateActivitySkuStock(Long sku);
 }

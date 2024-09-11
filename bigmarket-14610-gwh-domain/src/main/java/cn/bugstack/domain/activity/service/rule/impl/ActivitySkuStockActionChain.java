@@ -3,9 +3,19 @@ package cn.bugstack.domain.activity.service.rule.impl;
 import cn.bugstack.domain.activity.model.entity.ActivityCountEntity;
 import cn.bugstack.domain.activity.model.entity.ActivityEntity;
 import cn.bugstack.domain.activity.model.entity.ActivitySkuEntity;
+import cn.bugstack.domain.activity.model.valobj.ActivitySkuStockKeyVO;
+import cn.bugstack.domain.activity.repository.IActivityRepository;
+import cn.bugstack.domain.activity.service.armory.IActivityDispatch;
 import cn.bugstack.domain.activity.service.rule.AbstractActionChain;
+import cn.bugstack.domain.strategy.model.valobj.RuleLogicCheckTypeVO;
+import cn.bugstack.domain.strategy.model.valobj.StrategyAwardStockVO;
+import cn.bugstack.domain.strategy.service.rule.tree.factory.DefaultTreeFactory;
+import cn.bugstack.types.enums.ResponseCode;
+import cn.bugstack.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
+
+import javax.annotation.Resource;
 
 /**
  * @author fuzhouling
@@ -17,22 +27,28 @@ import org.springframework.stereotype.Component;
 @Component("activity_sku_stock_action")
 public class ActivitySkuStockActionChain extends AbstractActionChain {
 
+    @Resource
+    private IActivityDispatch activityDispatch;
+    @Resource
+    private IActivityRepository activityRepository;
+
     @Override
     public boolean action(ActivitySkuEntity activitySkuEntity, ActivityEntity activityEntity, ActivityCountEntity activityCountEntity) {
-        log.info("活动责任链-商品库存处理【校验&扣减】开始。");
-        //todo --在ActivitySkuEntity可以获取到全部库存以及剩余库存；
-        //获取到当前需要消耗的总的次数
-        Integer totalCount = activityCountEntity.getTotalCount();
-        //先对activitySkuEntity的库存进行校验，如果库存不足，则直接返回false；以及剩余库存扣减消耗的总的次数；
-        Integer stockCountSurplus = activitySkuEntity.getStockCountSurplus();
-        if (stockCountSurplus <= 0||stockCountSurplus-totalCount<0) {
-            log.info("活动责任链-商品库存处理【校验&扣减】失败，库存不足。");
-            return false;
+        log.info("活动责任链-商品库存处理【校验&扣减】开始。{}",activitySkuEntity.getSku());
+        boolean status = activityDispatch.subtractionActivitySkuStock(activitySkuEntity.getSku(), activityEntity.getEndDateTime());
+        if(status){
+            log.info("活动责任链-商品库存处理【有效期、状态、库存(sku)】成功。sku:{} activityId:{}"
+                    , activitySkuEntity.getSku(), activityEntity.getActivityId());
+            //如果库存扣减成功，则给redis发送一条消息
+            //写入延时队列，延迟消费更新数据库记录，在trigger的job；UpdateActivitySkuStockJob下消息队列，更新数据库记录。
+            activityRepository.activitySkuStockConsumeSendQueue(ActivitySkuStockKeyVO.builder()
+                            .sku(activitySkuEntity.getSku())
+                            .activityId(activityEntity.getActivityId())
+                            .build());
+            return true;
+
         }
-
-
-
-        return true;
+        throw new AppException(ResponseCode.ACTIVITY_SKU_STOCK_ERROR.getCode(), ResponseCode.ACTIVITY_SKU_STOCK_ERROR.getInfo());
     }
 
 }

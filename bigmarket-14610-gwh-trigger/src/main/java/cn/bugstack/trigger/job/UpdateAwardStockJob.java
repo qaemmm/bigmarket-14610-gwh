@@ -28,7 +28,6 @@ public class UpdateAwardStockJob {
            if (null == strategyAwardStockVO) {
                return;
            }
-
            Integer awardId = strategyAwardStockVO.getAwardId();
            Long strategyId = strategyAwardStockVO.getStrategyId();
            log.info("定时任务，更新数据库奖品库存，strategyId:{} awardId:{}", strategyId, awardId);
