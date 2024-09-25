@@ -7,7 +7,7 @@ import cn.bugstack.domain.activity.model.valobj.ActivitySkuStockKeyVO;
  * @date 2024/09/02
  * @description: 活动sku库存处理接口
  */
-public interface ISkuStock {
+public interface IRaffleActivitySkuStockService {
 
     /**
      * 获取活动sku库存队列

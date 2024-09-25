@@ -102,6 +102,8 @@ mini-db-router:
 mybatis:
   mapper-locations: classpath:/mybatis/mapper/*.xml
   config-location:  classpath:/mybatis/config/mybatis-config.xml
+  #用于mybatis在控制台打印sql日志
+
 
 #Redis 配置
 redis:

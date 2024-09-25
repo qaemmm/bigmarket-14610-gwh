@@ -1,6 +1,4 @@
-package cn.bugstack.domain.activity.service.rule;
-
-import cn.bugstack.domain.strategy.service.rule.chain.ILogicChain;
+package cn.bugstack.domain.activity.service.quota.rule;
 
 /**
  * @author fuzhouling

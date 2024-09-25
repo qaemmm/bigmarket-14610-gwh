@@ -1,6 +1,6 @@
 package cn.bugstack.trigger.listener;
 
-import cn.bugstack.domain.activity.service.ISkuStock;
+import cn.bugstack.domain.activity.service.IRaffleActivitySkuStockService;
 
 import cn.bugstack.types.event.BaseEvent;
 import com.alibaba.fastjson2.JSON;
@@ -26,7 +26,7 @@ public class ActivitySkuStoreZeroCustomer {
     private String topic;
 
     @Resource
-    private ISkuStock skuStock;
+    private IRaffleActivitySkuStockService skuStock;
 
     @RabbitListener(queuesToDeclare = @Queue("activity_sku_stock_zero"))
     public void listener(String message){

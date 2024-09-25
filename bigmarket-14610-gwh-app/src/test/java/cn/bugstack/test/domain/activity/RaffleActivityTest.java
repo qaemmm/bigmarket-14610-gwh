@@ -1,10 +1,8 @@
 package cn.bugstack.test.domain.activity;
 
-import cn.bugstack.domain.activity.model.entity.ActivityOrderEntity;
-import cn.bugstack.domain.activity.model.entity.ActivityShopCartEntity;
 import cn.bugstack.domain.activity.model.entity.SkuRechargeEntity;
-import cn.bugstack.domain.activity.service.IRaffleOrder;
-import cn.bugstack.domain.activity.service.RaffleActivityService;
+import cn.bugstack.domain.activity.service.IRaffleActivityAccountQuotaService;
+import cn.bugstack.domain.activity.service.quota.RaffleActivityAccountQuotaService;
 import cn.bugstack.domain.activity.service.armory.IActivityArmory;
 import cn.bugstack.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;
@@ -28,20 +26,13 @@ import java.util.concurrent.CountDownLatch;
 @Slf4j
 public class RaffleActivityTest {
     @Resource
-    private RaffleActivityService raffleActivity;
+    private RaffleActivityAccountQuotaService raffleActivity;
     @Resource
-    private IRaffleOrder raffleOrder;
+    private IRaffleActivityAccountQuotaService raffleOrder;
     @Resource
     private IActivityArmory activityArmory;
 
-    @Test
-    public void test_raffle_activity_order(){
-        ActivityShopCartEntity activityShopCartEntity = new ActivityShopCartEntity();
-        activityShopCartEntity.setUserId("gwh");
-        activityShopCartEntity.setSku(9011L);
-        ActivityOrderEntity activityOrderEntity = raffleActivity.createRaffleActivityOrder(activityShopCartEntity);
-        log.info("测试结果 {}", activityOrderEntity);
-    }
+
 
     @Test
     public void test_createSkuRechargeOrder(){
@@ -50,7 +41,7 @@ public class RaffleActivityTest {
         skuRechargeEntity.setSku(9011L);
         // outBusinessNo 作为幂等仿重使用，同一个业务单号2次使用会抛出索引冲突 Duplicate entry '700091009111' for key 'uq_out_business_no' 确保唯一性。
         skuRechargeEntity.setOutBusinessNo("7000910091116");
-        String skuRechargeOrder = raffleOrder.createSkuRechargeOrder(skuRechargeEntity);
+        String skuRechargeOrder = raffleOrder.createOrder(skuRechargeEntity);
         log.info("测试结果 {}", skuRechargeOrder);
     }
 
@@ -70,7 +61,7 @@ public class RaffleActivityTest {
                 skuRechargeEntity.setSku(9011L);
                 // outBusinessNo 作为幂等仿重使用，同一个业务单号2次使用会抛出索引冲突 Duplicate entry '700091009111' for key 'uq_out_business_no' 确保唯一性。
                 skuRechargeEntity.setOutBusinessNo(RandomStringUtils.randomNumeric(12));
-                String orderId = raffleOrder.createSkuRechargeOrder(skuRechargeEntity);
+                String orderId = raffleOrder.createOrder(skuRechargeEntity);
                 log.info("测试结果：{}", orderId);
             } catch (AppException e) {
                 log.warn(e.getInfo());
