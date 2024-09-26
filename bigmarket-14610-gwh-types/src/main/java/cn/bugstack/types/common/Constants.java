@@ -23,5 +23,7 @@ public class Constants {
        public static String ACTIVITY_COUNT_KEY = "big_market_activity_count_key_";
        public static String ACTIVITY_SKU_KEY = "big_market_activity_sku_key_";
 
+       public static String USER_CREDIT_ACCOUNT_LOCK= "big_market_user_credit_account_lock";
+
     }
 }

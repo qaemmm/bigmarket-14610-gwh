@@ -49,7 +49,7 @@ public class BehaviorRebateServiceTest {
         BehaviorEntity behaviorEntity = new BehaviorEntity();
         behaviorEntity.setUserId("xiaofuge");
         behaviorEntity.setBehaviorTypeVO(BehaviorTypeVO.SIGN);
-        behaviorEntity.setOutBusinessNo("20241010");
+        behaviorEntity.setOutBusinessNo("20241210");
         List<String> order = behaviorRebateService.createOrder(behaviorEntity);
         for (int i = 0; i < order.size(); i++) {
             log.info("生成订单号：{}", order.get(i));
