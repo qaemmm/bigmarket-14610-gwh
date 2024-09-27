@@ -36,8 +36,13 @@ public abstract class AbstractRaffleStrategy implements IRaffleStrategy{
         this.treeFactory = treeFactory;
     }
 
-    //  抽象类里能这么写吗？？？？？
-    // 抽象类重写抽奖接口，通过这样的方式来定义抽奖的标准流程。之后过滤抽奖规则，并根据结果处理奖品结果
+    /**
+     * 抽奖
+     *
+     * @param raffleFactorEntity 抽奖因子 userId、strategyId、awardId
+     * @return RaffleAwardEntity 抽奖结果 awardId、awardConfig、awardTitle、sort奖品序列号
+     */
+    // 抽象类重写抽奖接口，通过这样的方式来定义抽奖的标准流程。责任链（黑名单、权重等非默认抽奖）+规则树（抽奖次数、库存判断、兜底策略）来进行抽奖过滤
     @Override
     public RaffleAwardEntity performRaffle(RaffleFactorEntity raffleFactorEntity) {
 
@@ -57,7 +62,7 @@ public abstract class AbstractRaffleStrategy implements IRaffleStrategy{
             return buildRaffleAwardEntity(strategyId,chainStrategyAwardVO.getAwardId(),null);
         }
 
-        //3.规则树抽奖过滤【奖品id，会根据抽奖次数判断，库存判断、兜底兜里返回最终的可获得奖品信息】
+        //3.规则树抽奖过滤【奖品id，会根据抽奖次数判断，库存判断、兜底策略返回最终可获得奖品信息】
         DefaultTreeFactory.StrategyAwardVO treeStrategyAwardVO = raffleLogicTree(userId,strategyId,chainStrategyAwardVO.getAwardId());
         log.info("抽奖策略计算-规则树 {} {} {} {}", userId, strategyId, treeStrategyAwardVO.getAwardId(), treeStrategyAwardVO.getAwardRuleValue());
 
@@ -70,6 +75,7 @@ public abstract class AbstractRaffleStrategy implements IRaffleStrategy{
         return RaffleAwardEntity.builder()
                 .awardConfig(awardConfig)
                 .awardId(awardId)
+                .awardTitle(strategyAward.getAwardTitle())
                 .sort(strategyAward.getSort())
                 .build();
     }

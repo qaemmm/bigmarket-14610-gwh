@@ -93,7 +93,7 @@ public class RaffleActivityPartakeService extends AbstractRaffleActivityPartake{
             activityAccountDayEntity.setUserId(userId);
             activityAccountDayEntity.setActivityId(activityId);
             activityAccountDayEntity.setDay(day);
-            //todo 这一块如果activityAccountEntity为null的话，那么这个月额度也没有任何意义
+            //todo 这一块如果activityAccountEntity为null的话，那么这个日额度也没有任何意义
             activityAccountDayEntity.setDayCount(activityAccountEntity.getDayCount());
             activityAccountDayEntity.setDayCountSurplus(activityAccountEntity.getDayCountSurplus());
         }

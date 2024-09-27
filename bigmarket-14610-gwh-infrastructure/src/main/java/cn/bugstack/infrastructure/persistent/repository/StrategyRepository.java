@@ -11,12 +11,16 @@ import cn.bugstack.domain.strategy.model.valobj.RuleTreeVO;
 import cn.bugstack.domain.strategy.model.valobj.StrategyAwardRuleModelVO;
 import cn.bugstack.domain.strategy.model.valobj.StrategyAwardStockVO;
 import cn.bugstack.domain.strategy.repository.IStrategyRepository;
+import cn.bugstack.infrastructure.persistent.dao.IRaffleActivityAccountDayDao;
+import cn.bugstack.infrastructure.persistent.dao.IRaffleActivityDao;
 import cn.bugstack.infrastructure.persistent.dao.IRuleTreeDao;
 import cn.bugstack.infrastructure.persistent.dao.IRuleTreeNodeDao;
 import cn.bugstack.infrastructure.persistent.dao.IRuleTreeNodeLineDao;
 import cn.bugstack.infrastructure.persistent.dao.IStrategyAwardDao;
 import cn.bugstack.infrastructure.persistent.dao.IStrategyDao;
 import cn.bugstack.infrastructure.persistent.dao.IStrategyRuleDao;
+import cn.bugstack.infrastructure.persistent.po.RaffleActivity;
+import cn.bugstack.infrastructure.persistent.po.RaffleActivityAccountDay;
 import cn.bugstack.infrastructure.persistent.po.RuleTree;
 import cn.bugstack.infrastructure.persistent.po.RuleTreeNode;
 import cn.bugstack.infrastructure.persistent.po.RuleTreeNodeLine;
@@ -37,6 +41,7 @@ import org.springframework.stereotype.Repository;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -57,6 +62,10 @@ public class StrategyRepository implements IStrategyRepository {
     private IStrategyAwardDao strategyAwardDao;
     @Resource
     private IRedisService redisService;
+    @Resource
+    private IRaffleActivityDao raffleActivityDao;
+    @Resource
+    private IRaffleActivityAccountDayDao raffleActivityAccountDayDao;
 
     @Override
     public List<StrategyAwardEntity> queryStrategyAwardList(Long strategyId) {
@@ -324,6 +333,19 @@ public class StrategyRepository implements IStrategyRepository {
         redisService.setValue(cacheKey,strategyAwardEntity);
 
         return strategyAwardEntity;
+    }
+
+    @Override
+    public Integer queryTodayUserRaffleCount(String userId, Long strategyId) {
+        Long activityId = raffleActivityDao.queryActivityIdByStrategyId(strategyId);
+        RaffleActivityAccountDay raffleActivityAccountDay = new RaffleActivityAccountDay();
+        raffleActivityAccountDay.setUserId(userId);
+        raffleActivityAccountDay.setActivityId(activityId);
+        raffleActivityAccountDay.setDay(raffleActivityAccountDay.currentDay());
+        RaffleActivityAccountDay raffleActivityAccountDayRes = raffleActivityAccountDayDao.queryActivityAccountDayByUserId(raffleActivityAccountDay);
+        if(null==raffleActivityAccountDayRes)return 0;
+        //通过今天的总的-剩余的次数，
+        return raffleActivityAccountDayRes.getDayCount()-raffleActivityAccountDayRes.getDayCountSurplus();
     }
 
 

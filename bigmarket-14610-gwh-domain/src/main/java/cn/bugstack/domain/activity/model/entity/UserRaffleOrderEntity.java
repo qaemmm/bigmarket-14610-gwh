@@ -19,7 +19,6 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 public class UserRaffleOrderEntity {
-
     //用户ID
     private String userId;
     //活动ID

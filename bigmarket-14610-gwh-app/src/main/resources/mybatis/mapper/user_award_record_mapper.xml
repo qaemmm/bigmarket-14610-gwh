@@ -16,6 +16,13 @@
         <result column="update_time" property="updateTime"/>
 
     </resultMap>
+    <insert id="insert" parameterType="cn.bugstack.infrastructure.persistent.po.UserAwardRecord">
+        INSERT INTO user_award_record
+        (user_id, activity_id, strategy_id, order_id, award_id, award_title, award_time, award_state, create_time, update_time)
+        VALUES
+        (#{userId}, #{activityId}, #{strategyId}, #{orderId}, #{awardId}, #{awardTitle}, #{awardTime}, #{awardState}, now(),
+         now())
+    </insert>
 
 
 </mapper>

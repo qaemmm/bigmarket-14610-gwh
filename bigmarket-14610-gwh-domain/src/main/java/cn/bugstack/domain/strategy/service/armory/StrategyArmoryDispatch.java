@@ -1,5 +1,7 @@
 package cn.bugstack.domain.strategy.service.armory;
 
+import cn.bugstack.domain.activity.model.entity.ActivityEntity;
+import cn.bugstack.domain.activity.repository.IActivityRepository;
 import cn.bugstack.domain.strategy.model.entity.StrategyAwardEntity;
 import cn.bugstack.domain.strategy.model.entity.StrategyEntity;
 import cn.bugstack.domain.strategy.model.entity.StrategyRuleEntity;
@@ -33,6 +35,8 @@ import java.util.Set;
 public class StrategyArmoryDispatch implements IStrategyArmory,IStrategyDispatch{
     @Resource
     private IStrategyRepository repository;
+    @Resource
+    private IActivityRepository activityRepository;
 
     @Override
     public boolean assembleLotteryStrategy(Long strategyId) {
@@ -48,6 +52,7 @@ public class StrategyArmoryDispatch implements IStrategyArmory,IStrategyDispatch
 
         //2、权重策略配置 - 适用于 rule_weight 权重规则配置
         StrategyEntity strategyEntity = repository.queryStrategyEntityByStrategyId(strategyId);
+        //这一块也需要对strategyEntity进行判断，因为我如果没有查到数据的话直接就是null了，下面又会报空指针
         String ruleWeight = strategyEntity.getRuleModels();
         if(null == ruleWeight) return true;
         StrategyRuleEntity strategyRuleEntity = repository.queryStrategyRule(strategyId,ruleWeight);
@@ -65,6 +70,13 @@ public class StrategyArmoryDispatch implements IStrategyArmory,IStrategyDispatch
             assembleLotteryStrategy(String.valueOf(strategyId).concat("_").concat(key), strategyAwardEntitiesClone);
         }
         return true;
+    }
+
+    @Override
+    public boolean assembleLotteryStrategyByActivityId(Long activityId) {
+        //这块方法会默认先从redis中读取对应活动实体
+        ActivityEntity activityEntity = activityRepository.queryRaffleActivityByActivityId(activityId);
+        return assembleLotteryStrategy(activityEntity.getStrategyId());
     }
 
     public void assembleLotteryStrategy(String key, List<StrategyAwardEntity> strategyAwardEntities) {

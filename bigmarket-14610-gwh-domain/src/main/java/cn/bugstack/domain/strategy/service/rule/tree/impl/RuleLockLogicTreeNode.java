@@ -1,10 +1,13 @@
 package cn.bugstack.domain.strategy.service.rule.tree.impl;
 
 import cn.bugstack.domain.strategy.model.valobj.RuleLogicCheckTypeVO;
+import cn.bugstack.domain.strategy.repository.IStrategyRepository;
 import cn.bugstack.domain.strategy.service.rule.tree.ILogicTreeNode;
 import cn.bugstack.domain.strategy.service.rule.tree.factory.DefaultTreeFactory;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
+
+import javax.annotation.Resource;
 
 /**
  * @author fuzhouling
@@ -16,7 +19,9 @@ import org.springframework.stereotype.Component;
 @Component("rule_lock")
 public class RuleLockLogicTreeNode implements ILogicTreeNode {
 
-    private Long userRaffleCount = 10L;
+    @Resource
+    private IStrategyRepository strategyRepository;
+
     @Override
     public DefaultTreeFactory.TreeActionEntity logic(String userId, Long strategyId, Integer awardId, String ruleValue) {
         //次数锁
@@ -28,6 +33,7 @@ public class RuleLockLogicTreeNode implements ILogicTreeNode {
         } catch (Exception e) {
             throw new RuntimeException("规则过滤-次数锁异常 ruleValue: " + ruleValue + " 配置不正确");
         }
+        Integer userRaffleCount = strategyRepository.queryTodayUserRaffleCount(userId, strategyId);
         if (userRaffleCount >= raffleCount) {
             return DefaultTreeFactory.TreeActionEntity.builder()
                     .ruleLogicCheckType(RuleLogicCheckTypeVO.ALLOW)

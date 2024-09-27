@@ -2,6 +2,7 @@ package cn.bugstack.infrastructure.persistent.dao;
 
 import cn.bugstack.domain.activity.model.entity.PartakeRaffleActivityEntity;
 import cn.bugstack.domain.activity.model.entity.UserRaffleOrderEntity;
+import cn.bugstack.infrastructure.persistent.po.UserAwardRecord;
 import cn.bugstack.infrastructure.persistent.po.UserRaffleOrder;
 import cn.bugstack.middleware.db.router.annotation.DBRouter;
 import cn.bugstack.middleware.db.router.annotation.DBRouterStrategy;
@@ -16,4 +17,7 @@ public interface IUserRaffleOrderDao {
 
     @DBRouter
     UserRaffleOrder queryNoUsedRaffleOrder(UserRaffleOrder userRaffleOrderReq);
+
+
+    int updateUserRaffleOrderStateUsed(@Param("userRaffleOrder")UserRaffleOrder userRaffleOrder);
 }

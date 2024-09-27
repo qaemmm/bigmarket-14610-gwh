@@ -13,6 +13,7 @@ import cn.bugstack.domain.activity.model.entity.UserRaffleOrderEntity;
 import cn.bugstack.domain.activity.model.valobj.ActivitySkuStockKeyVO;
 
 import java.util.Date;
+import java.util.List;
 
 /**
  * @author fuzhouling
@@ -53,5 +54,7 @@ public interface IActivityRepository {
 
     ActivityAccountDayEntity queryActivityAccountDay(String userId, Long activityId, String day);
 
+
+    List<ActivitySkuEntity> queryActivityByActivityId(Long activityId);
 
 }

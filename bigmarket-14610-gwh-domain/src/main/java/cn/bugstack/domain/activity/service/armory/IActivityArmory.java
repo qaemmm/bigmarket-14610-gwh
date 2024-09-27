@@ -11,6 +11,14 @@ public interface IActivityArmory {
     /**
      * 构建活动策略
      *
+     * @param activityId
+     * @return 是否
+     */
+    boolean assembleActivityByActivityId(Long activityId);
+
+    /**
+     * 构建活动策略
+     *
      * @param sku
      * @return 是否
      */

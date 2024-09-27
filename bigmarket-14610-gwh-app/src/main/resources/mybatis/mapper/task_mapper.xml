@@ -5,12 +5,38 @@
     <resultMap id="dataMap" type="cn.bugstack.infrastructure.persistent.po.Task">
         <id column="id" property="id"/>
         <result column="topic" property="topic"/>
+        <result column="user_id" property="userId"/>
+        <result column="message_id" property="messageId"/>
         <result column="message" property="message"/>
         <result column="state" property="state"/>
         <result column="create_time" property="createTime"/>
         <result column="update_time" property="updateTime"/>
 
     </resultMap>
+    <insert id="insert" parameterType="cn.bugstack.infrastructure.persistent.po.Task">
+        insert into task(topic,user_id,message_id,message,state,create_time,update_time)
+        values(#{topic},#{userId},#{messageId},#{message},#{state},now(),now())
+    </insert>
+    <update id="updateTaskSendMessageCompleted" parameterType="cn.bugstack.infrastructure.persistent.po.Task">
+        update task
+        set state = 'create',update_time = now()
+        where user_id = #{userId} and message_id = #{messageId}
+    </update>
+<!--    这一块就是如果有发送失败的或者任务状态是创建的且超过6000的才进行发送，就相当于是等一下-->
+    <update id="updateTaskSendMessageFail" parameterType="cn.bugstack.infrastructure.persistent.po.Task">
+        update task
+        set state = 'fail',update_time = now()
+        where user_id = #{userId}
+          and message_id = #{messageId}
+    </update>
+
+    <!--    这一块就是如果有发送失败的或者任务状态是创建的且超过6000的才进行发送，就相当于是等一下-->
+    <select id="queryNoSendMessageTaskList" resultType="cn.bugstack.infrastructure.persistent.po.Task">
+        select user_id, message_id, topic, message
+        from task
+        where state = 'fail'
+           or (state = 'create' and now() - create_time > 6000) limit 10
+    </select>
 
 
 </mapper>

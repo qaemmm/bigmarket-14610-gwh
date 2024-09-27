@@ -19,10 +19,18 @@
         insert into user_raffle_order ( user_id, activity_id, activity_name, strategy_id, order_id, order_time, order_state)
         values ( #{userRaffleOrder.userId}, #{userRaffleOrder.activityId}, #{userRaffleOrder.activityName}, #{userRaffleOrder.strategyId}, #{userRaffleOrder.orderId}, #{userRaffleOrder.orderTime}, #{userRaffleOrder.orderState})
     </insert>
+    <update id="updateUserRaffleOrderStateUsed"
+            parameterType="cn.bugstack.infrastructure.persistent.po.UserRaffleOrder">
+        update user_raffle_order
+        set order_state = 'used'
+        where user_id = #{userRaffleOrder.userId} and order_id = #{userRaffleOrder.orderId}
+          and order_state = 'create'
+    </update>
 
     <select id="queryNoUsedRaffleOrder" resultMap="dataMap"
             parameterType="cn.bugstack.infrastructure.persistent.po.UserRaffleOrder">
-        select * from user_raffle_order where user_id = #{userId} and activity_id = #{activityId} and order_state = 'create'
+        select * from user_raffle_order
+                 where user_id = #{userId} and activity_id = #{activityId} and order_state = 'create'
     </select>
 
 

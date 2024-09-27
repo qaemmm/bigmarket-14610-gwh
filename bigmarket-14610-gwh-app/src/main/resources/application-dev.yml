@@ -1,5 +1,5 @@
 server:
-  port: 8091
+  port: 8090
   tomcat:
     threads:
       max: 200 #最大线程数
@@ -127,6 +127,8 @@ logging:
   level:
     root: info
   config: classpath:logback-spring.xml
+
+  #rabbitmq
 spring:
   rabbitmq:
     host: 127.0.0.1
@@ -138,3 +140,4 @@ spring:
         prefetch: 1 # 每次投递n个消息，消费完在投递n个
     topic:
       activity_sku_stock_zero: activity_sku_stock_zero
+      send_award : send_award

@@ -28,6 +28,15 @@ public abstract class AbstractRaffleActivityPartake implements IRaffleActivityPa
     public AbstractRaffleActivityPartake(IActivityRepository activityRepository) {
         this.activityRepository = activityRepository;
     }
+
+    @Override
+    public UserRaffleOrderEntity createOrder(String userId, Long activityId){
+        return this.createOrder(PartakeRaffleActivityEntity.builder()
+                        .userId(userId)
+                        .activityId(activityId)
+                        .build()
+        );
+    }
     @Override
     public UserRaffleOrderEntity createOrder(PartakeRaffleActivityEntity partakeRaffleActivityEntity) {
         //1、基础信息
@@ -53,7 +62,7 @@ public abstract class AbstractRaffleActivityPartake implements IRaffleActivityPa
             log.info("创建参与活动订单[已经创建没有使用] userId:{} activityId:{} userRaffleOrderEntity:{}", userId, activityId, JSON.toJSONString(userRaffleOrderEntity));
             return userRaffleOrderEntity;
         }
-        //4、账户额度过滤&返回账户构建对象
+        //4、账户额度过滤&返回账户构建聚合对象--总额度、月额度、日额度（月、日分别有一个标志位）
         CreatePartakeOrderAggregate createPartakeOrderAggregate = this.doFilterAccount(userId, activityId,currentDate);
 
         //5、创建订单,这一块返回订单对象之后，赋值给聚合对象
@@ -71,5 +80,6 @@ public abstract class AbstractRaffleActivityPartake implements IRaffleActivityPa
 
     protected abstract UserRaffleOrderEntity buildUserRaffleOrder(String userId, Long activityId, Date currentDate);
 
+    //这块封装了账户额度的过滤（总额度，月额度、日额度），返回一个聚合对象
     protected abstract CreatePartakeOrderAggregate doFilterAccount(String userId, Long activityId, Date currentDate);
 }

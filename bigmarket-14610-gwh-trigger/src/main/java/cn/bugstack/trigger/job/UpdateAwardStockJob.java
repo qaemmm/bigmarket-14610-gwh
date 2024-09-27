@@ -23,14 +23,12 @@ public class UpdateAwardStockJob {
     @Scheduled(cron = "0/5 * * * * ?")
     public void exec(){
        try {
-           log.info("定时任务，去队列中获取到期的奖品库存，更新数据库");
            StrategyAwardStockVO strategyAwardStockVO = raffleStock.takeQueue();
            if (null == strategyAwardStockVO) {
                return;
            }
            Integer awardId = strategyAwardStockVO.getAwardId();
            Long strategyId = strategyAwardStockVO.getStrategyId();
-           log.info("定时任务，更新数据库奖品库存，strategyId:{} awardId:{}", strategyId, awardId);
            raffleStock.updateStrategyAwardStock(strategyId, awardId);
        }catch (Exception e){
            log.error("定时任务，更新数据库奖品库存异常",e);

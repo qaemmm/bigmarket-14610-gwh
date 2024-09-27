@@ -29,4 +29,14 @@ public class EventPublisher {
             throw e;
         }
     }
+
+    public void publish(String topic, String message) {
+        try {
+            rabbitTemplate.convertAndSend(topic, message);
+            log.info("发送消息成功 topic: {} message: {}", topic, message);
+        } catch (Exception e) {
+            log.error("发送消息失败", e);
+            throw e;
+        }
+    }
 }

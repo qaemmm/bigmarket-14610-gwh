@@ -20,4 +20,8 @@ public interface IRaffleActivityAccountDayDao {
     void insertActivityAccountDay(RaffleActivityAccountDay build);
 
     int updateActivityAccountDaySubstractQuota(RaffleActivityAccountDay build);
+
+    //这一块注解加了就可以实现分库
+    @DBRouter
+    RaffleActivityAccountDay queryActivityAccountDayByUserId(RaffleActivityAccountDay raffleActivityAccountDay);
 }

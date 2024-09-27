@@ -18,13 +18,13 @@ public class UserAwardRecord {
 //    用户ID
     private String userId;
 //    活动ID
-    private String activityId;
+    private Long activityId;
 //    抽奖策略ID
-    private String strategyId;
+    private Long strategyId;
 //    抽奖订单ID【作为幂等使用】
     private String orderId;
 //    奖品ID
-    private String awardId;
+    private Integer awardId;
 //    奖品标题（名称）
     private String awardTitle;
 //    中奖时间

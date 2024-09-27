@@ -24,12 +24,10 @@ public class UpdateActivitySkuStockJob {
     @Scheduled(cron = "0/5 * * * * ?")
     public void exec(){
         try{
-            log.info("定时任务，更新活动sku库存");
             ActivitySkuStockKeyVO activitySkuStockKeyVO = skuStock.takeQueueValve();
             if (null == activitySkuStockKeyVO) {
                 return;
             }
-            log.info("定时任务，更新活动sku库存 sku:{} activityId:{}", activitySkuStockKeyVO.getSku(), activitySkuStockKeyVO.getActivityId());
             skuStock.updateActivitySkuStock(activitySkuStockKeyVO.getSku());
 
         }catch (Exception e) {

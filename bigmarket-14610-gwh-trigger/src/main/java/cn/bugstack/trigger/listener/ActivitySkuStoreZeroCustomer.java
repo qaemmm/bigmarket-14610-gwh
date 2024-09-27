@@ -16,7 +16,7 @@ import javax.annotation.Resource;
  * @author fuzhouling
  * @date 2024/09/10
  * @program bigmarket-14610-gwh
- * @description todo desc...
+ * @description 活动sku库存为0消费者
  **/
 @Slf4j
 @Component

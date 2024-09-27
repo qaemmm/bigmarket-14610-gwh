@@ -3,6 +3,8 @@ package cn.bugstack.infrastructure.persistent.dao;
 import cn.bugstack.infrastructure.persistent.po.RaffleActivitySku;
 import org.apache.ibatis.annotations.Mapper;
 
+import java.util.List;
+
 /**
  * @author fuzhouling
  * @date 2024/09/02
@@ -17,4 +19,6 @@ public interface IRaffleActivitySkuDao {
     void clearActivitySkuStock(Long sku);
 
     void updateActivitySkuStock(Long sku);
+
+    List<RaffleActivitySku> queryActivityByActivityId(Long activityId);
 }
