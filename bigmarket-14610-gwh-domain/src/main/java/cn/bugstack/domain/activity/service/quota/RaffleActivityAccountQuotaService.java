@@ -86,5 +86,9 @@ public class RaffleActivityAccountQuotaService extends AbstractRaffleActivityAcc
     }
 
 
+    @Override
+    public Integer getUserTodayPartakeCount(String userId, Long activityId) {
+        return activityRepository.getUserTodayPartakeCount(userId, activityId);
+    }
 }
 

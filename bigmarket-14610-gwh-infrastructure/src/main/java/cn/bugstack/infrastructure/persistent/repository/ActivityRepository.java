@@ -495,5 +495,17 @@ public class ActivityRepository implements IActivityRepository {
         ).collect(Collectors.toList());
     }
 
+    @Override
+    public Integer getUserTodayPartakeCount(String userId, Long activityId) {
+
+        RaffleActivityAccountDay raffleActivityAccountDay = new RaffleActivityAccountDay();
+        raffleActivityAccountDay.setUserId(userId);
+        raffleActivityAccountDay.setActivityId(activityId);
+        raffleActivityAccountDay.setDay(raffleActivityAccountDay.currentDay());
+        Integer userTodayPartakeCount = raffleActivityAccountDayDao.getUserTodayPartakeCount(raffleActivityAccountDay);
+
+        return userTodayPartakeCount==null?0:userTodayPartakeCount;
+    }
+
 }
 

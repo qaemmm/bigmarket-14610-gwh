@@ -19,7 +19,7 @@ import java.util.Map;
 public interface IStrategyRepository {
 
     //遍历所有的策略中奖集合实体，通过策略id
-    public List<StrategyAwardEntity> queryStrategyAwardList(Long strategyId);
+     List<StrategyAwardEntity> queryStrategyAwardList(Long strategyId);
 
     //通过策略id将中奖范围和乱序后的结果表存储好
     void storeStrategyAwardSearchRateTable(String key, Integer rateRange, Map<Integer, Integer> shuffleStrategyAwardSearchRateTable);
@@ -58,4 +58,8 @@ public interface IStrategyRepository {
     StrategyAwardEntity queryStrategyAwardEntity(Long strategyId, Integer awardId);
 
     Integer queryTodayUserRaffleCount(String userId, Long strategyId);
+
+    Long queryStrategyIdByActivityId(Long activityId);
+
+    Map<String, Integer> getRuleValueByTreeIds(String[] treeIds);
 }

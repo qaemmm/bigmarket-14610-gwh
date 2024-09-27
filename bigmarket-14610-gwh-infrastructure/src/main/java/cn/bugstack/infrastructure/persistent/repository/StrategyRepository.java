@@ -88,6 +88,7 @@ public class StrategyRepository implements IStrategyRepository {
                     .awardCountSurplus(strategyAward.getAwardCountSurplus())
                     .awardId(strategyAward.getAwardId())
                     .awardRate(strategyAward.getAwardRate())
+                    .ruleModels(strategyAward.getRuleModels())
                     .build();
             strategiesAwardEntities.add(strategyAwardEntity);
         }
@@ -346,6 +347,25 @@ public class StrategyRepository implements IStrategyRepository {
         if(null==raffleActivityAccountDayRes)return 0;
         //通过今天的总的-剩余的次数，
         return raffleActivityAccountDayRes.getDayCount()-raffleActivityAccountDayRes.getDayCountSurplus();
+    }
+
+    @Override
+    public Long queryStrategyIdByActivityId(Long activityId) {
+       Long strategyId =  raffleActivityDao.queryStrategyIdByActivityId(activityId);
+        return strategyId;
+    }
+
+    @Override
+    public Map<String, Integer> getRuleValueByTreeIds(String[] treeIds) {
+        if(null==treeIds||treeIds.length==0){
+            return Collections.emptyMap();
+        }
+        Map<String,Integer> ruleValueMap = new HashMap<>();
+        List<RuleTreeNode> ruleTreeNodes = ruleTreeNodeDao.queryRuleTreeNodeListByTreeIds(treeIds);
+        for(RuleTreeNode ruleTreeNode:ruleTreeNodes){
+            ruleValueMap.put(ruleTreeNode.getTreeId(),Integer.parseInt(ruleTreeNode.getRuleValue()));
+        }
+        return ruleValueMap;
     }
 
 

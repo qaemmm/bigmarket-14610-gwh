@@ -24,4 +24,8 @@ public interface IRaffleActivityAccountDayDao {
     //这一块注解加了就可以实现分库
     @DBRouter
     RaffleActivityAccountDay queryActivityAccountDayByUserId(RaffleActivityAccountDay raffleActivityAccountDay);
+
+    @DBRouter
+    Integer getUserTodayPartakeCount(RaffleActivityAccountDay raffleActivityAccountDay);
+
 }
