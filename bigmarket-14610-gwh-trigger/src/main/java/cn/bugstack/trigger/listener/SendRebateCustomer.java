@@ -51,7 +51,7 @@ public class SendRebateCustomer {
             raffleActivityAccountQuotaService.createOrder(skuRechargeEntity);
         } catch (AppException e) {
             if (ResponseCode.INDEX_DUP.getCode().equals(e.getCode())) {
-                log.warn("监听用户行为返利消息，消费重复 topic: {} message: {}", t opic, message, e);
+                log.warn("监听用户行为返利消息，消费重复 topic: {} message: {}", topic, message, e);
                 return;
             }
             throw e;
