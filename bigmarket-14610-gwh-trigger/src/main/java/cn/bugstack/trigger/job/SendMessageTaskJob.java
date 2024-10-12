@@ -36,6 +36,7 @@ public class SendMessageTaskJob {
                try{
                    dbRouter.setDBKey(finalDbIdx);
                    dbRouter.setTBKey(0);
+                   //查询发送MQ失败和超时1分钟未发送的MQ,兜底处理
                    List<TaskEntity> taskEntities = taskService.queryNoSendMessageTaskList();
                    if (taskEntities.isEmpty()){
                        return ;

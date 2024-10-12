@@ -19,7 +19,7 @@
     </insert>
     <update id="updateTaskSendMessageCompleted" parameterType="cn.bugstack.infrastructure.persistent.po.Task">
         update task
-        set state = 'create',update_time = now()
+        set state = 'completed',update_time = now()
         where user_id = #{userId} and message_id = #{messageId}
     </update>
 <!--    这一块就是如果有发送失败的或者任务状态是创建的且超过6000的才进行发送，就相当于是等一下-->

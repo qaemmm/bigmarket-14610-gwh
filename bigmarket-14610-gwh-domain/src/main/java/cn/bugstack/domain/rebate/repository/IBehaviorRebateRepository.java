@@ -1,11 +1,21 @@
 package cn.bugstack.domain.rebate.repository;
 
+import cn.bugstack.domain.rebate.model.aggregate.BehaviorRebateAggregate;
+import cn.bugstack.domain.rebate.model.valobj.DailyBehaviorRebateVO;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
 /**
  * @author fuzhouling
  * @date 2024/09/30
  * @program bigmarket-14610-gwh
- * @description todo desc...
+ * @description 行为返利仓储
  **/
-public class IBehaviorRebateRepository {
+public interface IBehaviorRebateRepository {
 
+    List<DailyBehaviorRebateVO> queryDailyRebateByBehaviorType(String behaviorType) ;
+
+
+    void saveUserRebateRecord(String userId, List<BehaviorRebateAggregate> behaviorRebateAggregates);
 }

@@ -154,7 +154,7 @@ public class ActivityRepository implements IActivityRepository {
         raffleActivityOrder.setStrategyId(activityOrderEntity.getStrategyId());
         raffleActivityOrder.setOrderId(activityOrderEntity.getOrderId());
         raffleActivityOrder.setOrderTime(activityOrderEntity.getOrderTime());
-        //todo ！！疑惑订单里的总月日次数是什么意思
+
         raffleActivityOrder.setTotalCount(activityOrderEntity.getTotalCount());
         raffleActivityOrder.setDayCount(activityOrderEntity.getDayCount());
         raffleActivityOrder.setMonthCount(activityOrderEntity.getMonthCount());
@@ -175,6 +175,23 @@ public class ActivityRepository implements IActivityRepository {
         raffleActivityAccount.setMonthCount(createQuotaOrderAggregate.getMonthCount());
         raffleActivityAccount.setMonthCountSurplus(createQuotaOrderAggregate.getMonthCount());
 
+        // 账户对象 - 月
+        RaffleActivityAccountMonth raffleActivityAccountMonth = new RaffleActivityAccountMonth();
+        raffleActivityAccountMonth.setUserId(createQuotaOrderAggregate.getUserId());
+        raffleActivityAccountMonth.setActivityId(createQuotaOrderAggregate.getActivityId());
+        raffleActivityAccountMonth.setMonth(raffleActivityAccountMonth.currentMonth());
+        raffleActivityAccountMonth.setMonthCount(createQuotaOrderAggregate.getMonthCount());
+        raffleActivityAccountMonth.setMonthCountSurplus(createQuotaOrderAggregate.getMonthCount());
+
+        // 账户对象 - 日
+        RaffleActivityAccountDay raffleActivityAccountDay = new RaffleActivityAccountDay();
+        raffleActivityAccountDay.setUserId(createQuotaOrderAggregate.getUserId());
+        raffleActivityAccountDay.setActivityId(createQuotaOrderAggregate.getActivityId());
+        raffleActivityAccountDay.setDay(raffleActivityAccountDay.currentDay());
+        raffleActivityAccountDay.setDayCount(createQuotaOrderAggregate.getDayCount());
+        raffleActivityAccountDay.setDayCountSurplus(createQuotaOrderAggregate.getDayCount());
+
+
         // 以用户ID作为切分键，通过 doRouter 设定路由【这样就保证了下面的操作，都是同一个链接下，也就保证了事务的特性】
         dbRouter.doRouter(createQuotaOrderAggregate.getUserId());
         //编程式事务
@@ -184,11 +201,16 @@ public class ActivityRepository implements IActivityRepository {
                raffleActivityOrderDao.insert(raffleActivityOrder);
                //这里再保存账户前，需要判断一下是否存在这个账户，如果不存在，需要初始化一个账户
                // （但是再多线程的情况下）可能就是存在两个线程同时判断不存在，然后同时初始化，这个时候就会出现问题
-               int count = raffleActivityAccountDao.updateAccoutQuota(raffleActivityAccount);
+               int count = raffleActivityAccountDao.updateAccountQuota(raffleActivityAccount);
                if(count == 0){
                    raffleActivityAccountDao.insert(raffleActivityAccount);
                }
+               // 4. 更新账户 - 月
+               raffleActivityAccountMonthDao.addAccountQuota(raffleActivityAccountMonth);
+               // 5. 更新账户 - 日
+               raffleActivityAccountDayDao.addAccountQuota(raffleActivityAccountDay);
                return 1;
+
            }catch (DuplicateKeyException e){
                status.setRollbackOnly();
                log.error("写入订单记录，唯一索引冲突 userId: {} activityId: {} sku: {}", activityOrderEntity.getUserId(), activityOrderEntity.getActivityId(), activityOrderEntity.getSku(), e);

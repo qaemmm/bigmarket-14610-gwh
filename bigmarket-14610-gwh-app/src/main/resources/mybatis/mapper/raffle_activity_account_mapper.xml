@@ -20,7 +20,7 @@
         insert into raffle_activity_account (user_id, activity_id, total_count, total_count_surplus, day_count, day_count_surplus, month_count, month_count_surplus, create_time, update_time)
         values (#{userId}, #{activityId}, #{totalCount}, #{totalCountSurplus}, #{dayCount}, #{dayCountSurplus}, #{monthCount}, #{monthCountSurplus}, now(), now())
     </insert>
-    <update id="updateAccoutQuota"
+    <update id="updateAccountQuota"
             parameterType="cn.bugstack.infrastructure.persistent.po.RaffleActivityAccount">
         update raffle_activity_account
         set total_count         = total_count + #{totalCount},

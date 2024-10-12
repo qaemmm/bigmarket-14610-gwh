@@ -8,6 +8,12 @@ import cn.bugstack.types.model.Response;
 
 import java.util.List;
 
+/**
+ * @author fuzhouling
+ * @date 2024/09/26
+ * @program bigmarket-14610-gwh
+ * @description todo desc...
+ **/
 public interface IRaffleStrategyService {
     /**
      * 策略装配接口

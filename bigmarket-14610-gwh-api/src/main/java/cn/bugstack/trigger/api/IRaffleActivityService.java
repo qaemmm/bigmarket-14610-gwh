@@ -3,12 +3,13 @@ package cn.bugstack.trigger.api;
 import cn.bugstack.trigger.api.dto.ActivityDrawRequestDTO;
 import cn.bugstack.trigger.api.dto.ActivityDrawResponseDTO;
 import cn.bugstack.types.model.Response;
+import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * @author fuzhouling
  * @date 2024/09/26
  * @program bigmarket-14610-gwh
- * @description todo desc...
+ * @description 抽奖活动服务
  **/
 public interface IRaffleActivityService {
     /**
@@ -24,4 +25,10 @@ public interface IRaffleActivityService {
      */
     Response<ActivityDrawResponseDTO> draw(ActivityDrawRequestDTO request);
 
+    /**
+     * 日历签到返利接口
+     * @param userId 用户ID
+     * @return 返回结果
+     */
+    Response<Boolean> calenderSignRebate(String userId) ;
 }
