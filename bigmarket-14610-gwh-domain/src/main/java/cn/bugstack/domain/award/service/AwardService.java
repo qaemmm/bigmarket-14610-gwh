@@ -30,7 +30,7 @@ public class AwardService implements IAwardService{
                 .awardTitle(userAwardRecordEntity.getAwardTitle())
                 .build();
         SendAwardMessageEvent sendAwardMessageEvent = new SendAwardMessageEvent();
-        BaseEvent.EventMessage<SendAwardMessageEvent.SendAwardMessage> sendAwardMessageEventMessage = sendAwardMessageEvent.buildEventMesaage(sendAwardMessage);
+        BaseEvent.EventMessage<SendAwardMessageEvent.SendAwardMessage> sendAwardMessageEventMessage = sendAwardMessageEvent.buildEventMessage(sendAwardMessage);
 
 
         // 构建任务对象

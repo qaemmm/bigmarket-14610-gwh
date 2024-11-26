@@ -2,6 +2,8 @@ package cn.bugstack.trigger.api;
 
 import cn.bugstack.trigger.api.dto.ActivityDrawRequestDTO;
 import cn.bugstack.trigger.api.dto.ActivityDrawResponseDTO;
+import cn.bugstack.trigger.api.dto.UserActivityAccountRequestDTO;
+import cn.bugstack.trigger.api.dto.UserActivityAccountResponseDTO;
 import cn.bugstack.types.model.Response;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -30,5 +32,20 @@ public interface IRaffleActivityService {
      * @param userId 用户ID
      * @return 返回结果
      */
-    Response<Boolean> calenderSignRebate(String userId) ;
+    Response<Boolean> calendarSignRebate(String userId) ;
+
+    /**
+     * 是否日历签到
+     * @param userId 用户id
+     * @return
+     */
+    Response<Boolean> isCalendarSignRebate(String userId);
+
+
+    /**
+     * 查询用户账户额度
+     * @param request
+     * @return
+     */
+    Response<UserActivityAccountResponseDTO> queryUserActivityAccount(UserActivityAccountRequestDTO request);
 }

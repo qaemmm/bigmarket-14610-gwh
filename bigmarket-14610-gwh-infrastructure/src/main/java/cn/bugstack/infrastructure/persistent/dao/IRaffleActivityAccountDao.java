@@ -27,4 +27,10 @@ public interface IRaffleActivityAccountDao {
     void updateActivityAccountMonthMirrorQuota(RaffleActivityAccount raffleActivityAccount);
 
     int updateActivityAccountSubstractQuota(RaffleActivityAccount raffleActivityAccount);
+
+    @DBRouter
+    RaffleActivityAccount queryActivityAccountEntity(RaffleActivityAccount raffleActivityAccount);
+
+    @DBRouter
+    RaffleActivityAccount queryUserPartakeCount(RaffleActivityAccount raffleActivityAccount);
 }

@@ -1,6 +1,7 @@
 package cn.bugstack.infrastructure.persistent.repository;
 
 import cn.bugstack.domain.rebate.model.aggregate.BehaviorRebateAggregate;
+import cn.bugstack.domain.rebate.model.entity.BehaviorEntity;
 import cn.bugstack.domain.rebate.model.entity.BehaviorRebateOrderEntity;
 import cn.bugstack.domain.rebate.model.entity.TaskEntity;
 import cn.bugstack.domain.rebate.model.valobj.DailyBehaviorRebateVO;
@@ -24,6 +25,7 @@ import org.springframework.transaction.support.TransactionTemplate;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -50,8 +52,8 @@ public class BehaviorRebateRepository implements IBehaviorRebateRepository {
     private EventPublisher eventPublisher;
 
     @Override
-    public List<DailyBehaviorRebateVO> queryDailyRebateByBehaviorType(String rebateType) {
-        List<DailyBehaviorRebate> dailyBehaviorRebates = iDailyBehaviorRebateDao.queryDailyRebateByBehaviorType(rebateType);
+    public List<DailyBehaviorRebateVO> queryDailyRebateByBehaviorType(String behaviorType) {
+        List<DailyBehaviorRebate> dailyBehaviorRebates = iDailyBehaviorRebateDao.queryDailyRebateByBehaviorType(behaviorType);
         if(null==dailyBehaviorRebates || dailyBehaviorRebates.isEmpty()) return new ArrayList<>();
         List<DailyBehaviorRebateVO> dailyBehaviorRebateVOS = new ArrayList<>();
         for(DailyBehaviorRebate dailyBehaviorRebate : dailyBehaviorRebates){
@@ -84,6 +86,7 @@ public class BehaviorRebateRepository implements IBehaviorRebateRepository {
                        userBehaviorRebateOrder.setRebateDesc(behaviorRebateOrderEntity.getRebateDesc());
                        userBehaviorRebateOrder.setRebateType(behaviorRebateOrderEntity.getRebateType());
                        userBehaviorRebateOrder.setRebateConfig(behaviorRebateOrderEntity.getRebateConfig());
+                       userBehaviorRebateOrder.setOutBusinessNo(behaviorRebateOrderEntity.getOutBusinessNo());
                        userBehaviorRebateOrder.setBizId(behaviorRebateOrderEntity.getBizId());
 
                        userBehaviorRebateOrderDao.insert(userBehaviorRebateOrder);
@@ -124,5 +127,29 @@ public class BehaviorRebateRepository implements IBehaviorRebateRepository {
                 taskDao.updateTaskSendMessageFail(task);
             }
         }
+    }
+
+    @Override
+    public List<BehaviorRebateOrderEntity> queryOrderByOutBusinessNo(String userId, String outBusinessNo) {
+        List<UserBehaviorRebateOrder> userBehaviorRebateOrders = userBehaviorRebateOrderDao.queryOrderByOutBusinessNo(
+                UserBehaviorRebateOrder.builder()
+                        .userId(userId)
+                        .outBusinessNo(outBusinessNo)
+                        .build());
+        if(null==userBehaviorRebateOrders || userBehaviorRebateOrders.isEmpty()) return new ArrayList<>();
+        List<BehaviorRebateOrderEntity> behaviorRebateOrderEntities = new ArrayList<>(userBehaviorRebateOrders.size());
+        userBehaviorRebateOrders.forEach(userBehaviorRebateOrder -> {
+            BehaviorRebateOrderEntity behaviorRebateOrderEntity = new BehaviorRebateOrderEntity();
+            behaviorRebateOrderEntity.setUserId(userBehaviorRebateOrder.getUserId());
+            behaviorRebateOrderEntity.setOrderId(userBehaviorRebateOrder.getOrderId());
+            behaviorRebateOrderEntity.setBehaviorType(userBehaviorRebateOrder.getBehaviorType());
+            behaviorRebateOrderEntity.setRebateDesc(userBehaviorRebateOrder.getRebateDesc());
+            behaviorRebateOrderEntity.setRebateType(userBehaviorRebateOrder.getRebateType());
+            behaviorRebateOrderEntity.setRebateConfig(userBehaviorRebateOrder.getRebateConfig());
+            behaviorRebateOrderEntity.setOutBusinessNo(userBehaviorRebateOrder.getOutBusinessNo());
+            behaviorRebateOrderEntity.setBizId(userBehaviorRebateOrder.getBizId());
+            behaviorRebateOrderEntities.add(behaviorRebateOrderEntity);
+        });
+        return behaviorRebateOrderEntities;
     }
 }

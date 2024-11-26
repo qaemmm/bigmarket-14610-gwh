@@ -1,6 +1,9 @@
 package cn.bugstack.infrastructure.persistent.po;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
@@ -11,6 +14,9 @@ import java.util.Date;
  * @description 用户行为返利订单
  **/
 @Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class UserBehaviorRebateOrder {
     //自增ID
     private Integer id;
@@ -26,6 +32,8 @@ public class UserBehaviorRebateOrder {
     private String rebateType;
     //返利配置【sku值，积分值】
     private String rebateConfig;
+    //外部业务ID
+    private String outBusinessNo;
     //业务ID - 拼接的唯一值
     private String bizId;
     //创建时间

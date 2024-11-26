@@ -24,7 +24,7 @@ public class SendRebateMessageEvent extends BaseEvent<SendRebateMessageEvent.Sen
 
 
     @Override
-    public EventMessage<SendRebateMessage> buildEventMesaage(SendRebateMessage data) {
+    public EventMessage<SendRebateMessage> buildEventMessage(SendRebateMessage data) {
         return EventMessage.<SendRebateMessage>builder()
                 .id(RandomStringUtils.randomNumeric(11))
                 .timestamp(new Date())

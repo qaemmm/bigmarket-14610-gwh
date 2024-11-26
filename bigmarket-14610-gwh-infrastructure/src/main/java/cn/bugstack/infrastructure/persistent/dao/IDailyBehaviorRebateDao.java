@@ -7,5 +7,5 @@ import java.util.List;
 
 @Mapper
 public interface IDailyBehaviorRebateDao {
-    List<DailyBehaviorRebate> queryDailyRebateByBehaviorType(String rebateType);
+    List<DailyBehaviorRebate> queryDailyRebateByBehaviorType(String behaviorType);
 }

@@ -1,11 +1,7 @@
 package cn.bugstack.domain.activity.service.quota;
 
 import cn.bugstack.domain.activity.model.aggregate.CreateQuotaOrderAggregate;
-import cn.bugstack.domain.activity.model.entity.ActivityCountEntity;
-import cn.bugstack.domain.activity.model.entity.ActivityEntity;
-import cn.bugstack.domain.activity.model.entity.ActivityOrderEntity;
-import cn.bugstack.domain.activity.model.entity.ActivitySkuEntity;
-import cn.bugstack.domain.activity.model.entity.SkuRechargeEntity;
+import cn.bugstack.domain.activity.model.entity.*;
 import cn.bugstack.domain.activity.model.valobj.ActivitySkuStockKeyVO;
 import cn.bugstack.domain.activity.model.valobj.OrderStateVO;
 import cn.bugstack.domain.activity.repository.IActivityRepository;
@@ -20,7 +16,7 @@ import java.util.Date;
  * @author fuzhouling
  * @date 2024/09/02
  * @program bigmarket-14610-gwh
- * @description todo desc...
+ * @description 活动账户余额服务
  **/
 @Service
 public class RaffleActivityAccountQuotaService extends AbstractRaffleActivityAccountQuota implements IRaffleActivitySkuStockService {
@@ -89,6 +85,16 @@ public class RaffleActivityAccountQuotaService extends AbstractRaffleActivityAcc
     @Override
     public Integer getUserTodayPartakeCount(String userId, Long activityId) {
         return activityRepository.getUserTodayPartakeCount(userId, activityId);
+    }
+
+    @Override
+    public ActivityAccountEntity queryActivityAccountEntity(String userId, Long activityId) {
+        return activityRepository.queryActivityAccountEntity(userId,activityId);
+    }
+
+    @Override
+    public Integer queryUserPartakeCount(String userId, Long activityId) {
+        return activityRepository.queryUserPartakeCount(userId,activityId);
     }
 }
 

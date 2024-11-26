@@ -4,7 +4,10 @@ import cn.bugstack.domain.activity.model.entity.SkuRechargeEntity;
 import cn.bugstack.domain.activity.service.IRaffleActivityAccountQuotaService;
 import cn.bugstack.domain.activity.service.quota.RaffleActivityAccountQuotaService;
 import cn.bugstack.domain.activity.service.armory.IActivityArmory;
+import cn.bugstack.trigger.api.IRaffleActivityService;
 import cn.bugstack.types.exception.AppException;
+import cn.bugstack.types.model.Response;
+import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Test;
@@ -31,6 +34,9 @@ public class RaffleActivityTest {
     private IRaffleActivityAccountQuotaService raffleOrder;
     @Resource
     private IActivityArmory activityArmory;
+
+    @Resource
+    private IRaffleActivityService raffleActivityService;
 
 
 

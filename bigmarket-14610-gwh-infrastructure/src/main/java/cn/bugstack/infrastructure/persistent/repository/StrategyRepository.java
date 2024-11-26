@@ -1,5 +1,6 @@
 package cn.bugstack.infrastructure.persistent.repository;
 
+import cn.bugstack.domain.award.model.valobj.RuleWeightVO;
 import cn.bugstack.domain.strategy.model.entity.StrategyAwardEntity;
 import cn.bugstack.domain.strategy.model.entity.StrategyEntity;
 import cn.bugstack.domain.strategy.model.entity.StrategyRuleEntity;
@@ -11,6 +12,7 @@ import cn.bugstack.domain.strategy.model.valobj.RuleTreeVO;
 import cn.bugstack.domain.strategy.model.valobj.StrategyAwardRuleModelVO;
 import cn.bugstack.domain.strategy.model.valobj.StrategyAwardStockVO;
 import cn.bugstack.domain.strategy.repository.IStrategyRepository;
+import cn.bugstack.domain.strategy.service.rule.chain.factory.DefaultChainFactory;
 import cn.bugstack.infrastructure.persistent.dao.IRaffleActivityAccountDayDao;
 import cn.bugstack.infrastructure.persistent.dao.IRaffleActivityDao;
 import cn.bugstack.infrastructure.persistent.dao.IRuleTreeDao;
@@ -40,11 +42,7 @@ import org.redisson.api.RMap;
 import org.springframework.stereotype.Repository;
 
 import javax.annotation.Resource;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 
@@ -366,6 +364,49 @@ public class StrategyRepository implements IStrategyRepository {
             ruleValueMap.put(ruleTreeNode.getTreeId(),Integer.parseInt(ruleTreeNode.getRuleValue()));
         }
         return ruleValueMap;
+    }
+
+    @Override
+    public List<RuleWeightVO> queryAwardRuleWeight(Long strategyId) {
+        String cacheKey =Constants.RedisKey.STRATEGY_RULE_WEIGHT_KEY + strategyId;
+        List<RuleWeightVO> ruleWeightVOS = redisService.getValue(cacheKey);
+        if(null!=ruleWeightVOS)return ruleWeightVOS;
+        ruleWeightVOS = new ArrayList<>();
+        StrategyRule strategyRule = new StrategyRule();
+        strategyRule.setStrategyId(strategyId);
+        strategyRule.setRuleModel(DefaultChainFactory.LogicModel.RULE_WIGHT.getCode());
+        String ruleValue = strategyRuleDao.queryStrategyRuleValue(strategyRule);
+        StrategyRuleEntity strategyRuleEntity = new StrategyRuleEntity();
+        strategyRuleEntity.setStrategyId(strategyId);
+        strategyRuleEntity.setRuleModel(DefaultChainFactory.LogicModel.RULE_WIGHT.getCode());
+        strategyRuleEntity.setRuleValue(ruleValue);
+        Map<String, List<Integer>> ruleWeightValues = strategyRuleEntity.getRuleValues();
+        // 3. 遍历规则组装奖品配置
+        Set<String> ruleWeightKeys = ruleWeightValues.keySet();
+        for (String ruleWeightKey : ruleWeightKeys) {
+            List<Integer> awardIds = ruleWeightValues.get(ruleWeightKey);
+            List<RuleWeightVO.Award> awardList = new ArrayList<>();
+            // 也可以修改为一次从数据库查询
+            for (Integer awardId : awardIds) {
+                StrategyAward strategyAwardReq = new StrategyAward();
+                strategyAwardReq.setStrategyId(strategyId);
+                strategyAwardReq.setAwardId(awardId);
+                StrategyAward strategyAward = strategyAwardDao.queryStrategyAward(strategyAwardReq);
+                awardList.add(RuleWeightVO.Award.builder()
+                        .awardId(strategyAward.getAwardId())
+                        .awardTitle(strategyAward.getAwardTitle())
+                        .build());
+            }
+
+            ruleWeightVOS.add(RuleWeightVO.builder()
+                    .ruleValue(ruleValue)
+                    .weight(Integer.valueOf(ruleWeightKey.split(Constants.COLON)[0]))
+                    .awardIds(awardIds)
+                    .awardList(awardList)
+                    .build());
+        }
+        redisService.setValue(cacheKey,ruleWeightVOS);
+        return ruleWeightVOS;
     }
 
 

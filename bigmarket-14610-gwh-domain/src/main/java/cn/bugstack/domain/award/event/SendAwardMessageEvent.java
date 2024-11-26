@@ -24,7 +24,7 @@ public class SendAwardMessageEvent extends BaseEvent<SendAwardMessageEvent.SendA
     private String topic;
 
     @Override
-    public EventMessage<SendAwardMessage> buildEventMesaage(SendAwardMessage data) {
+    public EventMessage<SendAwardMessage> buildEventMessage(SendAwardMessage data) {
         return EventMessage.<SendAwardMessage>builder()
                 .id(RandomStringUtils.randomNumeric(11))
                 .timestamp(new Date())

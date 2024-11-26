@@ -59,4 +59,7 @@ public interface IActivityRepository {
 
     Integer getUserTodayPartakeCount(String userId, Long activityId);
 
+    ActivityAccountEntity queryActivityAccountEntity(String userId, Long activityId);
+
+    Integer queryUserPartakeCount(String userId, Long activityId);
 }

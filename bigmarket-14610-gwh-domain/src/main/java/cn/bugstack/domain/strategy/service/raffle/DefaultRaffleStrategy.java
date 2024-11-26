@@ -1,5 +1,6 @@
 package cn.bugstack.domain.strategy.service.raffle;
 
+import cn.bugstack.domain.award.model.valobj.RuleWeightVO;
 import cn.bugstack.domain.strategy.model.entity.StrategyAwardEntity;
 import cn.bugstack.domain.strategy.model.valobj.RuleTreeVO;
 import cn.bugstack.domain.strategy.model.valobj.StrategyAwardRuleModelVO;
@@ -82,12 +83,27 @@ public class DefaultRaffleStrategy extends AbstractRaffleStrategy implements IRa
 
     @Override
     public List<StrategyAwardEntity> queryRaffleAwardListByActivityId(Long activityId) {
-        Long strategyId = repository.queryStrategyIdByActivityId(activityId);
+        Long strategyId = queryStrategyIdByActivityId(activityId);
         return repository.queryStrategyAwardList(strategyId);
+    }
+
+    public Long queryStrategyIdByActivityId(Long activityId){
+        return repository.queryStrategyIdByActivityId(activityId);
     }
 
     @Override
     public Map<String, Integer> getRuleValueByTreeIds(String[] treeIds) {
         return repository.getRuleValueByTreeIds(treeIds);
+    }
+
+
+    public List<RuleWeightVO> queryAwardRuleWeight(Long strategyId) {
+        return repository.queryAwardRuleWeight(strategyId);
+    }
+
+    @Override
+    public List<RuleWeightVO> queryAwardRuleWeightByActivityId(Long activityId) {
+        Long strategyId = queryStrategyIdByActivityId(activityId);
+        return queryAwardRuleWeight(strategyId);
     }
 }

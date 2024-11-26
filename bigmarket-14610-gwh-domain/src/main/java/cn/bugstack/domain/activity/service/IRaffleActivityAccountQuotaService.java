@@ -1,5 +1,6 @@
 package cn.bugstack.domain.activity.service;
 
+import cn.bugstack.domain.activity.model.entity.ActivityAccountEntity;
 import cn.bugstack.domain.activity.model.entity.ActivityOrderEntity;
 import cn.bugstack.domain.activity.model.entity.ActivityShopCartEntity;
 import cn.bugstack.domain.activity.model.entity.SkuRechargeEntity;
@@ -30,5 +31,21 @@ public interface IRaffleActivityAccountQuotaService {
      * @return
      */
     Integer getUserTodayPartakeCount(String userId, Long activityId);
+
+    /**
+     * 通过用户id、活动id获取活动账户
+     * @param userId
+     * @param activityId
+     * @return
+     */
+    ActivityAccountEntity queryActivityAccountEntity(String userId, Long activityId);
+
+    /**
+     * 用户参与次数
+     * @param userId
+     * @param activityId
+     * @return
+     */
+    Integer queryUserPartakeCount(String userId, Long activityId);
 }
 

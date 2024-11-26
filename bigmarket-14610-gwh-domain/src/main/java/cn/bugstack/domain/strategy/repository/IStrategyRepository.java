@@ -1,5 +1,6 @@
 package cn.bugstack.domain.strategy.repository;
 
+import cn.bugstack.domain.award.model.valobj.RuleWeightVO;
 import cn.bugstack.domain.strategy.model.entity.StrategyAwardEntity;
 import cn.bugstack.domain.strategy.model.entity.StrategyEntity;
 import cn.bugstack.domain.strategy.model.entity.StrategyRuleEntity;
@@ -62,4 +63,6 @@ public interface IStrategyRepository {
     Long queryStrategyIdByActivityId(Long activityId);
 
     Map<String, Integer> getRuleValueByTreeIds(String[] treeIds);
+
+    List<RuleWeightVO> queryAwardRuleWeight(Long strategyId);
 }

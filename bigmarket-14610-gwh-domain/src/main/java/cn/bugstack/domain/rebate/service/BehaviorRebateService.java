@@ -49,13 +49,14 @@ public class BehaviorRebateService implements IBehaviorRebateService {
                     .rebateType(dailyBehaviorRebateVO.getRebateType())
                     .bizId(bizId)
                     .behaviorType(behaviorEntity.getBehaviorTypeVO().getCode())
+                    .outBusinessNo(behaviorEntity.getOutBusinessNo())
                     .rebateConfig(dailyBehaviorRebateVO.getRebateConfig())
                     .orderId(RandomStringUtils.randomAlphanumeric(11))
                     .build();
 
             // 构建事件消息、 MQ 消息对象
             BaseEvent.EventMessage<SendRebateMessageEvent.SendRebateMessage> rebateMessageEventMessage =
-                    sendRebateMessageEvent.buildEventMesaage(SendRebateMessageEvent.SendRebateMessage.builder()
+                    sendRebateMessageEvent.buildEventMessage(SendRebateMessageEvent.SendRebateMessage.builder()
                             .userId(behaviorEntity.getUserId())
                             .rebateDesc(dailyBehaviorRebateVO.getRebateDesc())
                             .rebateType(dailyBehaviorRebateVO.getRebateType())
@@ -85,5 +86,10 @@ public class BehaviorRebateService implements IBehaviorRebateService {
         // 4. 返回订单ID集合
 
         return orderIds;
+    }
+
+    @Override
+    public List<BehaviorRebateOrderEntity> queryOrderByOutBusinessNo(String userId, String outBusinessNo) {
+        return behaviorRebateRepository.queryOrderByOutBusinessNo(userId,outBusinessNo);
     }
 }
