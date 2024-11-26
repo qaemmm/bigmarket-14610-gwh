@@ -128,7 +128,7 @@ public class RaffleStrategyController implements IRaffleStrategyService {
                         .waitUnlockCount(null== awardRuleLockCount||awardRuleLockCount<= userTodayPartakeCount?0:awardRuleLockCount-userTodayPartakeCount)
                         .build();
                 raffleAwardListResponseDTOList.add(raffleAwardListResponseDTO);
-                log.info("!!!!!!isAwardUnlock:{}",raffleAwardListResponseDTO.isAwardUnlock());
+                log.info("!!!!!!AwardId{}--isAwardUnlock:{}",raffleAwardListResponseDTO.getAwardId(),raffleAwardListResponseDTO.isAwardUnlock());
             }
             Response<List<RaffleAwardListResponseDTO>> response = Response.<List<RaffleAwardListResponseDTO>>builder()
                     .code(ResponseCode.SUCCESS.getCode())
@@ -194,8 +194,9 @@ public class RaffleStrategyController implements IRaffleStrategyService {
                 .build();
     }
 
+    @RequestMapping(value = "query_raffle_strategy_rule_weight", method = RequestMethod.POST)
     @Override
-    public Response<List<RaffleStrategyRuleWeightResponseDTO>> queryRaffleStrategyRuleWeight(RaffleStrategyRuleWeightRequestDTO request) {
+    public Response<List<RaffleStrategyRuleWeightResponseDTO>> queryRaffleStrategyRuleWeight(@RequestBody RaffleStrategyRuleWeightRequestDTO request) {
       try{ //传过来一个userId、activityId
         log.info("查询抽奖策略权重规则开始userId:{},activityId:{}", request.getUserId(), request.getActivityId());
         // 1、参数校验

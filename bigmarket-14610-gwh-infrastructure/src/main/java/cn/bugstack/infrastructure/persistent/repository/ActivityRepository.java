@@ -596,6 +596,7 @@ public class ActivityRepository implements IActivityRepository {
                 .userId(userId)
                 .activityId(activityId)
                 .build());
+        if(null==raffleActivityAccount)return 0;
         return raffleActivityAccount.getTotalCount()-raffleActivityAccount.getTotalCountSurplus();
     }
 

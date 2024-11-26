@@ -14,6 +14,7 @@ export function StrategyArmory() {
             window.alert("抽奖活动策略装配失败 code:" + code + " info:" + info)
             return;
         }
+        window.alert("装配完成，开始体验吧!")
     }
 
     return (
