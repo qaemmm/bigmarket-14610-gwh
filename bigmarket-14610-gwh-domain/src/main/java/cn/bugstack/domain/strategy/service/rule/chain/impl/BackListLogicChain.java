@@ -36,7 +36,8 @@ public class BackListLogicChain extends AbstractLogicChain {
                 log.info("抽奖责任链-黑名单接管 userId: {} strategyId: {} ruleModel: {} awardId: {}", userId, strategyId, ruleModel(), awardId);
                 return DefaultChainFactory.StrategyAwardVO.builder()
                         .awardId(awardId)
-                        .awardRuleValue(ruleModel())
+                        .logicModel(ruleModel())
+                        .awardRuleValue("0.01,1")
                         .build();
             }
         }

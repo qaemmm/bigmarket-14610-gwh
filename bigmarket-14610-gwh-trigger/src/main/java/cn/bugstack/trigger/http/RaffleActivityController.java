@@ -154,6 +154,7 @@ public class RaffleActivityController implements IRaffleActivityService {
                     .awardId(raffleAwardEntity.getAwardId())
                     .awardTitle(raffleAwardEntity.getAwardTitle())
                     .awardTime(new Date())
+                    .awardConfig(raffleAwardEntity.getAwardConfig())
                     .awardState(AwardStateVO.create)
                     .build();
             // 4、存放结果--写入中奖记录
@@ -187,6 +188,9 @@ public class RaffleActivityController implements IRaffleActivityService {
 
     /*
         * 日历签到返利接口
+        *
+        * 这一块签到的话默认会创建一个订单，根据你日常的一个行为然后给你返利，
+        * 然后组装成一个用户行为记录（这一块对用户订单-行为-返利配置-唯一订单id）+任务实体（这一块作为消息队列进行发送）
      */
     @RequestMapping(value = "calendar_sign_rebate", method = RequestMethod.POST)
     public Response<Boolean> calendarSignRebate(@RequestParam String userId){

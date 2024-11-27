@@ -59,7 +59,7 @@ public abstract class AbstractRaffleStrategy implements IRaffleStrategy{
         log.info("责任链{} {} {} {}",strategyId,userId,chainStrategyAwardVO.getAwardId(),chainStrategyAwardVO.getAwardRuleValue());
         log.info("DefaultChainFactory.LogicModel.RULE_DEFAULT:{}", DefaultChainFactory.LogicModel.RULE_DEFAULT);
         if(!DefaultChainFactory.LogicModel.RULE_DEFAULT.getCode().equals(chainStrategyAwardVO.getAwardRuleValue())){
-            return buildRaffleAwardEntity(strategyId,chainStrategyAwardVO.getAwardId(),null);
+            return buildRaffleAwardEntity(strategyId,chainStrategyAwardVO.getAwardId(),chainStrategyAwardVO.getAwardRuleValue());
         }
 
         //3.规则树抽奖过滤【奖品id，会根据抽奖次数判断，库存判断、兜底策略返回最终可获得奖品信息】

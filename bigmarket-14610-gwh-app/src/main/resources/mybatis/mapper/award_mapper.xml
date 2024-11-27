@@ -29,7 +29,17 @@
         from award
         where award_id = #{awardId}
     </select>
-<!--    <select id="queryAwardByAwardId" resultType="cn.bugstack.infrastructure.persistent.po.Award">-->
+    <select id="queryAwardConfig" resultType="java.lang.String">
+        select award_config
+        from award
+        where award_id = #{awardId}
+    </select>
+    <select id="queryAwardKey" resultType="java.lang.String">
+        select award_key
+        from award
+        where award_id = #{awardId}
+    </select>
+    <!--    <select id="queryAwardByAwardId" resultType="cn.bugstack.infrastructure.persistent.po.Award">-->
 <!--        select *-->
 <!--        from award-->
 <!--        where award_id = #{awardId}-->

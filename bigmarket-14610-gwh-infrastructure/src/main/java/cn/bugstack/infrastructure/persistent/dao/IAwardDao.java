@@ -20,4 +20,8 @@ public interface IAwardDao {
     Award queryAwardById(@Param("awardId")Integer awardId);
 
     void deleteAwardById(@Param("award_id")Integer award_id);
+
+    String queryAwardConfig(Integer awardId);
+
+    String queryAwardKey(Integer awardId);
 }

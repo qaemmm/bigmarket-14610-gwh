@@ -23,6 +23,7 @@ public enum ResponseCode {
     ACCOUNT_QUOTA_ERROR("ERR_BIZ_006", "业务异常，账户额度不足"),
     ACCOUNT_MONTH_QUOTA_ERROR("ERR_BIZ_007", "业务异常，月账户额度不足"),
     ACCOUNT_DAY_QUOTA_ERROR("ERR_BIZ_008", "业务异常，日账户额度不足"),
+    AWARD_CONFIG_ERROR("ERR_CONFIG_001", "award_config 配置不是一个范围值，如 1,100"),
     ;
 
     private String code;
