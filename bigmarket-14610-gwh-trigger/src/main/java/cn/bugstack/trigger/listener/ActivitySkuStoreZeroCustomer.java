@@ -28,7 +28,7 @@ public class ActivitySkuStoreZeroCustomer {
     @Resource
     private IRaffleActivitySkuStockService skuStock;
 
-    @RabbitListener(queuesToDeclare = @Queue("activity_sku_stock_zero"))
+    @RabbitListener(queuesToDeclare = @Queue("spring.rabbitmq.topic.activity_sku_stock_zero"))
     public void listener(String message){
         try{
             //这一块就是监听消息队列，将消息队列中的数据取出来，然后进行处理

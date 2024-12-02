@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * Redis 服务 - Redisson
  *
- * @author Fuzhengwei 
+ * @author Fuzhengwei
  */
 @Service("redissonService")
 public class RedissonService implements IRedisService {
@@ -164,7 +164,7 @@ public class RedissonService implements IRedisService {
 
     @Override
     public void setAtomicLong(String cacheKey, Integer awardCount) {
-        redissonClient.getBucket(cacheKey).setIfAbsent(awardCount);
+        redissonClient.getBucket(cacheKey).set(awardCount);
     }
 
     @Override

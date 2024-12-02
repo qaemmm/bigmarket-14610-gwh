@@ -31,7 +31,7 @@ public class RaffleActivityControllerTest {
 
     @Test
     public void test_isCalendarSignRebate() {
-        Response<Boolean> response = raffleActivityService.isCalendarSignRebate("xiaofuge");
+        Response<Boolean> response = raffleActivityService.isCalendarSignRebate("liergou3");
         log.info("测试结果：{}", JSON.toJSONString(response));
     }
 
@@ -50,7 +50,7 @@ public class RaffleActivityControllerTest {
     public void test_blacklist_draw() throws InterruptedException {
         ActivityDrawRequestDTO request = new ActivityDrawRequestDTO();
         request.setActivityId(100301L);
-        request.setUserId("user003");
+        request.setUserId("user001");
         Response<ActivityDrawResponseDTO> response = raffleActivityService.draw(request);
 
         log.info("请求参数：{}", JSON.toJSONString(request));

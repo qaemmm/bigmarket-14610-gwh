@@ -42,6 +42,7 @@ public class AwardService implements IAwardService{
                 .userId(userAwardRecordEntity.getUserId())
                 .awardId(userAwardRecordEntity.getAwardId())
                 .awardTitle(userAwardRecordEntity.getAwardTitle())
+                .orderId(userAwardRecordEntity.getOrderId())
                 .build();
         //这一块需要测一下就是直接使用创建的形式和使用new出来的有什么不一样
 //        SendAwardMessageEvent sendAwardMessageEvent = new SendAwardMessageEvent();

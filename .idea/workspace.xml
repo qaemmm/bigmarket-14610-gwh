@@ -6,46 +6,23 @@
   <component name="ChangeListManager">
     <list default="true" id="a4f64b9b-9926-43c6-9cf6-26b240c3c8dd" name="Changes" comment="写入中奖记录和任务补偿发送MQ">
       <changelist_data name="weixin_52875810" email="842123094@qq.com" date="1727334984000" />
-      <change afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/main/resources/mybatis/mapper/user_credit_account_mapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/award/model/aggregate/GiveOutPrizesAggregate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/award/model/entity/DistributeAwardEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/award/model/entity/UserCreditAwardEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/award/model/valobj/AccountStatusVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/award/service/distribute/IDistributeAward.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/award/service/distribute/impl/UserCreditRandomAward.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/persistent/dao/IUserCreditAccountDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/persistent/po/UserCreditAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/data/log/log_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/data/log/log_error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/data/log/log_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/data/log/log_info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/main/resources/mybatis/mapper/award_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/main/resources/mybatis/mapper/award_mapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/main/resources/mybatis/mapper/user_award_record_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/main/resources/mybatis/mapper/user_award_record_mapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/test/java/cn/bugstack/test/domain/award/AwardServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/test/java/cn/bugstack/test/domain/award/AwardServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/main/resources/application-dev.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/test/java/cn/bugstack/trigger/RaffleActivityControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/test/java/cn/bugstack/trigger/RaffleActivityControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/award/event/SendAwardMessageEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/award/event/SendAwardMessageEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/award/model/entity/UserAwardRecordEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/award/model/entity/UserAwardRecordEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/award/model/valobj/AwardStateVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/award/model/valobj/AwardStateVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/award/repository/IAwardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/award/repository/IAwardRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/test/java/cn/bugstack/trigger/RaffleStrategyControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/test/java/cn/bugstack/trigger/RaffleStrategyControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/award/service/AwardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/award/service/AwardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/award/service/IAwardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/award/service/IAwardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/strategy/service/AbstractRaffleStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/strategy/service/AbstractRaffleStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/strategy/service/rule/chain/factory/DefaultChainFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/strategy/service/rule/chain/factory/DefaultChainFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/strategy/service/rule/chain/impl/BackListLogicChain.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/strategy/service/rule/chain/impl/BackListLogicChain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/persistent/dao/IAwardDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/persistent/dao/IAwardDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/persistent/dao/IUserAwardRecordDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/persistent/dao/IUserAwardRecordDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/persistent/po/RaffleActivityAccountMonth.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/persistent/po/RaffleActivityAccountMonth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/persistent/repository/AwardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/persistent/repository/AwardRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/persistent/redis/RedissonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/persistent/redis/RedissonService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-trigger/src/main/java/cn/bugstack/trigger/http/RaffleActivityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-trigger/src/main/java/cn/bugstack/trigger/http/RaffleActivityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-trigger/src/main/java/cn/bugstack/trigger/listener/SendAwardCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-trigger/src/main/java/cn/bugstack/trigger/listener/SendAwardCustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-types/src/main/java/cn/bugstack/types/enums/ResponseCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-types/src/main/java/cn/bugstack/types/enums/ResponseCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/dev-ops/mysql/sql/big_market.sql" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/mysql/sql/big_market.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/dev-ops/mysql/sql/big_market_01.sql" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/mysql/sql/big_market_01.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/dev-ops/mysql/sql/big_market_02.sql" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/mysql/sql/big_market_02.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-trigger/src/main/java/cn/bugstack/trigger/listener/ActivitySkuStoreZeroCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-trigger/src/main/java/cn/bugstack/trigger/listener/ActivitySkuStoreZeroCustomer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -101,23 +78,17 @@
       </RecentBranches>
     </option>
   </component>
-  <component name="KubernetesApiPersistence">{}</component>
-  <component name="KubernetesApiProvider">{
-  &quot;isMigrated&quot;: true
-}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="customMavenHome" value="D:\enviroment\apache-maven-3.6.1" />
         <option name="localRepository" value="D:\enviroment\apache-maven-3.6.1\repo" />
-        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
         <option name="userSettingsFile" value="D:\enviroment\apache-maven-3.6.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 7
-}</component>
   <component name="ProjectId" id="2l5Nf1orZVUfzQqcsnPdEQ25beG" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
@@ -125,61 +96,15 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Docker.dev-ops/docker-compose-app.yml: Compose Deployment.executor": "Run",
-    "Docker.dev-ops/docker-compose-environment.yml.rabbitmq: Compose Deployment.executor": "Run",
-    "Docker.dev-ops/docker-compose-environment.yml: Compose Deployment.executor": "Run",
-    "JUnit.ApiTest.test.executor": "Run",
-    "JUnit.AwardServiceTest.test_distributeAward.executor": "Run",
-    "JUnit.AwardServiceTest.test_saveUserAwardRecord.executor": "Debug",
-    "JUnit.BehaviorRebateServiceTest.test_createOrder.executor": "Debug",
-    "JUnit.RaffleActivityControllerTest.test_blacklist_draw.executor": "Run",
-    "JUnit.RaffleActivityControllerTest.test_calendarSignRebate.executor": "Run",
-    "JUnit.RaffleActivityControllerTest.test_isCalendarSignRebate.executor": "Run",
-    "JUnit.RaffleActivityControllerTest.test_queryUserActivityAccount.executor": "Debug",
-    "JUnit.RaffleActivityDaoTest.test.executor": "Run",
-    "JUnit.RaffleActivityDaoTest.test_query.executor": "Run",
-    "JUnit.RaffleActivityOrderDaoTest.test_insert.executor": "Run",
-    "JUnit.RaffleActivityOrderDaoTest.test_query.executor": "Debug",
-    "JUnit.RaffleActivityPartakeServiceTest.test_createOrder.executor": "Run",
-    "JUnit.RaffleActivityTest.test_createSkuRechargeOrder.executor": "Debug",
-    "JUnit.RaffleActivityTest.test_isCalendarSignRebate.executor": "Debug",
-    "JUnit.RaffleActivityTest.test_raffle_activity_order.executor": "Debug",
-    "JUnit.RaffleActivityTest.test_raffle_activity_sku.executor": "Run",
-    "JUnit.RaffleStrategyControllerTest.test_queryRaffleStrategyRuleWeight.executor": "Run",
-    "JUnit.RaffleStrategyTest.executor": "Run",
-    "JUnit.RaffleStrategyTest.test_performance.executor": "Run",
-    "JUnit.RaffleStrategyTest.test_queryRaffleAwardList.executor": "Run",
-    "Maven.bigmarket-14610-gwh [clean].executor": "Run",
-    "Maven.bigmarket-14610-gwh [install].executor": "Run",
-    "Maven.bigmarket-14610-gwh-app [clean].executor": "Run",
-    "Maven.bigmarket-14610-gwh-app [install].executor": "Run",
-    "Maven.bigmarket-14610-gwh-infrastructure [clean].executor": "Run",
-    "Maven.bigmarket-14610-gwh-infrastructure [install].executor": "Run",
-    "Maven.bigmarket-14610-gwh-trigger [clean].executor": "Run",
-    "Maven.bigmarket-14610-gwh-trigger [install].executor": "Run",
-    "Maven.bigmarket-14610-gwh-types [clean].executor": "Run",
-    "Maven.bigmarket-14610-gwh-types [install].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.Application.executor": "Debug",
-    "git-widget-placeholder": "241126-gwh-user-credit-account",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/JAVA_Project/big-market",
+    "WebServerToolWindowFactoryState": "false",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "D:/JAVA_Project/bigmarket-14610-gwh/bigmarket-14610-gwh-api/src/main/java/cn/bugstack/Main.java",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.31034482",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "ts.external.directory.path": "D:\\JAVA_Project\\bigmarket-14610-gwh\\big-market-front\\node_modules\\typescript\\lib",
+    "spring.configuration.checksum": "11bd33745d71053b7373c897cbccfd2a",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -197,7 +122,7 @@
       <recent name="cn.bugstack.domain.rebate.model.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RaffleActivityControllerTest.test_calendarSignRebate">
+  <component name="RunManager" selected="JUnit.RaffleActivityControllerTest.test_blacklist_draw">
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
@@ -386,11 +311,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RaffleActivityControllerTest.test_calendarSignRebate" />
         <item itemvalue="JUnit.RaffleActivityControllerTest.test_blacklist_draw" />
-        <item itemvalue="JUnit.AwardServiceTest.test_distributeAward" />
         <item itemvalue="JUnit.RaffleStrategyControllerTest.test_queryRaffleStrategyRuleWeight" />
-        <item itemvalue="JUnit.RaffleActivityTest.test_isCalendarSignRebate" />
+        <item itemvalue="JUnit.RaffleActivityControllerTest.test_queryUserActivityAccount" />
+        <item itemvalue="JUnit.RaffleActivityControllerTest.test_isCalendarSignRebate" />
+        <item itemvalue="JUnit.RaffleActivityControllerTest.test_calendarSignRebate" />
       </list>
     </recent_temporary>
   </component>
@@ -403,6 +328,9 @@
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="a4f64b9b-9926-43c6-9cf6-26b240c3c8dd" name="Changes" comment="" />
@@ -453,6 +381,9 @@
       <workItem from="1731563273185" duration="1013000" />
       <workItem from="1732522122423" duration="7334000" />
       <workItem from="1732613309350" duration="8024000" />
+      <workItem from="1732803475029" duration="4367000" />
+      <workItem from="1733151220942" duration="58000" />
+      <workItem from="1733151295496" duration="1461000" />
     </task>
     <task id="LOCAL-00001" summary="合并代码">
       <option name="closed" value="true" />
@@ -500,11 +431,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint type="java-line">
-          <url>jar://$PROJECT_DIR$/../../enviroment/apache-maven-3.6.1/repo/cn/bugstack/middleware/db-router-spring-boot-starter/1.0.2/db-router-spring-boot-starter-1.0.2.jar!/cn/bugstack/middleware/db/router/dynamic/DynamicMybatisPlugin.class</url>
-          <line>54</line>
-          <option name="timeStamp" value="151" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/activity/service/armory/ActivityArmoryDispatch.java</url>
           <line>31</line>
           <option name="timeStamp" value="170" />
@@ -520,59 +446,84 @@
           <option name="timeStamp" value="228" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-app/src/test/java/cn/bugstack/test/domain/rebate/BehaviorRebateServiceTest.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="229" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/persistent/repository/BehaviorRebateRepository.java</url>
           <line>133</line>
           <option name="timeStamp" value="232" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/strategy/service/rule/tree/impl/RuleLuckAwardLogicTreeNode.java</url>
           <line>30</line>
           <option name="timeStamp" value="242" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-trigger/src/main/java/cn/bugstack/trigger/http/RaffleActivityController.java</url>
-          <line>160</line>
-          <option name="timeStamp" value="244" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-trigger/src/main/java/cn/bugstack/trigger/listener/SendRebateCustomer.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="247" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-trigger/src/main/java/cn/bugstack/trigger/listener/SendRebateCustomer.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="248" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/persistent/repository/BehaviorRebateRepository.java</url>
           <line>121</line>
           <option name="timeStamp" value="249" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/persistent/repository/ActivityRepository.java</url>
-          <line>203</line>
-          <option name="timeStamp" value="250" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/persistent/repository/ActivityRepository.java</url>
-          <line>200</line>
-          <option name="timeStamp" value="251" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/persistent/repository/ActivityRepository.java</url>
           <line>115</line>
           <option name="timeStamp" value="252" />
         </line-breakpoint>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="cn.bugstack.types.exception.AppException" package="cn.bugstack.types.exception" />
-          <option name="timeStamp" value="245" />
-        </breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/persistent/repository/AwardRepository.java</url>
+          <line>152</line>
+          <option name="timeStamp" value="254" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/persistent/repository/AwardRepository.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="260" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-trigger/src/main/java/cn/bugstack/trigger/listener/SendAwardCustomer.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="264" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/award/service/AwardService.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="265" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/rebate/service/BehaviorRebateService.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="270" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-app/src/test/java/cn/bugstack/trigger/RaffleActivityControllerTest.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="272" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/persistent/repository/ActivityRepository.java</url>
+          <line>398</line>
+          <option name="timeStamp" value="274" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/activity/service/quota/AbstractRaffleActivityAccountQuota.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="278" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/persistent/repository/ActivityRepository.java</url>
+          <line>200</line>
+          <option name="timeStamp" value="279" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/event/EventPublisher.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="286" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/rebate/service/IBehaviorRebateService.java</url>
+          <line>8</line>
+          <properties class="cn.bugstack.domain.rebate.service.IBehaviorRebateService" method="createOrder">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="253" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

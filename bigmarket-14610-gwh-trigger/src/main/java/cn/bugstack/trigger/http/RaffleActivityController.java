@@ -199,6 +199,7 @@ public class RaffleActivityController implements IRaffleActivityService {
             behaviorEntity.setUserId(userId);
             behaviorEntity.setBehaviorTypeVO(BehaviorTypeVO.SIGN);
             behaviorEntity.setOutBusinessNo(dateFormatDay.format(new Date()));
+            //根据行为创建订单--聚合一个行为返现订单+任务实体--通过mq发送topic-send-rebate消息到消息队列
             List<String> orderIds = behaviorRebateService.createOrder(behaviorEntity);
             log.info("日历签到返利完成 userId:{} orderIds: {}", userId, JSON.toJSONString(orderIds));
             return Response.<Boolean>builder()
