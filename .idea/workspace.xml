@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f64b9b-9926-43c6-9cf6-26b240c3c8dd" name="Changes" comment="写入中奖记录和任务补偿发送MQ">
-      <changelist_data name="weixin_52875810" email="842123094@qq.com" date="1727334984000" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/data/log/log_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/data/log/log_error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/data/log/log_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/data/log/log_info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/test/java/cn/bugstack/trigger/RaffleActivityControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/test/java/cn/bugstack/trigger/RaffleActivityControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/test/java/cn/bugstack/trigger/RaffleStrategyControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/test/java/cn/bugstack/trigger/RaffleStrategyControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/award/service/AwardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/award/service/AwardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/persistent/redis/RedissonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/persistent/redis/RedissonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-trigger/src/main/java/cn/bugstack/trigger/http/RaffleActivityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-trigger/src/main/java/cn/bugstack/trigger/http/RaffleActivityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-trigger/src/main/java/cn/bugstack/trigger/listener/ActivitySkuStoreZeroCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-trigger/src/main/java/cn/bugstack/trigger/listener/ActivitySkuStoreZeroCustomer.java" afterDir="false" />
-    </list>
+    <list default="true" id="a4f64b9b-9926-43c6-9cf6-26b240c3c8dd" name="Changes" comment="营销服务 第26节：积分领域调额服务" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,16 +16,21 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="weixin_52875810 &lt;842123094@qq.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="241201-gwh-user-credit-order" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -50,24 +44,16 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1733645747" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="241201-gwh-user-credit-order" />
+                    <option name="lastUsedInstant" value="1733639863" />
+                  </RecentBranch>
+                  <RecentBranch>
                     <option name="branchName" value="241126-gwh-user-credit-account" />
                     <option name="lastUsedInstant" value="1732613366" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="241126-gwh-phase-2-interface-docking" />
-                    <option name="lastUsedInstant" value="1732599680" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="241012-gwh-account-rule-sign-api" />
-                    <option name="lastUsedInstant" value="1728722877" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1728721437" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="20240930_gwh_behavior_rebate" />
-                    <option name="lastUsedInstant" value="1728721436" />
                   </RecentBranch>
                 </list>
               </option>
@@ -99,6 +85,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/JAVA_Project/bigmarket-14610-gwh/bigmarket-14610-gwh-app/src/main/resources/mybatis/mapper",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -113,53 +100,23 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app\src\main\resources\mybatis\mapper" />
+      <recent name="D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-domain\src\main\java\cn\bugstack\domain\credit" />
       <recent name="D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-domain\src\main\java\cn\bugstack\domain\task" />
       <recent name="D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-domain\src\main\java\cn\bugstack\domain\activity\model\entity" />
-      <recent name="D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app\src\main\resources\mybatis\mapper" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.bugstack.infrastructure.persistent.dao" />
       <recent name="cn.bugstack.domain.rebate.model.valobj" />
       <recent name="cn.bugstack.domain.rebate.model.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RaffleActivityControllerTest.test_blacklist_draw">
+  <component name="RunManager">
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
       </deployment>
       <method v="2" />
-    </configuration>
-    <configuration name="AwardServiceTest.test_distributeAward" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bigmarket-14610-gwh-app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.bugstack.test.domain.award.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cn.bugstack.test.domain.award" />
-      <option name="MAIN_CLASS_NAME" value="cn.bugstack.test.domain.award.AwardServiceTest" />
-      <option name="METHOD_NAME" value="test_distributeAward" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RaffleActivityControllerTest.test_blacklist_draw" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bigmarket-14610-gwh-app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.bugstack.trigger.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cn.bugstack.trigger" />
-      <option name="MAIN_CLASS_NAME" value="cn.bugstack.trigger.RaffleActivityControllerTest" />
-      <option name="METHOD_NAME" value="test_blacklist_draw" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration name="RaffleActivityControllerTest.test_calendarSignRebate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bigmarket-14610-gwh-app" />
@@ -311,8 +268,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RaffleActivityControllerTest.test_blacklist_draw" />
         <item itemvalue="JUnit.RaffleStrategyControllerTest.test_queryRaffleStrategyRuleWeight" />
+        <item itemvalue="JUnit.RaffleActivityTest.test_isCalendarSignRebate" />
         <item itemvalue="JUnit.RaffleActivityControllerTest.test_queryUserActivityAccount" />
         <item itemvalue="JUnit.RaffleActivityControllerTest.test_isCalendarSignRebate" />
         <item itemvalue="JUnit.RaffleActivityControllerTest.test_calendarSignRebate" />
@@ -384,6 +341,7 @@
       <workItem from="1732803475029" duration="4367000" />
       <workItem from="1733151220942" duration="58000" />
       <workItem from="1733151295496" duration="1461000" />
+      <workItem from="1733639807767" duration="5611000" />
     </task>
     <task id="LOCAL-00001" summary="合并代码">
       <option name="closed" value="true" />
@@ -393,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1724744223625</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="营销服务 第26节：积分领域调额服务">
+      <created>1733645707189</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1733645707189</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -410,7 +375,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="241126-gwh-user-credit-account" />
+                        <option value="241201-gwh-user-credit-order" />
                       </list>
                     </value>
                   </entry>
@@ -425,7 +390,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="合并代码" />
     <MESSAGE value="写入中奖记录和任务补偿发送MQ" />
-    <option name="LAST_COMMIT_MESSAGE" value="写入中奖记录和任务补偿发送MQ" />
+    <MESSAGE value="营销服务 第26节：积分领域调额服务" />
+    <option name="LAST_COMMIT_MESSAGE" value="营销服务 第26节：积分领域调额服务" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -518,7 +484,7 @@
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/rebate/service/IBehaviorRebateService.java</url>
           <line>8</line>
-          <properties class="cn.bugstack.domain.rebate.service.IBehaviorRebateService" method="createOrder">
+          <properties class="cn.bugstack.domain.rebate.service.IBehaviorRebateService">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
