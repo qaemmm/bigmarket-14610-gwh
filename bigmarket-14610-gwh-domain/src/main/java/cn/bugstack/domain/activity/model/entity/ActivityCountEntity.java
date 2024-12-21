@@ -5,6 +5,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
+
 /**
  * @author Fuzhengwei
  * @description 活动次数实体对象
@@ -35,5 +37,11 @@ public class ActivityCountEntity {
      * 月次数
      */
     private Integer monthCount;
+
+    /**
+     * 商品金额【积分】
+     */
+    private BigDecimal productAmount;
+
 
 }

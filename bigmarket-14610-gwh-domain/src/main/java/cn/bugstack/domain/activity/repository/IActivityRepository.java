@@ -2,14 +2,7 @@ package cn.bugstack.domain.activity.repository;
 
 import cn.bugstack.domain.activity.model.aggregate.CreatePartakeOrderAggregate;
 import cn.bugstack.domain.activity.model.aggregate.CreateQuotaOrderAggregate;
-import cn.bugstack.domain.activity.model.entity.ActivityAccountDayEntity;
-import cn.bugstack.domain.activity.model.entity.ActivityAccountEntity;
-import cn.bugstack.domain.activity.model.entity.ActivityAccountMonthEntity;
-import cn.bugstack.domain.activity.model.entity.ActivityCountEntity;
-import cn.bugstack.domain.activity.model.entity.ActivityEntity;
-import cn.bugstack.domain.activity.model.entity.ActivitySkuEntity;
-import cn.bugstack.domain.activity.model.entity.PartakeRaffleActivityEntity;
-import cn.bugstack.domain.activity.model.entity.UserRaffleOrderEntity;
+import cn.bugstack.domain.activity.model.entity.*;
 import cn.bugstack.domain.activity.model.valobj.ActivitySkuStockKeyVO;
 
 import java.util.Date;
@@ -62,4 +55,10 @@ public interface IActivityRepository {
     ActivityAccountEntity queryActivityAccountEntity(String userId, Long activityId);
 
     Integer queryUserPartakeCount(String userId, Long activityId);
+
+    void doSaveCreditPayOrder(CreateQuotaOrderAggregate createQuotaOrderAggregate);
+
+    void doSaveNoPayOrder(CreateQuotaOrderAggregate createQuotaOrderAggregate);
+
+    void updateOrder(DeliveryOrderEntity deliveryOrderEntity);
 }

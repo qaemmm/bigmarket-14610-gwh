@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 /**
@@ -52,6 +53,10 @@ public class RaffleActivityOrder {
     private String state;
     // 外部业务号
     private String outBusinessNo;
+    /**
+     * 支付金额【积分】
+     */
+    private BigDecimal payAmount;
     //创建时间
     private Date createTime;
     //更新时间

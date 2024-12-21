@@ -172,4 +172,9 @@ public class RedissonService implements IRedisService {
         return redissonClient.getBucket(lockKey).trySet("lock", expiredMillis, timeUnit);
     }
 
+    @Override
+    public Long getAtomicLong(String cacheKey) {
+        return redissonClient.getAtomicLong(cacheKey).get();
+    }
+
 }

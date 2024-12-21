@@ -26,6 +26,7 @@ public class SendAwardMessageEvent extends BaseEvent<SendAwardMessageEvent.SendA
     @Override
     public EventMessage<SendAwardMessage> buildEventMessage(SendAwardMessage data) {
         return EventMessage.<SendAwardMessage>builder()
+                //这一块相当于一个重入锁的使用，就是在某个时间段要是重复发了俩个mq消息，这个时候我们只会取第一个进行重试，对于第二个我们直接抛弃
                 .id(RandomStringUtils.randomNumeric(11))
                 .timestamp(new Date())
                 .data(data)

@@ -1,6 +1,7 @@
 package cn.bugstack.domain.activity.model.aggregate;
 
 import cn.bugstack.domain.activity.model.entity.ActivityOrderEntity;
+import cn.bugstack.domain.activity.model.valobj.OrderStateVO;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -45,4 +46,7 @@ public class CreateQuotaOrderAggregate {
      */
     private ActivityOrderEntity activityOrderEntity;
 
+    public void setOrderState(OrderStateVO orderState){
+        this.activityOrderEntity.setState(orderState);
+    }
 }

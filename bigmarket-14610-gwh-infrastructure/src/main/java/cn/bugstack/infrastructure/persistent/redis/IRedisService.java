@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * Redis 服务
  *
- * @author Fuzhengwei 
+ * @author Fuzhengwei
  */
 public interface IRedisService {
 
@@ -255,4 +255,6 @@ public interface IRedisService {
     void setAtomicLong(String cacheKey, Integer awardCount);
 
     boolean setNx(String lockKey, long expiredMillis, TimeUnit timeUnit);
+
+    Long getAtomicLong(String cacheKey);
 }

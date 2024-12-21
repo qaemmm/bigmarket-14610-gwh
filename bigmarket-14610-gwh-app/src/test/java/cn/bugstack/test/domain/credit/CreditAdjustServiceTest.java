@@ -12,6 +12,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.annotation.Resource;
 import java.math.BigDecimal;
+import java.util.concurrent.CountDownLatch;
 
 /**
  * @author Fuzhengwei bugstack.cn @小傅哥
@@ -47,4 +48,19 @@ public class CreditAdjustServiceTest {
         tradeEntity.setOutBusinessNo("20000990991");
         creditAdjustService.createOrder(tradeEntity);
     }
+
+    //李二狗积分兑换商品，携带上订单唯一标识，扣减积分
+    @Test
+    public void test_createOrder_convert_sku() throws InterruptedException {
+        TradeEntity tradeEntity = new TradeEntity();
+        tradeEntity.setUserId("liergou2");
+        tradeEntity.setTradeName(TradeNameVO.CONVERT_SKU);
+        tradeEntity.setTradeType(TradeTypeVO.REVERSE);
+        tradeEntity.setAmount(new BigDecimal("-1.68"));
+        tradeEntity.setOutBusinessNo("700091009111623");
+        creditAdjustService.createOrder(tradeEntity);
+        //这个东西不放开的话，mq可能就还没执行完就停止了，毕竟mq的listen是异步监听的
+        new CountDownLatch(1).await();
+    }
+
 }

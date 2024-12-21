@@ -1,5 +1,6 @@
 package cn.bugstack.domain.activity.model.entity;
 
+import cn.bugstack.domain.activity.model.valobj.OrderTradeTypeVO;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -29,4 +30,8 @@ public class SkuRechargeEntity {
      * 幂等的唯一业务号，外部谁就是支付订单成功后，返回的业务号
      */
     private String outBusinessNo;
+
+    /** 用户ID */
+    private OrderTradeTypeVO orderTradeType = OrderTradeTypeVO.rebate_no_pay_trade;
+
 }

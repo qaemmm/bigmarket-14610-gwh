@@ -33,4 +33,7 @@ public interface IRaffleActivityAccountDao {
 
     @DBRouter
     RaffleActivityAccount queryUserPartakeCount(RaffleActivityAccount raffleActivityAccount);
+
+
+    RaffleActivityAccount queryAccountByUserId(RaffleActivityAccount raffleActivityAccount);
 }

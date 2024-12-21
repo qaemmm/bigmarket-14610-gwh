@@ -19,9 +19,14 @@ import java.util.List;
 @DBRouterStrategy(splitTable = true)
 @Mapper
 public interface IRaffleActivityOrderDao {
-
+    @DBRouter(key = "userId")
     void insert(RaffleActivityOrder raffleActivityOrder);
 
     @DBRouter
     List<RaffleActivityOrder> queryRaffleActivityOrderByUserId(String userId);
+    @DBRouter
+    RaffleActivityOrder queryRaffleActivityOrder(RaffleActivityOrder raffleActivityOrderReq);
+
+//    @DBRouter todo --这一块我觉的不用加的原因是因为他本身就会去库中匹配数据，所以不用发分库，但是可以试试
+    int updateOrderCompleted(RaffleActivityOrder raffleActivityOrderReq);
 }
