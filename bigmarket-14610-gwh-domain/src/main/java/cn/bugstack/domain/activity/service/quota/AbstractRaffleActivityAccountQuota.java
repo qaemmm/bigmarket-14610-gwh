@@ -1,10 +1,7 @@
 package cn.bugstack.domain.activity.service.quota;
 
 import cn.bugstack.domain.activity.model.aggregate.CreateQuotaOrderAggregate;
-import cn.bugstack.domain.activity.model.entity.ActivityCountEntity;
-import cn.bugstack.domain.activity.model.entity.ActivityEntity;
-import cn.bugstack.domain.activity.model.entity.ActivitySkuEntity;
-import cn.bugstack.domain.activity.model.entity.SkuRechargeEntity;
+import cn.bugstack.domain.activity.model.entity.*;
 import cn.bugstack.domain.activity.repository.IActivityRepository;
 import cn.bugstack.domain.activity.service.IRaffleActivityAccountQuotaService;
 import cn.bugstack.domain.activity.service.quota.policy.ITradePolicy;
@@ -32,7 +29,7 @@ public abstract class AbstractRaffleActivityAccountQuota extends RaffleActivityA
     }
 
 
-    public String createOrder(SkuRechargeEntity skuRechargeEntity){
+    public UnpaidActivityOrderEntity createOrder(SkuRechargeEntity skuRechargeEntity){
         //1 参数校验
         String userId = skuRechargeEntity.getUserId();
         Long sku = skuRechargeEntity.getSku();
@@ -40,6 +37,12 @@ public abstract class AbstractRaffleActivityAccountQuota extends RaffleActivityA
         if(null==userId||null == sku||null==outBusinessNo){
             throw new AppException(ResponseCode.ILLEGAL_PARAMETER.getCode(), ResponseCode.ILLEGAL_PARAMETER.getInfo());
         }
+        // 2. 查询未支付订单「一个月以内的未支付订单」
+        UnpaidActivityOrderEntity unpaidCreditOrder = activityRepository.queryUnpaidActivityOrder(skuRechargeEntity);
+        if (unpaidCreditOrder!=null){
+            return unpaidCreditOrder;
+        }
+
         //2 查询基础信息
         //2.1 通过sku查询活动信息
         ActivitySkuEntity activitySkuEntity = queryActivitySku(sku);
@@ -61,8 +64,13 @@ public abstract class AbstractRaffleActivityAccountQuota extends RaffleActivityA
         //6、通过不同策略来创建订单
         iTradePolicy.trade(createQuotaOrderAggregate);
 
-        // 6、返回订单号
-        return createQuotaOrderAggregate.getActivityOrderEntity().getOrderId();
+        ActivityOrderEntity activityOrderEntity = createQuotaOrderAggregate.getActivityOrderEntity();
+        return UnpaidActivityOrderEntity.builder()
+                .orderId(activityOrderEntity.getOrderId())
+                .userId(activityOrderEntity.getUserId())
+                .payAmount(activityOrderEntity.getPayAmount())
+                .outBusinessNo(activityOrderEntity.getOutBusinessNo())
+                .build();
 
     }
 

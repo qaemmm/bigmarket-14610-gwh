@@ -19,7 +19,7 @@ public interface IRaffleActivityAccountQuotaService {
      * @param skuRechargeEntity
      * @return
      */
-    String createOrder(SkuRechargeEntity skuRechargeEntity);
+    UnpaidActivityOrderEntity createOrder(SkuRechargeEntity skuRechargeEntity);
 
 
     /**
