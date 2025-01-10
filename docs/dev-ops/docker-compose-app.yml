@@ -3,7 +3,7 @@ version: '3.8'
 services:
   bigmarket-14610-gwh-app:
     # 运行的镜像名称
-    image: 842123094/bigmarket-14610-gwh-app:1.3
+    image: 842123094/bigmarket-14610-gwh-app:3.0
     container_name: bigmarket-14610-gwh-app
     restart: always
     ports:
@@ -63,7 +63,7 @@ services:
   big-market-front-app:
     # 运行的镜像名称
     container_name: big-market-front-app
-    image: 842123094/big-market-front-app:1.3
+    image: 842123094/big-market-front-app:3.0
     restart: always
     networks:
       - my-network
