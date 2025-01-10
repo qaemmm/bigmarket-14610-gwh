@@ -14,4 +14,7 @@ public interface IUserCreditAccountDao {
     void insert(UserCreditAccount userCreditAccountReq);
 
     UserCreditAccount queryUserCreditAccount(UserCreditAccount userCreditAccountReq);
+
+    int updateSubtractionAmount(UserCreditAccount userCreditAccountReq);
+
 }

@@ -287,7 +287,7 @@ public class RaffleActivityController implements IRaffleActivityService {
 
     @Autowired
     private IRaffleActivitySkuProductService raffleActivitySkuProductService;
-    @RequestMapping(value = "query_sku_product", method = RequestMethod.GET)
+    @RequestMapping(value = "query_sku_product_by_activityId", method = RequestMethod.GET)
     @Override
     public Response<List<SkuProductResponseDTO>> querySkuProductListByActivityId(Long activityId) {
 
@@ -357,7 +357,7 @@ public class RaffleActivityController implements IRaffleActivityService {
     }
     @RequestMapping(value = "credit_pay_exchange_sku", method = RequestMethod.POST)
     @Override
-    public Response<Boolean> creditPayExchangeSku(SkuProductShopCartRequestDTO request) {
+    public Response<Boolean> creditPayExchangeSku(@RequestBody SkuProductShopCartRequestDTO request) {
 
          try{
              log.info("userId{}，skuId{}",request.getUserId(),request.getSku());
@@ -372,7 +372,7 @@ public class RaffleActivityController implements IRaffleActivityService {
              String orderId = creditAdjustService.createOrder(TradeEntity.builder()
                      .userId(unpaidActivityOrderEntity.getUserId())
                      .outBusinessNo(unpaidActivityOrderEntity.getOutBusinessNo())
-                     .amount(unpaidActivityOrderEntity.getPayAmount())
+                     .amount(unpaidActivityOrderEntity.getPayAmount().negate())
                      .tradeName(TradeNameVO.CONVERT_SKU)
                      .tradeType(TradeTypeVO.REVERSE)
 

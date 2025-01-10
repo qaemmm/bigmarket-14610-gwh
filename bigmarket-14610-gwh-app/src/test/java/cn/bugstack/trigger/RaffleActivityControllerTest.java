@@ -1,19 +1,22 @@
 package cn.bugstack.trigger;
 
+import cn.bugstack.domain.activity.service.armory.IActivityArmory;
+import cn.bugstack.domain.strategy.service.armory.IStrategyArmory;
 import cn.bugstack.trigger.api.IRaffleActivityService;
-import cn.bugstack.trigger.api.dto.ActivityDrawRequestDTO;
-import cn.bugstack.trigger.api.dto.ActivityDrawResponseDTO;
-import cn.bugstack.trigger.api.dto.UserActivityAccountRequestDTO;
-import cn.bugstack.trigger.api.dto.UserActivityAccountResponseDTO;
+import cn.bugstack.trigger.api.dto.*;
 import cn.bugstack.types.model.Response;
 import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import javax.annotation.Resource;
 import java.util.concurrent.CountDownLatch;
 
 @Slf4j
@@ -22,6 +25,21 @@ import java.util.concurrent.CountDownLatch;
 public class RaffleActivityControllerTest {
     @Autowired
     private IRaffleActivityService raffleActivityService;
+
+    @Resource
+    private IActivityArmory activityArmory;
+    @Resource
+    private IStrategyArmory strategyArmory;
+
+    @Before
+    public void setup() {
+        log.info("测试开始");
+        Long activityId = 100301L;
+        //活动装配-activitySkuEntity
+        activityArmory.assembleActivityByActivityId(activityId);
+        //策略装配-StrategyAwardEntity
+        strategyArmory.assembleLotteryStrategyByActivityId(activityId);
+    }
     @Test
     public void test_calendarSignRebate(){
         Response<Boolean> response = raffleActivityService.calendarSignRebate("liergou3");
@@ -62,4 +80,15 @@ public class RaffleActivityControllerTest {
 
 //現在問題很大，執行一個抽奖逻辑的时候，总账户额度--日月对不上；执行一次签到之后发现一次会给账户+10???同时在运行mq的时候会报错。
 
+    @Test
+    public void test_creditPayExchangeSku() throws InterruptedException {
+        SkuProductShopCartRequestDTO request = new SkuProductShopCartRequestDTO();
+        request.setUserId("xiaofuge");
+        request.setSku(9012L);
+        Response<Boolean> response = raffleActivityService.creditPayExchangeSku(request);
+        log.info("请求参数：{}", JSON.toJSONString(request));
+        log.info("测试结果：{}", JSON.toJSONString(response));
+
+        new CountDownLatch(1).await();
+    }
 }

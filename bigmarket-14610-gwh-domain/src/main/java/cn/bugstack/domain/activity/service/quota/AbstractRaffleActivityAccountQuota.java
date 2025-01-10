@@ -2,6 +2,7 @@ package cn.bugstack.domain.activity.service.quota;
 
 import cn.bugstack.domain.activity.model.aggregate.CreateQuotaOrderAggregate;
 import cn.bugstack.domain.activity.model.entity.*;
+import cn.bugstack.domain.activity.model.valobj.OrderTradeTypeVO;
 import cn.bugstack.domain.activity.repository.IActivityRepository;
 import cn.bugstack.domain.activity.service.IRaffleActivityAccountQuotaService;
 import cn.bugstack.domain.activity.service.quota.policy.ITradePolicy;
@@ -11,6 +12,7 @@ import cn.bugstack.types.enums.ResponseCode;
 import cn.bugstack.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;
 
+import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -58,10 +60,17 @@ public abstract class AbstractRaffleActivityAccountQuota extends RaffleActivityA
         // 4、构建订单聚合对象
         CreateQuotaOrderAggregate createQuotaOrderAggregate = buildOrderAggregate(skuRechargeEntity, activitySkuEntity, activityEntity, activityCountEntity);
 
+        // 5、需要判断是否是积分兑换商品，是的话判断用户的额度与当前可用额度做比对
+        if(OrderTradeTypeVO.credit_pay_trade.equals(skuRechargeEntity.getOrderTradeType())){
+            BigDecimal availableAmount = activityRepository.queryUserCreditAccountAmount(userId);
+            if(availableAmount.compareTo(activitySkuEntity.getProductAmount())<0){
+                throw new AppException(ResponseCode.USER_CREDIT_ACCOUNT_NO_AVAILABLE_AMOUNT.getCode(), ResponseCode.USER_CREDIT_ACCOUNT_NO_AVAILABLE_AMOUNT.getInfo());
+            }
+        }
 
-        //5、交易策略
+        //6、交易策略
         ITradePolicy iTradePolicy = tradePolicyMap.get(skuRechargeEntity.getOrderTradeType().getCode());
-        //6、通过不同策略来创建订单
+        //7、通过不同策略来创建订单
         iTradePolicy.trade(createQuotaOrderAggregate);
 
         ActivityOrderEntity activityOrderEntity = createQuotaOrderAggregate.getActivityOrderEntity();

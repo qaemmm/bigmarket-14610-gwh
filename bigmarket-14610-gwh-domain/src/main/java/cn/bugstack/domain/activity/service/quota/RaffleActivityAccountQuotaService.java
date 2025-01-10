@@ -11,6 +11,7 @@ import cn.bugstack.domain.activity.service.quota.rule.factory.DefaultActivityCha
 import org.apache.commons.lang3.RandomStringUtils;
 import org.springframework.stereotype.Service;
 
+import java.math.BigDecimal;
 import java.util.Date;
 import java.util.Map;
 

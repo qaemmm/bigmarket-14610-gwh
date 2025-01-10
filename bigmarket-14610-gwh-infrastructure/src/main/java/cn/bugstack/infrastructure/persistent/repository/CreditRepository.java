@@ -16,6 +16,8 @@ import cn.bugstack.infrastructure.persistent.po.UserCreditOrder;
 import cn.bugstack.infrastructure.persistent.redis.IRedisService;
 import cn.bugstack.middleware.db.router.strategy.IDBRouterStrategy;
 import cn.bugstack.types.common.Constants;
+import cn.bugstack.types.enums.ResponseCode;
+import cn.bugstack.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;
 import org.redisson.api.RLock;
 import org.springframework.dao.DuplicateKeyException;
@@ -23,6 +25,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.support.TransactionTemplate;
 
 import javax.annotation.Resource;
+import java.math.BigDecimal;
 import java.util.concurrent.TimeUnit;
 
 
@@ -95,7 +98,18 @@ public class CreditRepository implements ICreditRepository {
                     if (null == userCreditAccount) {
                         userCreditAccountDao.insert(userCreditAccountReq);
                     } else {
-                        userCreditAccountDao.updateAddAmount(userCreditAccountReq);
+                        //当前的账户如果不为0，则直接更新添加（这一块的availableAmount可能是负数）
+                        BigDecimal availableAmount = userCreditAccountReq.getAvailableAmount();
+                        if (availableAmount.compareTo(BigDecimal.ZERO) >= 0) {
+                            userCreditAccountDao.updateAddAmount(userCreditAccountReq);
+                        } else {
+                            //如果是扣减积分，要确保积分账户是正数
+                            int subtractionCount = userCreditAccountDao.updateSubtractionAmount(userCreditAccountReq);
+                            if (1 != subtractionCount) {
+                                status.setRollbackOnly();
+                                throw new AppException(ResponseCode.USER_CREDIT_ACCOUNT_NO_AVAILABLE_AMOUNT.getCode(), ResponseCode.USER_CREDIT_ACCOUNT_NO_AVAILABLE_AMOUNT.getInfo());
+                            }
+                        }
                     }
                     // 2. 保存账户订单
                     userCreditOrderDao.insert(userCreditOrderReq);
@@ -113,7 +127,10 @@ public class CreditRepository implements ICreditRepository {
             });
         } finally {
             dbRouter.clear();
-            lock.unlock();
+            //todo 会有什么问题？为什么要加，之前不是有一个问题就是，会删掉别人锁的场景吗？
+            if (lock.isLocked()){
+                lock.unlock();
+            }
         }
         //发送消息
         try {
@@ -134,10 +151,14 @@ public class CreditRepository implements ICreditRepository {
         userCreditAccountReq.setUserId(userId);
         try{
             dbRouter.doRouter(userId);
+            BigDecimal availableAmount = BigDecimal.ZERO;
             UserCreditAccount userCreditAccount = userCreditAccountDao.queryUserCreditAccount(userCreditAccountReq);
+            if (null!=userCreditAccount){
+                availableAmount = userCreditAccount.getAvailableAmount();
+            }
             return CreditAccountEntity.builder()
                     .userId(userId)
-                    .adjustAmount(userCreditAccount.getAvailableAmount())
+                    .adjustAmount(availableAmount)
             .build();
         }finally {
             dbRouter.clear();

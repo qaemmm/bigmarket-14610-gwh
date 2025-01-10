@@ -9,22 +9,8 @@ import cn.bugstack.domain.activity.model.valobj.ActivityStateVO;
 import cn.bugstack.domain.activity.model.valobj.UserRaffleOrderStateVO;
 import cn.bugstack.domain.activity.repository.IActivityRepository;
 import cn.bugstack.infrastructure.event.EventPublisher;
-import cn.bugstack.infrastructure.persistent.dao.IRaffleActivityAccountDao;
-import cn.bugstack.infrastructure.persistent.dao.IRaffleActivityAccountDayDao;
-import cn.bugstack.infrastructure.persistent.dao.IRaffleActivityAccountMonthDao;
-import cn.bugstack.infrastructure.persistent.dao.IRaffleActivityCountDao;
-import cn.bugstack.infrastructure.persistent.dao.IRaffleActivityDao;
-import cn.bugstack.infrastructure.persistent.dao.IRaffleActivityOrderDao;
-import cn.bugstack.infrastructure.persistent.dao.IRaffleActivitySkuDao;
-import cn.bugstack.infrastructure.persistent.dao.IUserRaffleOrderDao;
-import cn.bugstack.infrastructure.persistent.po.RaffleActivity;
-import cn.bugstack.infrastructure.persistent.po.RaffleActivityAccount;
-import cn.bugstack.infrastructure.persistent.po.RaffleActivityAccountDay;
-import cn.bugstack.infrastructure.persistent.po.RaffleActivityAccountMonth;
-import cn.bugstack.infrastructure.persistent.po.RaffleActivityCount;
-import cn.bugstack.infrastructure.persistent.po.RaffleActivityOrder;
-import cn.bugstack.infrastructure.persistent.po.RaffleActivitySku;
-import cn.bugstack.infrastructure.persistent.po.UserRaffleOrder;
+import cn.bugstack.infrastructure.persistent.dao.*;
+import cn.bugstack.infrastructure.persistent.po.*;
 import cn.bugstack.infrastructure.persistent.redis.IRedisService;
 import cn.bugstack.middleware.db.router.strategy.IDBRouterStrategy;
 import cn.bugstack.types.common.Constants;
@@ -35,11 +21,13 @@ import org.redisson.api.RBlockingQueue;
 import org.redisson.api.RDelayedQueue;
 import org.redisson.api.RLock;
 import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.support.TransactionTemplate;
 
 import javax.annotation.Resource;
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
@@ -278,7 +266,11 @@ public class ActivityRepository implements IActivityRepository {
             raffleActivityOrderReq.setUserId(deliveryOrderEntity.getUserId());
             raffleActivityOrderReq.setOutBusinessNo(deliveryOrderEntity.getOutBusinessNo());
             RaffleActivityOrder raffleActivityOrderRes = raffleActivityOrderDao.queryRaffleActivityOrder(raffleActivityOrderReq);
-
+            //前面加锁了，这里要把锁释放一下（问？不释放会怎么样）
+            if (null == raffleActivityOrderRes) {
+                if (lock.isLocked()) lock.unlock();
+                return;
+            }
 
             log.info("查询订单通过userId{},outBusinessNo{},raffleActivityOrderRes{}",deliveryOrderEntity.getUserId(),deliveryOrderEntity.getOutBusinessNo(),raffleActivityOrderRes);
             // 账户对象 - 总
@@ -341,7 +333,7 @@ public class ActivityRepository implements IActivityRepository {
             });
         } finally {
             dbRouter.clear();
-            lock.unlock();
+            if (lock.isLocked()) lock.unlock();
         }
 
     }
@@ -846,5 +838,21 @@ public class ActivityRepository implements IActivityRepository {
         return raffleActivityAccount.getTotalCount()-raffleActivityAccount.getTotalCountSurplus();
     }
 
+
+    @Autowired
+    private IUserCreditAccountDao userCreditAccountDao;
+    @Override
+    public BigDecimal queryUserCreditAccountAmount(String userId) {
+        try {
+            dbRouter.doRouter(userId);
+            UserCreditAccount userCreditAccountReq = new UserCreditAccount();
+            userCreditAccountReq.setUserId(userId);
+            UserCreditAccount userCreditAccount = userCreditAccountDao.queryUserCreditAccount(userCreditAccountReq);
+            if (null == userCreditAccount) return BigDecimal.ZERO;
+            return userCreditAccount.getAvailableAmount();
+        } finally {
+            dbRouter.clear();
+        }
+    }
 }
 
