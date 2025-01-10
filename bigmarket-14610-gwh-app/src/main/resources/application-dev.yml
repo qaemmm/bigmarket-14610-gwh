@@ -1,5 +1,5 @@
 server:
-  port: 8090
+  port: 8091
   tomcat:
     threads:
       max: 200 #最大线程数
