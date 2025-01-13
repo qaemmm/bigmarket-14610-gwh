@@ -8,6 +8,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @SpringBootApplication
 @Configurable
 @EnableScheduling
+@EnableDubbo
 public class Application {
 
     public static void main(String[] args){
