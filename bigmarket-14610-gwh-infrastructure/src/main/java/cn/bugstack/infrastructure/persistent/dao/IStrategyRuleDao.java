@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.Mapper;
 import java.util.List;
 
 /**
- * @author Fuzhengwei 
+ * @author Fuzhengwei
  * @description 策略规则 DAO
  * @create 2023-12-16 13:25
  */
@@ -16,7 +16,7 @@ public interface IStrategyRuleDao {
 
     List<StrategyRule> queryStrategyRuleList();
 
-    StrategyRule queryStrategyRule(Long strategyId, String ruleWeight);
+    StrategyRule queryStrategyRule(StrategyRule strategyRuleReq);
 
     String queryStrategyRuleValue(StrategyRule strategyRule);
 }
