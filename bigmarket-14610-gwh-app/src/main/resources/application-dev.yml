@@ -111,7 +111,7 @@ redis:
     config:
       host: 124.70.185.116
       password: gwh842
-      port: 6379
+      port: 16379
       pool-size: 10
       min-idle-size: 5
       idle-timeout: 30000
@@ -123,11 +123,11 @@ redis:
 
 dubbo:
   application:
-    name: big-market
+    name: bigmarket-14610-gwh-app
     version: 1.0
   registry:
-    id: nacos-registry
-    address: nacos://124.70.185.116:8848
+      id: nacos-registry
+      address: nacos://192.168.1.10:8848
   protocol:
     name: dubbo
     port: -1
