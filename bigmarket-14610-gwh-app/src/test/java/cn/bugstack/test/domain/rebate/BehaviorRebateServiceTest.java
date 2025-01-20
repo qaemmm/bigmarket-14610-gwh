@@ -35,7 +35,8 @@ public class BehaviorRebateServiceTest {
     private IStrategyArmory strategyArmory;
 
 
-    @Before
+    @Test
+//    @Before
     public void setup() {
         log.info("测试开始");
         Long activityId = 100301L;

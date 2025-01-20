@@ -333,7 +333,7 @@ public class ActivityRepository implements IActivityRepository {
             });
         } finally {
             dbRouter.clear();
-            if (lock.isLocked()) lock.unlock();
+            if (lock.isLocked()&& lock.isHeldByCurrentThread()) lock.unlock();
         }
 
     }

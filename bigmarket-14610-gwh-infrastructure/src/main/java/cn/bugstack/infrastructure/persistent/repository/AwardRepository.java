@@ -13,18 +13,22 @@ import cn.bugstack.infrastructure.persistent.po.Task;
 import cn.bugstack.infrastructure.persistent.po.UserAwardRecord;
 import cn.bugstack.infrastructure.persistent.po.UserCreditAccount;
 import cn.bugstack.infrastructure.persistent.po.UserRaffleOrder;
+import cn.bugstack.infrastructure.persistent.redis.IRedisService;
 import cn.bugstack.middleware.db.router.annotation.DBRouter;
 import cn.bugstack.middleware.db.router.strategy.IDBRouterStrategy;
+import cn.bugstack.types.common.Constants;
 import cn.bugstack.types.enums.ResponseCode;
 import cn.bugstack.types.exception.AppException;
 import com.alibaba.fastjson2.JSON;
 import lombok.extern.slf4j.Slf4j;
+import org.redisson.api.RLock;
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.support.TransactionTemplate;
 
 import javax.annotation.Resource;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author fuzhouling
@@ -51,6 +55,9 @@ public class AwardRepository implements IAwardRepository {
     private IAwardDao awardDao;
     @Resource
     private IUserCreditAccountDao userCreditAccountDao;
+
+    @Resource
+    private IRedisService redisService;
 
     @Override
     public void saveUserAwardRecord(UserAwardRecordAggregate userAwardRecordAggregate) {
@@ -130,18 +137,25 @@ public class AwardRepository implements IAwardRepository {
         UserCreditAwardEntity userCreditAwardEntity = giveOutPrizesAggregate.getUserCreditAwardEntity();
         UserAwardRecordEntity userAwardRecordEntity = giveOutPrizesAggregate.getUserAwardRecordEntity();
 
+        // 更新发奖记录
         UserAwardRecord userAwardRecordReq = new UserAwardRecord();
         userAwardRecordReq.setUserId(userId);
         userAwardRecordReq.setOrderId(userAwardRecordEntity.getOrderId());
         userAwardRecordReq.setAwardState(userAwardRecordEntity.getAwardState().getCode());
 
+        // 更新用户积分 「首次则插入数据」
         UserCreditAccount userCreditAccountReq = new UserCreditAccount();
         userCreditAccountReq.setUserId(userCreditAwardEntity.getUserId());
         userCreditAccountReq.setTotalAmount(userCreditAwardEntity.getCreditAmount());
         userCreditAccountReq.setAvailableAmount(userCreditAwardEntity.getCreditAmount());
         userCreditAccountReq.setAccountStatus(AccountStatusVO.open.getCode());
 
+        //抢占锁---这一块加锁是为了保证在定时任务在扫描失败任务的时候，多个机子下同时扫描到该任务，
+        // 通过加分布锁的形式确保单个时间只有一个线程可以执行该任务
+        RLock lock = redisService.getLock(Constants.RedisKey.ACTIVITY_ACCOUNT_LOCK+userId);
+
         try{
+            lock.lock(3, TimeUnit.SECONDS);
             dbRouter.doRouter(userId);
             transactionTemplate.execute(status -> {
                 try{
@@ -168,6 +182,7 @@ public class AwardRepository implements IAwardRepository {
             });
         }finally {
             dbRouter.clear();
+            lock.unlock();
         }
 
     }

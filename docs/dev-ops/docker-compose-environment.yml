@@ -14,7 +14,7 @@ services:
       - SPRING_DATASOURCE_PLATFORM=mysql
       - MYSQL_SERVICE_HOST=mysql
       - MYSQL_SERVICE_DB_NAME=nacos_config
-      - MYSQL_SERVICE_PORT=3307
+      - MYSQL_SERVICE_PORT=3306
       - MYSQL_SERVICE_USER=root
       - MYSQL_SERVICE_PASSWORD=gwh842
       - MYSQL_SERVICE_DB_PARAM=characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useSSL=false&allowPublicKeyRetrieval=true
@@ -42,6 +42,7 @@ services:
     ports:
       - "3307:3306"
     volumes:
+      - ./mysql/my.cnf:/etc/mysql/conf.d/mysql.cnf:ro
       - ./mysql/sql:/docker-entrypoint-initdb.d
     healthcheck:
       test: [ "CMD", "mysqladmin" ,"ping", "-h", "localhost" ]
@@ -49,15 +50,7 @@ services:
       timeout: 10s
       retries: 10
       start_period: 15s
-    volumes_from:
-      - mysql-job-dbdata
 
-  # 自动加载数据
-  mysql-job-dbdata:
-    image: alpine:3.18.2
-    container_name: mysql-job-dbdata
-    volumes:
-      - /var/lib/mysql
 
   # phpmyadmin https://hub.docker.com/_/phpmyadmin
   phpmyadmin:
@@ -136,6 +129,86 @@ services:
     networks:
       - my-network
 
+  zookeeper:
+    image: registry.cn-hangzhou.aliyuncs.com/xfg-studio/zookeeper:3.9.0
+    container_name: zookeeper
+    restart: always
+    hostname: zoo1
+    ports:
+      - 2181:2181
+    environment:
+      ZOO_MY_ID: 1
+      ZOO_SERVERS: server.1=zookeeper:2888:3888;2181
+    networks:
+      - my-network
+
+    # canal-server 伪装成mysql的从库
+    # docker cp canal-server:/home/admin/canal-server/conf/example/instance.properties /Users/xiaofuge/Documents/develop/github/xfg-studio/xfg-dev-tech-canal/docs/dev-ops/canal
+  canal-server:
+    image: registry.cn-hangzhou.aliyuncs.com/xfg-studio/canal-server:v1.1.7
+    container_name: canal-server
+    restart: unless-stopped
+    ports:
+      - "11111:11111"
+    volumes:
+      - ./canal/instance.properties:/home/admin/canal-server/conf/example/instance.properties
+    depends_on:
+      - mysql
+    networks:
+      - my-network
+
+
+    # canal-adapter 负责数据分发
+    # docker cp canal-adapter:/opt/canal-adapter/conf/application.yml /Users/xiaofuge/Documents/develop/github/xfg-studio/xfg-dev-tech-canal/docs/dev-ops/canal-adapter
+    # docker cp canal-adapter:/opt/canal-adapter/conf/rdb/mytest_user.yml /Users/xiaofuge/Documents/develop/github/xfg-studio/xfg-dev-tech-canal/docs/dev-ops/canal-adapter/rdb
+  canal-adapter:
+    image: registry.cn-hangzhou.aliyuncs.com/xfg-studio/canal-adapter:v1.1.6
+    container_name: canal-adapter
+    restart: unless-stopped
+    ports:
+      - "8082:8081"
+    volumes:
+      - ./canal-adapter/application.yml:/opt/canal-adapter/conf/application.yml
+      - ./canal-adapter/es7:/opt/canal-adapter/conf/es7
+    depends_on:
+      - canal-server
+    networks:
+      - my-network
+
+  elasticsearch:
+    image: registry.cn-hangzhou.aliyuncs.com/xfg-studio/elasticsearch:7.17.14
+    ports:
+      - '9200:9200'
+      - '9300:9300'
+    container_name: elasticsearch
+    restart: always
+    environment:
+      - 'cluster.name=elasticsearch' # 设置集群名称为elasticsearch
+      - 'discovery.type=single-node' # 以单一节点模式启动
+      #      - "cluster.name=docker-cluster" # 设置名称
+      - 'ES_JAVA_OPTS=-Xms512m -Xmx512m' # 设置使用jvm内存大小
+    networks:
+      - my-network
+
+  kibana:
+    image: registry.cn-hangzhou.aliyuncs.com/xfg-studio/kibana:7.17.14
+    container_name: kibana
+    restart: always
+    volumes:
+      - /etc/localtime:/etc/localtime
+      - ./kibana/config/kibana.yml:/usr/share/kibana/config/kibana.yml
+    ports:
+      - '5601:5601'
+    links:
+      - elasticsearch:es #可以用es这个域名访问elasticsearch服务
+    environment:
+      - ELASTICSEARCH_URL=http://es:9200 #设置访问elasticsearch的地址
+      - 'elasticsearch.hosts=http://es:9200' #设置访问elasticsearch的地址
+      - I18N_LOCALE=zh-CN
+    networks:
+      - my-network
+    depends_on:
+      - elasticsearch
 
 networks:
   my-network:
