@@ -1,6 +1,5 @@
 package cn.bugstack.types.enums;
 
-import javafx.scene.input.KeyCodeCombination;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
