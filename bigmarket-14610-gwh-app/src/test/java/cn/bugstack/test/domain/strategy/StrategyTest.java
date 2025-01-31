@@ -2,7 +2,7 @@ package cn.bugstack.test.domain.strategy;
 
 import cn.bugstack.domain.strategy.service.armory.IStrategyArmory;
 import cn.bugstack.domain.strategy.service.armory.IStrategyDispatch;
-import cn.bugstack.infrastructure.persistent.dao.IStrategyAwardDao;
+import cn.bugstack.infrastructure.dao.IStrategyAwardDao;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Before;
 import org.junit.Test;

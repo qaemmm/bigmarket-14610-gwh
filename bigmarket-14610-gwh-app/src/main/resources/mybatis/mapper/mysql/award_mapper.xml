@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.bugstack.infrastructure.dao.IAwardDao">
+
+    <resultMap id="dataMap" type="cn.bugstack.infrastructure.dao.po.Award">
+        <id column="id" property="id"/>
+        <result column="award_id" property="awardId"/>
+        <result column="award_key" property="awardKey"/>
+        <result column="award_config" property="awardConfig"/>
+        <result column="award_desc" property="awardDesc"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+    </resultMap>
+    <delete id="deleteAwardById" parameterType="java.lang.Integer">
+        delete from award
+        where award_id = #{award_id}
+
+    </delete>
+
+    <select id="queryAwardList" resultMap="dataMap">
+        select award_id, award_key, award_config, award_desc
+        from award
+        limit 10
+    </select>
+
+
+    <select id="queryAwardById" parameterType="java.lang.Integer" resultMap="dataMap">
+        select award_id, award_key, award_config, award_desc, create_time, update_time
+        from award
+        where award_id = #{awardId}
+    </select>
+    <select id="queryAwardConfig" resultType="java.lang.String">
+        select award_config
+        from award
+        where award_id = #{awardId}
+    </select>
+    <select id="queryAwardKey" resultType="java.lang.String">
+        select award_key
+        from award
+        where award_id = #{awardId}
+    </select>
+    <!--    <select id="queryAwardByAwardId" resultType="cn.bugstack.infrastructure.persistent.po.Award">-->
+<!--        select *-->
+<!--        from award-->
+<!--        where award_id = #{awardId}-->
+<!--    </select>-->
+
+<!--    <insert id="insert">-->
+<!--        insert into award(id,award_id, award_key, award_config, award_desc)-->
+<!--        values(#{id},#{awardId}, #{awardKey},#{awardConfig},#{awardDesc})-->
+<!--    </insert>-->
+
+</mapper>

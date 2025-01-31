@@ -150,11 +150,11 @@ public class RaffleActivityController implements IRaffleActivityService {
      * permitsPerSecond：每秒的访问频次限制
      * blacklistCount：超过多少次都被限制了，还访问的，扔到黑名单里24小时
      */
-    @RateLimiterAccessInterceptor(key = "userId", fallbackMethod = "drawRateLimiterError", permitsPerSecond = 1.0d, blacklistCount = 1)
-    @HystrixCommand(commandProperties = {
-            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "150")
-    }, fallbackMethod = "drawHystrixError"
-    )
+//    @RateLimiterAccessInterceptor(key = "userId", fallbackMethod = "drawRateLimiterError", permitsPerSecond = 1.0d, blacklistCount = 1)
+//    @HystrixCommand(commandProperties = {
+//            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "150")
+//    }, fallbackMethod = "drawHystrixError"
+//    )
     @RequestMapping(value = "draw", method = RequestMethod.POST)
     @Override
     public Response<ActivityDrawResponseDTO> draw(@RequestBody ActivityDrawRequestDTO request) {

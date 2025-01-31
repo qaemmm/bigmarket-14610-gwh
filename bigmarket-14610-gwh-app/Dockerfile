@@ -1,11 +1,12 @@
 # 基础镜像
-FROM openjdk:8-jre-slim
+FROM eclipse-temurin:17-jre-jammy
 
 # 作者
 LABEL MAINTAINER="842123094"
 
 # 配置
 ENV PARAMS=""
+ENV TZ=Asia/Shanghai
 
 # 时区
 ENV TZ=PRC
