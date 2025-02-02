@@ -6,6 +6,7 @@ import cn.bugstack.domain.strategy.model.entity.StrategyEntity;
 import cn.bugstack.domain.strategy.model.entity.StrategyRuleEntity;
 import cn.bugstack.domain.strategy.model.valobj.RuleTreeVO;
 import cn.bugstack.domain.strategy.model.valobj.StrategyAwardRuleModelVO;
+import cn.bugstack.domain.strategy.model.valobj.StrategyAwardStockKeyVO;
 import cn.bugstack.domain.strategy.model.valobj.StrategyAwardStockVO;
 
 import java.util.List;
@@ -54,6 +55,8 @@ public interface IStrategyRepository {
 
     StrategyAwardStockVO takeQueue();
 
+    StrategyAwardStockVO takeQueue(Long strategyId, Integer awardId);
+
     void updateStrategyAwardStock(Long strategyId, Integer awardId);
 
     StrategyAwardEntity queryStrategyAwardEntity(Long strategyId, Integer awardId);
@@ -65,4 +68,7 @@ public interface IStrategyRepository {
     Map<String, Integer> getRuleValueByTreeIds(String[] treeIds);
 
     List<RuleWeightVO> queryAwardRuleWeight(Long strategyId);
+
+    List<StrategyAwardStockKeyVO> queryOpenActivityStrategyAwardList();
+
 }

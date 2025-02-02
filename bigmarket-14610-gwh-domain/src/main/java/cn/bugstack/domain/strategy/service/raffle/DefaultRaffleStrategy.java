@@ -4,6 +4,7 @@ import cn.bugstack.domain.award.model.valobj.RuleWeightVO;
 import cn.bugstack.domain.strategy.model.entity.StrategyAwardEntity;
 import cn.bugstack.domain.strategy.model.valobj.RuleTreeVO;
 import cn.bugstack.domain.strategy.model.valobj.StrategyAwardRuleModelVO;
+import cn.bugstack.domain.strategy.model.valobj.StrategyAwardStockKeyVO;
 import cn.bugstack.domain.strategy.model.valobj.StrategyAwardStockVO;
 import cn.bugstack.domain.strategy.repository.IStrategyRepository;
 import cn.bugstack.domain.strategy.service.AbstractRaffleStrategy;
@@ -72,6 +73,11 @@ public class DefaultRaffleStrategy extends AbstractRaffleStrategy implements IRa
     }
 
     @Override
+    public StrategyAwardStockVO takeQueue(Long strategyId, Integer awardId) {
+        return repository.takeQueue(strategyId,awardId);
+    }
+
+    @Override
     public void updateStrategyAwardStock(Long strategyId, Integer awardId) {
         repository.updateStrategyAwardStock(strategyId, awardId);
     }
@@ -85,6 +91,11 @@ public class DefaultRaffleStrategy extends AbstractRaffleStrategy implements IRa
     public List<StrategyAwardEntity> queryRaffleAwardListByActivityId(Long activityId) {
         Long strategyId = queryStrategyIdByActivityId(activityId);
         return repository.queryStrategyAwardList(strategyId);
+    }
+
+    @Override
+    public List<StrategyAwardStockKeyVO> queryOpenActivityStrategyAwardList() {
+        return repository.queryOpenActivityStrategyAwardList();
     }
 
     public Long queryStrategyIdByActivityId(Long activityId){

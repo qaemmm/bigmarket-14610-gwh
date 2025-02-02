@@ -28,5 +28,7 @@ public class Constants {
 
        public static String ACTIVITY_ACCOUNT_LOCK = "big_market_activity_account_lock_";
 
+        public static final String OPEN_ACTIVITY_STRATEGY_AWARD_LIST = "big_market_open_activity_strategy_award_list";
+
     }
 }

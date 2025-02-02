@@ -32,12 +32,13 @@ public class UpdateActivitySkuStockJob {
             //获取当前活动的所有sku库存
             List<Long> skus = skuStock.querySkuList();
             for (Long sku : skus){
+                //todo --这一块使用线程池，为什么？
                 executor.execute(()->{
                     ActivitySkuStockKeyVO activitySkuStockKeyVO =null;
                     try{
                         activitySkuStockKeyVO = skuStock.takeQueueValve(sku);
                     }catch (InterruptedException e){
-                        log.error("定时任务，更新活动sku库存失败 sku: {} topic: {}", sku, activitySkuStockKeyVO.getActivityId());
+                        log.error("定时任务，更新活动sku库存失败 sku: {} ", sku);
                     }
                     if (null == activitySkuStockKeyVO) {
                         return;

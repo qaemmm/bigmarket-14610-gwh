@@ -4,13 +4,7 @@ import cn.bugstack.domain.award.model.valobj.RuleWeightVO;
 import cn.bugstack.domain.strategy.model.entity.StrategyAwardEntity;
 import cn.bugstack.domain.strategy.model.entity.StrategyEntity;
 import cn.bugstack.domain.strategy.model.entity.StrategyRuleEntity;
-import cn.bugstack.domain.strategy.model.valobj.RuleLimitTypeVO;
-import cn.bugstack.domain.strategy.model.valobj.RuleLogicCheckTypeVO;
-import cn.bugstack.domain.strategy.model.valobj.RuleTreeNodeLineVO;
-import cn.bugstack.domain.strategy.model.valobj.RuleTreeNodeVO;
-import cn.bugstack.domain.strategy.model.valobj.RuleTreeVO;
-import cn.bugstack.domain.strategy.model.valobj.StrategyAwardRuleModelVO;
-import cn.bugstack.domain.strategy.model.valobj.StrategyAwardStockVO;
+import cn.bugstack.domain.strategy.model.valobj.*;
 import cn.bugstack.domain.strategy.repository.IStrategyRepository;
 import cn.bugstack.domain.strategy.service.rule.chain.factory.DefaultChainFactory;
 import cn.bugstack.infrastructure.dao.IRaffleActivityAccountDayDao;
@@ -288,10 +282,19 @@ public class StrategyRepository implements IStrategyRepository {
     }
 
     @Override
+    @Deprecated
     public StrategyAwardStockVO takeQueue() {
         String cacheKey = Constants.RedisKey.STRATEGY_AWARD_COUNT_QUERY_KEY ;
         RBlockingQueue<StrategyAwardStockVO> blockingQueue = redisService.getBlockingQueue(cacheKey);
        //这里使用poll就可以了，不需要用take阻塞等待，因为这里是延迟队列，已经有了延迟时间。
+        return blockingQueue.poll();
+    }
+
+    @Override
+    public StrategyAwardStockVO takeQueue(Long strategyId, Integer awardId) {
+        String cacheKey = Constants.RedisKey.STRATEGY_AWARD_COUNT_QUERY_KEY+Constants.UNDERLINE+strategyId+Constants.UNDERLINE+awardId ;
+        RBlockingQueue<StrategyAwardStockVO> blockingQueue = redisService.getBlockingQueue(cacheKey);
+        //这里使用poll就可以了，不需要用take阻塞等待，因为这里是延迟队列，已经有了延迟时间。
         return blockingQueue.poll();
     }
 
@@ -406,6 +409,28 @@ public class StrategyRepository implements IStrategyRepository {
         }
         redisService.setValue(cacheKey,ruleWeightVOS);
         return ruleWeightVOS;
+    }
+
+    @Override
+    public List<StrategyAwardStockKeyVO> queryOpenActivityStrategyAwardList() {
+        String cacheKey = Constants.RedisKey.OPEN_ACTIVITY_STRATEGY_AWARD_LIST ;
+        List<StrategyAwardStockKeyVO> strategyAwardStockKeyVOS= redisService.getValue(cacheKey);
+        if (null != strategyAwardStockKeyVOS)return strategyAwardStockKeyVOS;
+
+        List<StrategyAward> strategyAwards = strategyAwardDao.queryOpenActivityStrategyAwardList();
+        if (null == strategyAwards || strategyAwards.isEmpty()) {
+            return Collections.emptyList();
+        }
+        strategyAwardStockKeyVOS = new ArrayList<>();
+        for (StrategyAward strategyAward: strategyAwards){
+            StrategyAwardStockKeyVO strategyAwardStockKeyVO = StrategyAwardStockKeyVO.builder()
+                    .strategyId(strategyAward.getStrategyId())
+                    .awardId(strategyAward.getAwardId())
+                    .build();
+            strategyAwardStockKeyVOS.add(strategyAwardStockKeyVO);
+        }
+        redisService.setValue(cacheKey,strategyAwardStockKeyVOS);
+        return strategyAwardStockKeyVOS;
     }
 
 

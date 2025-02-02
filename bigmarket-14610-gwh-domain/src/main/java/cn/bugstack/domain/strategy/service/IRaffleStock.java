@@ -6,4 +6,6 @@ public interface IRaffleStock {
     StrategyAwardStockVO takeQueue();
 
     void updateStrategyAwardStock(Long strategyId, Integer awardId);
+
+    StrategyAwardStockVO takeQueue(Long strategyId, Integer awardId);
 }

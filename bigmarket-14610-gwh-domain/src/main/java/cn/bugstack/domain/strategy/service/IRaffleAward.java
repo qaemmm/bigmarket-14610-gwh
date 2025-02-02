@@ -2,6 +2,7 @@ package cn.bugstack.domain.strategy.service;
 
 
 import cn.bugstack.domain.strategy.model.entity.StrategyAwardEntity;
+import cn.bugstack.domain.strategy.model.valobj.StrategyAwardStockKeyVO;
 
 import java.util.List;
 
@@ -20,4 +21,7 @@ public interface IRaffleAward {
      * @return 奖品列表集合
      */
     List<StrategyAwardEntity> queryRaffleAwardListByActivityId(Long activityId);
+
+    List<StrategyAwardStockKeyVO> queryOpenActivityStrategyAwardList();
+
 }
