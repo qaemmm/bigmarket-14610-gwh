@@ -6,6 +6,7 @@ import cn.bugstack.types.model.Response;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.zookeeper.data.Stat;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -25,7 +26,7 @@ import java.nio.charset.StandardCharsets;
 @RequestMapping("/api/${app.config.api-version}/raffle/dcc/")
 public class DCCController implements IDCCService {
 
-    @Resource
+    @Autowired(required = false)
     private CuratorFramework client;
 
 

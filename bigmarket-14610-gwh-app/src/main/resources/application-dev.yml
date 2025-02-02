@@ -142,6 +142,7 @@ zookeeper:
       max-retries: 3
       session-timeout-ms: 18000
       connection-timeout-ms: 30000
+      enabled: false
 
 # 日志
 logging:

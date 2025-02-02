@@ -8,6 +8,7 @@ import org.apache.curator.framework.recipes.cache.CuratorCache;
 import org.springframework.aop.framework.AopProxyUtils;
 import org.springframework.aop.support.AopUtils;
 import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.context.annotation.Configuration;
 
@@ -25,12 +26,13 @@ public class DCCValueBeanFactory implements BeanPostProcessor {
     private static final String BASE_CONFIG_PATH = "/big-market-dcc";
     private static final String BASE_CONFIG_PATH_CONFIG = BASE_CONFIG_PATH + "/config";
 
-    private final CuratorFramework client;
+    @Autowired(required = false)
+    private CuratorFramework client;
 
     private final Map<String, Object> dccObjGroup = new HashMap<>();
 
-    public DCCValueBeanFactory(CuratorFramework client) throws Exception {
-        this.client = client;
+    public DCCValueBeanFactory() throws Exception {
+        if(null==client)return;
 
         // 节点判断
         if (null == client.checkExists().forPath(BASE_CONFIG_PATH_CONFIG)) {

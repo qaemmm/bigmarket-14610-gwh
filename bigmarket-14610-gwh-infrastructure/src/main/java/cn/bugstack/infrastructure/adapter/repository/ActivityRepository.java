@@ -466,14 +466,11 @@ public class ActivityRepository implements IActivityRepository {
         redisService.setValue(cacheKey,stockCount);
     }
 
+    //这一块
     @Override
     public boolean subtractionActivitySkuStock(Long sku, String cacheKey, Date endDateTime) {
         long surplus = redisService.decr(cacheKey);
-        if(surplus == 0){
-            //库存消耗没了以后，发送MQ消息，更新数据库库存
-            eventPublisher.publish(activitySkuStockZeroMessageEvent.topic(), activitySkuStockZeroMessageEvent.buildEventMessage(sku));
-
-        }else if (surplus <0){
+        if (surplus <0){
             //没有库存了；
             redisService.setAtomicLong(cacheKey,0);
             return false;
@@ -488,7 +485,11 @@ public class ActivityRepository implements IActivityRepository {
         if(!lock){
             log.info("活动sku库存加锁失败{}",lockKey);
         }
-        return true;
+        if(surplus == 0){
+            //库存消耗没了以后，发送MQ消息，更新数据库库存
+            eventPublisher.publish(activitySkuStockZeroMessageEvent.topic(), activitySkuStockZeroMessageEvent.buildEventMessage(sku));
+        }
+        return lock;
     }
 
     @Override
