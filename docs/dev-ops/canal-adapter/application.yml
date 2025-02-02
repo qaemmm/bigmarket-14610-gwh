@@ -25,11 +25,11 @@ canal.conf:
   # 需要同步的数据库配置
   srcDataSources:
     big_market_01:
-      url: jdbc:mysql://mysql:3306/big_market_01?useUnicode=true
+      url: jdbc:mysql://mysql:13306/big_market_01?useUnicode=true
       username: canal
       password: canal
     big_market_02:
-      url: jdbc:mysql://mysql:3306/big_market_02?useUnicode=true
+      url: jdbc:mysql://mysql:13306/big_market_02?useUnicode=true
       username: canal
       password: canal
   canalAdapters:
