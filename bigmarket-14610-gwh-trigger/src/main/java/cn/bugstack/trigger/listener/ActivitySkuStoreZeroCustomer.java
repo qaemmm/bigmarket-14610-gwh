@@ -40,7 +40,8 @@ public class ActivitySkuStoreZeroCustomer {
             // 更新库存
             skuStock.clearActivitySkuStock(sku);
             // 清空队列 「此时就不需要延迟更新数据库记录了」
-            skuStock.clearQueueValue();
+            // 清空对应sku商品
+            skuStock.clearQueueValue(sku);
         }catch (Exception e){
             log.error("活动商品库存为0，处理失败", e);
             throw e;
