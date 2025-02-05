@@ -85,7 +85,7 @@ public class RaffleActivityController implements IRaffleActivityService {
     private IBehaviorRebateService behaviorRebateService;
 
     // dcc 统一配置中心动态配置降级开关
-    @DCCValue("degradeSwitch:open")
+    @DCCValue("degradeSwitch:close")
     private String degradeSwitch;
 
     private final SimpleDateFormat dateFormatDay = new SimpleDateFormat("yyyy-MM-dd");

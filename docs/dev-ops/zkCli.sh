@@ -1,1 +1,1 @@
-zkCli.sh -server 124.70.185.116:2181
+zkCli.sh -server 192.168.1.108:2181

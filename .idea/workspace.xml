@@ -4,22 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f64b9b-9926-43c6-9cf6-26b240c3c8dd" name="Changes" comment="">
+    <list default="true" id="a4f64b9b-9926-43c6-9cf6-26b240c3c8dd" name="Changes" comment="Changes">
+      <change afterPath="$PROJECT_DIR$/docs/dev-ops.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/big-market-front/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/big-market-front/build.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/build.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/data/log/log_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/data/log/log_error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/data/log/log_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/data/log/log_info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/main/java/cn/bugstack/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/main/java/cn/bugstack/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/main/resources/mybatis/mapper/mysql/raffle_activity_account_day_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/main/resources/mybatis/mapper/mysql/raffle_activity_account_day_mapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/main/resources/mybatis/mapper/mysql/raffle_activity_sku_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/main/resources/mybatis/mapper/mysql/raffle_activity_sku_mapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/strategy/repository/IStrategyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/strategy/repository/IStrategyRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/strategy/service/rule/chain/impl/RuleWeightLogicChain.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/strategy/service/rule/chain/impl/RuleWeightLogicChain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/adapter/repository/StrategyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/adapter/repository/StrategyRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/dao/IRaffleActivityAccountDayDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/dao/IRaffleActivityAccountDayDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-trigger/src/main/java/cn/bugstack/trigger/job/SendMessageTaskJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-trigger/src/main/java/cn/bugstack/trigger/job/SendMessageTaskJob.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-trigger/src/main/java/cn/bugstack/trigger/job/UpdateAwardStockJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-trigger/src/main/java/cn/bugstack/trigger/job/UpdateAwardStockJob.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/main/java/cn/bugstack/config/DCCValueBeanFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/main/java/cn/bugstack/config/DCCValueBeanFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/main/java/cn/bugstack/config/ZooKeeperClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/main/java/cn/bugstack/config/ZooKeeperClientConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/test/java/cn/bugstack/test/trigger/RaffleActivityControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/test/java/cn/bugstack/test/trigger/RaffleActivityControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/activity/service/quota/rule/impl/ActivitySkuStockActionChain.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/activity/service/quota/rule/impl/ActivitySkuStockActionChain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-trigger/src/main/java/cn/bugstack/trigger/http/RaffleActivityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-trigger/src/main/java/cn/bugstack/trigger/http/RaffleActivityController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/log/log_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/log/log_error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/log/log_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/log/log_info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dev-ops/canal/instance.properties" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/canal/instance.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dev-ops/curl/curl_big_market.raffle_activity_order.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/curl/curl_big_market.raffle_activity_order.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dev-ops/curl/curl_big_market.user_raffle_order.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/curl/curl_big_market.user_raffle_order.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dev-ops/docker-compose-app.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/docker-compose-app.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dev-ops/docker-compose-environment.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/docker-compose-environment.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dev-ops/mysql/my.cnf" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/mysql/my.cnf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dev-ops/mysql/sql/big_market_01.sql" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/mysql/sql/big_market_01.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dev-ops/mysql/sql/big_market_02.sql" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/mysql/sql/big_market_02.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dev-ops/redis/redis.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/redis/redis.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dev-ops/zkCli.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/zkCli.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,49 +111,63 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Docker.dev-ops/docker-compose-environment-aliyun.yml.canal-adapter: Compose 部署.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.dev-ops/docker-compose-environment-aliyun.yml.xxl-job-admin: Compose 部署.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.dev-ops/docker-compose-environment-aliyun.yml: Compose 部署.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.dev-ops/docker-compose-environment-private.yml.xxl-job-admin: Compose 部署.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.dev-ops/docker-compose-environment.yml.xxl-job-admin: Compose 部署.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RaffleActivityControllerTest.test_draw.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.RaffleActivityControllerTest.test_isCalendarSignRebate.executor&quot;: &quot;Run&quot;,
-    &quot;Maven.bigmarket-14610-gwh [clean].executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;Spring Boot.Application.executor&quot;: &quot;Run&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;250201-gwh-xxl-job&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/JavaProject/springboot-starter&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;11bd33745d71053b7373c897cbccfd2a&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Docker.dev-ops/docker-compose-app.yml.big-market-app-01: Compose 部署.executor": "Run",
+    "Docker.dev-ops/docker-compose-app.yml.big-market-app-02: Compose 部署.executor": "Run",
+    "Docker.dev-ops/docker-compose-app.yml: Compose 部署.executor": "Run",
+    "Docker.dev-ops/docker-compose-environment-aliyun.yml.canal-adapter: Compose 部署.executor": "Run",
+    "Docker.dev-ops/docker-compose-environment-aliyun.yml.rabbitmq: Compose 部署.executor": "Run",
+    "Docker.dev-ops/docker-compose-environment-aliyun.yml.xxl-job-admin: Compose 部署.executor": "Run",
+    "Docker.dev-ops/docker-compose-environment-aliyun.yml: Compose 部署.executor": "Run",
+    "Docker.dev-ops/docker-compose-environment-private.yml.xxl-job-admin: Compose 部署.executor": "Run",
+    "Docker.dev-ops/docker-compose-environment.yml.nginx: Compose 部署.executor": "Run",
+    "Docker.dev-ops/docker-compose-environment.yml.redis: Compose 部署.executor": "Run",
+    "Docker.dev-ops/docker-compose-environment.yml.xxl-job-admin: Compose 部署.executor": "Run",
+    "Docker.dev-ops/docker-compose-environment.yml: Compose 部署.executor": "Run",
+    "JUnit.RaffleActivityControllerTest.test_calendarSignRebate.executor": "Run",
+    "JUnit.RaffleActivityControllerTest.test_draw.executor": "Run",
+    "JUnit.RaffleActivityControllerTest.test_isCalendarSignRebate.executor": "Run",
+    "Maven.bigmarket-14610-gwh [clean].executor": "Run",
+    "Maven.bigmarket-14610-gwh [install].executor": "Run",
+    "Maven.bigmarket-14610-gwh-app [install].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.Application.executor": "Run",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "250205-gwh-dev-ops",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/JavaProject/big_market/bigmarket-14610-gwh/docs/dev-ops",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "spring.configuration.checksum": "11bd33745d71053b7373c897cbccfd2a",
+    "ts.external.directory.path": "D:\\JavaProject\\big_market\\bigmarket-14610-gwh\\big-market-front\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JavaProject\big_market\bigmarket-14610-gwh\docs\dev-ops" />
       <recent name="D:\JavaProject\big_market\bigmarket-14610-gwh\docs\dev-ops\mysql\sql" />
       <recent name="D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app\src\main\resources\mybatis\mapper" />
       <recent name="D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-domain\src\main\java\cn\bugstack\domain\credit" />
       <recent name="D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-domain\src\main\java\cn\bugstack\domain\task" />
-      <recent name="D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-domain\src\main\java\cn\bugstack\domain\activity\model\entity" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JavaProject\big_market\bigmarket-14610-gwh\docs" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="cn.bugstack.infrastructure.persistent.dao" />
@@ -153,7 +175,7 @@
       <recent name="cn.bugstack.domain.rebate.model.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
+  <component name="RunManager" selected="Docker.dev-ops/docker-compose-environment.yml.nginx: Compose 部署">
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
@@ -164,12 +186,12 @@
       <module name="bigmarket-14610-gwh-app" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="cn.bugstack.trigger.*" />
+          <option name="PATTERN" value="cn.bugstack.test.trigger.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="cn.bugstack.trigger" />
-      <option name="MAIN_CLASS_NAME" value="cn.bugstack.trigger.RaffleActivityControllerTest" />
+      <option name="PACKAGE_NAME" value="cn.bugstack.test.trigger" />
+      <option name="MAIN_CLASS_NAME" value="cn.bugstack.test.trigger.RaffleActivityControllerTest" />
       <option name="METHOD_NAME" value="test_calendarSignRebate" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -192,54 +214,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RaffleActivityControllerTest.test_isCalendarSignRebate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bigmarket-14610-gwh-app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.bugstack.test.trigger.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cn.bugstack.test.trigger" />
-      <option name="MAIN_CLASS_NAME" value="cn.bugstack.test.trigger.RaffleActivityControllerTest" />
-      <option name="METHOD_NAME" value="test_isCalendarSignRebate" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RaffleActivityTest.test_isCalendarSignRebate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bigmarket-14610-gwh-app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.bugstack.test.domain.activity.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cn.bugstack.test.domain.activity" />
-      <option name="MAIN_CLASS_NAME" value="cn.bugstack.test.domain.activity.RaffleActivityTest" />
-      <option name="METHOD_NAME" value="test_isCalendarSignRebate" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RaffleStrategyControllerTest.test_queryRaffleStrategyRuleWeight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bigmarket-14610-gwh-app" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.bugstack.trigger.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cn.bugstack.trigger" />
-      <option name="MAIN_CLASS_NAME" value="cn.bugstack.trigger.RaffleStrategyControllerTest" />
-      <option name="METHOD_NAME" value="test_queryRaffleStrategyRuleWeight" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="bigmarket-14610-gwh-app" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.bugstack.Application" />
@@ -260,38 +234,38 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="dev-ops/docker-compose-environment-aliyun.yml.xxl-job-admin: Compose 部署" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker2">
+    <configuration name="dev-ops/docker-compose-app.yml.big-market-app-01: Compose 部署" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker2">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
-              <option value="xxl-job-admin" />
+              <option value="big-market-app-01" />
             </list>
           </option>
-          <option name="sourceFilePath" value="docs/dev-ops/docker-compose-environment-aliyun.yml" />
+          <option name="sourceFilePath" value="docs/dev-ops/docker-compose-app.yml" />
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="dev-ops/docker-compose-environment-private.yml.xxl-job-admin: Compose 部署" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker2">
+    <configuration name="dev-ops/docker-compose-app.yml.big-market-app-02: Compose 部署" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker2">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
-              <option value="xxl-job-admin" />
+              <option value="big-market-app-02" />
             </list>
           </option>
-          <option name="sourceFilePath" value="docs/dev-ops/docker-compose-environment-private.yml" />
+          <option name="sourceFilePath" value="docs/dev-ops/docker-compose-app.yml" />
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="dev-ops/docker-compose-environment.yml.xxl-job-admin: Compose 部署" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker2">
+    <configuration name="dev-ops/docker-compose-environment.yml.nginx: Compose 部署" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker2">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
-              <option value="xxl-job-admin" />
+              <option value="nginx" />
             </list>
           </option>
           <option name="sourceFilePath" value="docs/dev-ops/docker-compose-environment.yml" />
@@ -301,11 +275,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.dev-ops/docker-compose-environment.yml.nginx: Compose 部署" />
+        <item itemvalue="JUnit.RaffleActivityControllerTest.test_calendarSignRebate" />
         <item itemvalue="JUnit.RaffleActivityControllerTest.test_draw" />
-        <item itemvalue="Docker.dev-ops/docker-compose-environment-aliyun.yml.xxl-job-admin: Compose 部署" />
-        <item itemvalue="Docker.dev-ops/docker-compose-environment.yml.xxl-job-admin: Compose 部署" />
-        <item itemvalue="Docker.dev-ops/docker-compose-environment-private.yml.xxl-job-admin: Compose 部署" />
-        <item itemvalue="JUnit.RaffleActivityControllerTest.test_isCalendarSignRebate" />
+        <item itemvalue="Docker.dev-ops/docker-compose-app.yml.big-market-app-02: Compose 部署" />
+        <item itemvalue="Docker.dev-ops/docker-compose-app.yml.big-market-app-01: Compose 部署" />
       </list>
     </recent_temporary>
   </component>
@@ -379,6 +353,8 @@
       <workItem from="1738674676761" duration="1084000" />
       <workItem from="1738676712077" duration="1647000" />
       <workItem from="1738680982628" duration="3211000" />
+      <workItem from="1738721032681" duration="2838000" />
+      <workItem from="1738723922930" duration="641000" />
     </task>
     <task id="LOCAL-00001" summary="合并代码">
       <option name="closed" value="true" />
@@ -452,7 +428,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/240720-gwh-ratelimiter" />
+                        <option value="250205-gwh-dev-ops" />
                       </list>
                     </value>
                   </entry>
@@ -544,11 +520,6 @@
           <option name="timeStamp" value="274" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/activity/service/quota/AbstractRaffleActivityAccountQuota.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="278" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/persistent/repository/ActivityRepository.java</url>
           <line>200</line>
           <option name="timeStamp" value="279" />
@@ -557,11 +528,6 @@
           <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/event/EventPublisher.java</url>
           <line>23</line>
           <option name="timeStamp" value="286" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-trigger/src/main/java/cn/bugstack/trigger/job/SendMessageTaskJob.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="288" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/strategy/service/armory/StrategyArmoryDispatch.java</url>
@@ -588,6 +554,26 @@
           <line>47</line>
           <option name="timeStamp" value="307" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/activity/service/quota/rule/impl/ActivitySkuStockActionChain.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="312" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/activity/service/quota/rule/impl/ActivitySkuStockActionChain.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="313" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/adapter/repository/ActivityRepository.java</url>
+          <line>472</line>
+          <option name="timeStamp" value="314" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/adapter/repository/ActivityRepository.java</url>
+          <line>484</line>
+          <option name="timeStamp" value="315" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/rebate/service/IBehaviorRebateService.java</url>
           <line>8</line>
@@ -595,7 +581,7 @@
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
-          <option name="timeStamp" value="253" />
+          <option name="timeStamp" value="319" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
