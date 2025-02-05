@@ -148,6 +148,11 @@ public class StrategyRepository implements IStrategyRepository {
     }
 
     @Override
+    public String queryStrategyRuleValue(Long strategyId, String ruleModel) {
+        return queryStrategyRuleValue(strategyId,null,ruleModel);
+    }
+
+    @Override
     public String queryStrategyRuleValue(Long strategyId, Integer awardId, String ruleModel) {
         StrategyRule strategyRule = new StrategyRule();
         strategyRule.setStrategyId(strategyId);
@@ -274,7 +279,7 @@ public class StrategyRepository implements IStrategyRepository {
     //延迟队列数据存放缓存处理。
     @Override
     public void awardStockConsumeSendQueue(StrategyAwardStockVO strategyAwardStockVO) {
-        String cacheKey = Constants.RedisKey.STRATEGY_AWARD_COUNT_QUERY_KEY ;
+        String cacheKey = Constants.RedisKey.STRATEGY_AWARD_COUNT_QUERY_KEY  + Constants.UNDERLINE + strategyAwardStockVO.getStrategyId() + Constants.UNDERLINE + strategyAwardStockVO.getAwardId();
         RBlockingQueue<StrategyAwardStockVO> blockingQueue = redisService.getBlockingQueue(cacheKey);
         RDelayedQueue<StrategyAwardStockVO> delayQueue = redisService.getDelayedQueue(blockingQueue);
         //todo ！！（补充学习） 这一块的延时队列起到什么样的效果？
@@ -433,5 +438,15 @@ public class StrategyRepository implements IStrategyRepository {
         return strategyAwardStockKeyVOS;
     }
 
+    @Override
+    public Integer queryActivityAccountTotalUseCount(String userId, Long strategyId) {
+        Long activityId = raffleActivityDao.queryActivityIdByStrategyId(strategyId);
+        RaffleActivityAccountDay raffleActivityAccountDayReq = new RaffleActivityAccountDay();
+        raffleActivityAccountDayReq.setActivityId(activityId);
+        raffleActivityAccountDayReq.setUserId(userId);
+        RaffleActivityAccountDay raffleActivityAccountDay = raffleActivityAccountDayDao.queryActivityAccountTotalUseCount(raffleActivityAccountDayReq);
+        // 返回计算使用量
+        return raffleActivityAccountDay.getDayCount()-raffleActivityAccountDay.getDayCountSurplus();
+    }
 
 }

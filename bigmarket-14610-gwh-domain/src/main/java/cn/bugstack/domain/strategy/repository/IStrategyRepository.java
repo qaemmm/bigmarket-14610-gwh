@@ -38,6 +38,9 @@ public interface IStrategyRepository {
 
     StrategyRuleEntity queryStrategyRule(Long strategyId, String ruleWeight);
 
+    String queryStrategyRuleValue(Long strategyId,String ruleModel);
+
+
     String queryStrategyRuleValue(Long strategyId, Integer awardId, String ruleModel);
 
     StrategyAwardRuleModelVO queryStrategyAwardRuleModel(Long strategyId, Integer awardId);
@@ -71,4 +74,5 @@ public interface IStrategyRepository {
 
     List<StrategyAwardStockKeyVO> queryOpenActivityStrategyAwardList();
 
+    Integer queryActivityAccountTotalUseCount(String userId, Long strategyId);
 }

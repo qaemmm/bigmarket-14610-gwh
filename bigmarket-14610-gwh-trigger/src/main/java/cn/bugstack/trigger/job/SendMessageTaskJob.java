@@ -43,7 +43,8 @@ public class SendMessageTaskJob {
         boolean isLocked =false;
         try{
             isLocked = lock.tryLock(3,0, TimeUnit.SECONDS);
-            log.info("isLocked:{}",isLocked);
+//            log.info("isLocked:{}",isLocked);
+            //前面加锁，！isLocked就是false，没毛病
             if (!isLocked) {return;}
             int dbCount = dbRouter.dbCount();
             for(int dbIdx = 1; dbIdx <= dbCount; dbIdx++){

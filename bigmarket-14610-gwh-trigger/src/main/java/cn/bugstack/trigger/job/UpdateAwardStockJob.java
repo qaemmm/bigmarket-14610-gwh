@@ -33,7 +33,7 @@ public class UpdateAwardStockJob {
     private ThreadPoolExecutor threadPoolExecutor;
     @Resource
     private RedissonClient redissonClient;
-    @Scheduled(cron = "0/5 * * * * ?")
+//    @Scheduled(cron = "0/5 * * * * ?")
 
     /**
      * 本地化任务注解；@Scheduled(cron = "0/5 * * * * ?")
@@ -49,7 +49,7 @@ public class UpdateAwardStockJob {
            //将open活动下的，所有策略奖品给查出来
            List<StrategyAwardStockKeyVO> strategyAwardStockKeyVOList = raffleAward.queryOpenActivityStrategyAwardList();
            for (StrategyAwardStockKeyVO strategyAwardStockKeyVO : strategyAwardStockKeyVOList){
-               threadPoolExecutor.execute(()->{
+               threadPoolExecutor.execute(() -> {
                    StrategyAwardStockVO strategyAwardStockVO= raffleStock.takeQueue(strategyAwardStockKeyVO.getStrategyId(),strategyAwardStockKeyVO.getAwardId());
                    if (strategyAwardStockVO != null){
                        return;

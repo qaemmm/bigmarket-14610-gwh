@@ -152,7 +152,7 @@ xxl:
     accessToken: default_token
     # 注册地址
     admin:
-      addresses: http://192.168.1.108:9090/xxl-job-admin
+      addresses: http://localhost:9090/xxl-job-admin
     # 注册执行器
     executor:
       #  执行器注册 [选填]：优先使用该配置作为注册地址，为空时使用内嵌服务 ”IP:PORT“ 作为注册地址。从而更灵活的支持容器类型执行器动态IP和动态映射端口问题。
