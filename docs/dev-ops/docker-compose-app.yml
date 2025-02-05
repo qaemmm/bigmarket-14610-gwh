@@ -2,7 +2,7 @@ version: '3.8'
 # 命令执行 docker-compose -f docker-compose-app.yml up -d
 services:
   big-market-app-01:
-    image: 842123094/bigmarket-14610-gwh-app.jar
+    image: 842123094/bigmarket-14610-gwh-app:4.2
     container_name: big-market-app-01
     restart: always
     ports:
@@ -22,7 +22,7 @@ services:
         max-size: "10m"
         max-file: "3"
   big-market-app-02:
-    image: 842123094/bigmarket-14610-gwh-app.jar
+    image: 842123094/bigmarket-14610-gwh-app:4.2
     container_name: big-market-app-02
     restart: always
     ports:

@@ -5,6 +5,7 @@ import cn.bugstack.domain.strategy.model.valobj.StrategyAwardStockVO;
 import cn.bugstack.domain.strategy.service.IRaffleAward;
 import cn.bugstack.domain.strategy.service.IRaffleStock;
 import com.xxl.job.core.handler.annotation.XxlJob;
+import io.micrometer.core.annotation.Timed;
 import lombok.extern.slf4j.Slf4j;
 import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
@@ -39,6 +40,7 @@ public class UpdateAwardStockJob {
      * 本地化任务注解；@Scheduled(cron = "0/5 * * * * ?")
      * 分布式任务注解；@XxlJob("UpdateAwardStockJob")
      */
+    @Timed(value = "updateAwardStockJob", description = "更新奖品库存任务")
     @XxlJob("UpdateAwardStockJob")
     public void exec(){
         RLock lock =  redissonClient.getLock("big-market-UpdateAwardStockJob");
