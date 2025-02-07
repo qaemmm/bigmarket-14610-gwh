@@ -4,21 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f64b9b-9926-43c6-9cf6-26b240c3c8dd" name="Changes" comment="第4-1阶段部署&lt;分布式部署&gt;">
-      <change afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/main/java/cn/bugstack/config/PrometheusConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/dev-ops/grafana/grafana.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/dev-ops/grafana/ldap.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/dev-ops/grafana/provisioning/datasources/datasource.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/dev-ops/prometheus/prometheus.yml" afterDir="false" />
+    <list default="true" id="a4f64b9b-9926-43c6-9cf6-26b240c3c8dd" name="Changes" comment="第4-2阶段部署&lt;监控部署&gt;">
+      <change afterPath="$PROJECT_DIR$/docs/JVM (Micrometer)-1700987274886.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/SpringBoot APM Dashboard（中文版本）-1723962219162.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/大营销监控-1723963199697.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/build.sh" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/build.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/data/log/log_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/data/log/log_error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/data/log/log_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/data/log/log_info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/activity/service/quota/AbstractRaffleActivityAccountQuota.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/activity/service/quota/AbstractRaffleActivityAccountQuota.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/log/log_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/log/log_error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/log/log_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/log/log_info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dev-ops.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/dev-ops/docker-compose-environment.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/docker-compose-environment.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dev-ops/grafana/provisioning/datasources/datasource.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/grafana/provisioning/datasources/datasource.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dev-ops/prometheus/prometheus.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/prometheus/prometheus.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,12 +118,14 @@
     "Docker.dev-ops/docker-compose-environment.yml.prometheus: Compose 部署.executor": "Run",
     "Docker.dev-ops/docker-compose-environment.yml.redis: Compose 部署.executor": "Run",
     "Docker.dev-ops/docker-compose-environment.yml.xxl-job-admin: Compose 部署.executor": "Run",
+    "Docker.dev-ops/docker-compose-environment.yml.zookeeper: Compose 部署.executor": "Run",
     "Docker.dev-ops/docker-compose-environment.yml: Compose 部署.executor": "Run",
     "JUnit.RaffleActivityControllerTest.test_calendarSignRebate.executor": "Run",
     "JUnit.RaffleActivityControllerTest.test_draw.executor": "Run",
     "JUnit.RaffleActivityControllerTest.test_isCalendarSignRebate.executor": "Run",
     "Maven.bigmarket-14610-gwh [clean].executor": "Run",
     "Maven.bigmarket-14610-gwh [install].executor": "Run",
+    "Maven.bigmarket-14610-gwh-app [clean].executor": "Run",
     "Maven.bigmarket-14610-gwh-app [install].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -132,18 +134,18 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "Spring Boot.Application.executor": "Run",
+    "Spring Boot.Application.executor": "Debug",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "docker-images-v4.0",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/JavaProject/big_market/bigmarket-14610-gwh/docs/dev-ops",
+    "last_opened_file_path": "D:/JavaProject/dynamic-thread-pool",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "MavenSettings",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "spring.configuration.checksum": "11bd33745d71053b7373c897cbccfd2a",
     "ts.external.directory.path": "D:\\JavaProject\\big_market\\bigmarket-14610-gwh\\big-market-front\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
@@ -154,11 +156,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JavaProject\big_market\bigmarket-14610-gwh\docs" />
       <recent name="D:\JavaProject\big_market\bigmarket-14610-gwh\docs\dev-ops" />
       <recent name="D:\JavaProject\big_market\bigmarket-14610-gwh\docs\dev-ops\mysql\sql" />
       <recent name="D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-app\src\main\resources\mybatis\mapper" />
       <recent name="D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-domain\src\main\java\cn\bugstack\domain\credit" />
-      <recent name="D:\JAVA_Project\bigmarket-14610-gwh\bigmarket-14610-gwh-domain\src\main\java\cn\bugstack\domain\task" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\JavaProject\big_market\bigmarket-14610-gwh\docs" />
@@ -169,7 +171,7 @@
       <recent name="cn.bugstack.domain.rebate.model.entity" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.dev-ops/docker-compose-environment.yml.prometheus: Compose 部署">
+  <component name="RunManager" selected="Spring Boot.Application">
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
@@ -196,33 +198,12 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="dev-ops/docker-compose-app.yml: Compose 部署" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker2">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="docs/dev-ops/docker-compose-app.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="dev-ops/docker-compose-app.yml.big-market-app-01: Compose 部署" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker2">
+    <configuration name="dev-ops/docker-compose-app.yml.big-market-app-02: Compose 部署" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker2">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
-              <option value="big-market-app-01" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docs/dev-ops/docker-compose-app.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="dev-ops/docker-compose-app.yml.big-market-front-app: Compose 部署" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker2">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="big-market-front-app" />
+              <option value="big-market-app-02" />
             </list>
           </option>
           <option name="sourceFilePath" value="docs/dev-ops/docker-compose-app.yml" />
@@ -256,13 +237,39 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="dev-ops/docker-compose-environment.yml.xxl-job-admin: Compose 部署" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker2">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="xxl-job-admin" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docs/dev-ops/docker-compose-environment.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="dev-ops/docker-compose-environment.yml.zookeeper: Compose 部署" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker2">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="zookeeper" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docs/dev-ops/docker-compose-environment.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.dev-ops/docker-compose-environment.yml.prometheus: Compose 部署" />
+        <item itemvalue="Docker.dev-ops/docker-compose-environment.yml.zookeeper: Compose 部署" />
         <item itemvalue="Docker.dev-ops/docker-compose-environment.yml.grafana: Compose 部署" />
-        <item itemvalue="Docker.dev-ops/docker-compose-app.yml.big-market-app-01: Compose 部署" />
-        <item itemvalue="Docker.dev-ops/docker-compose-app.yml.big-market-front-app: Compose 部署" />
-        <item itemvalue="Docker.dev-ops/docker-compose-app.yml: Compose 部署" />
+        <item itemvalue="Docker.dev-ops/docker-compose-environment.yml.prometheus: Compose 部署" />
+        <item itemvalue="Docker.dev-ops/docker-compose-environment.yml.xxl-job-admin: Compose 部署" />
+        <item itemvalue="Docker.dev-ops/docker-compose-app.yml.big-market-app-02: Compose 部署" />
       </list>
     </recent_temporary>
   </component>
@@ -337,7 +344,14 @@
       <workItem from="1738676712077" duration="1647000" />
       <workItem from="1738680982628" duration="3211000" />
       <workItem from="1738721032681" duration="2838000" />
-      <workItem from="1738723922930" duration="3458000" />
+      <workItem from="1738723922930" duration="8818000" />
+      <workItem from="1738738634079" duration="2574000" />
+      <workItem from="1738768283568" duration="152000" />
+      <workItem from="1738768447192" duration="360000" />
+      <workItem from="1738768844661" duration="1895000" />
+      <workItem from="1738818791081" duration="2290000" />
+      <workItem from="1738839717628" duration="1343000" />
+      <workItem from="1738898680325" duration="7521000" />
     </task>
     <task id="LOCAL-00001" summary="合并代码">
       <option name="closed" value="true" />
@@ -402,7 +416,23 @@
       <option name="project" value="LOCAL" />
       <updated>1738724620408</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="第4-2阶段部署&lt;监控部署&gt;">
+      <option name="closed" value="true" />
+      <created>1738727497459</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1738727497459</updated>
+    </task>
+    <task id="LOCAL-00010" summary="第4-2阶段部署&lt;监控部署&gt;">
+      <option name="closed" value="true" />
+      <created>1738727763222</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1738727763222</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -419,7 +449,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/docker-images-v4.0" />
+                        <option value="docker-images-v4.0" />
                       </list>
                     </value>
                   </entry>
@@ -441,7 +471,8 @@
     <MESSAGE value="fixed decr 0 值判断和增加Zookeeper 对 dcc 动态值启动配置操作，可以在不需要时关闭" />
     <MESSAGE value="营销服务 第33节：xxl-job分布式任务调度" />
     <MESSAGE value="第4-1阶段部署&lt;分布式部署&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="第4-1阶段部署&lt;分布式部署&gt;" />
+    <MESSAGE value="第4-2阶段部署&lt;监控部署&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="第4-2阶段部署&lt;监控部署&gt;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -542,38 +573,9 @@
           <option name="timeStamp" value="306" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/strategy/service/rule/chain/impl/RuleWeightLogicChain.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="307" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/activity/service/quota/rule/impl/ActivitySkuStockActionChain.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="312" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/activity/service/quota/rule/impl/ActivitySkuStockActionChain.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="313" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/adapter/repository/ActivityRepository.java</url>
-          <line>472</line>
-          <option name="timeStamp" value="314" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/adapter/repository/ActivityRepository.java</url>
-          <line>484</line>
-          <option name="timeStamp" value="315" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/rebate/service/IBehaviorRebateService.java</url>
-          <line>8</line>
-          <properties class="cn.bugstack.domain.rebate.service.IBehaviorRebateService" method="createOrder">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="319" />
+          <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-trigger/src/main/java/cn/bugstack/trigger/http/RaffleActivityController.java</url>
+          <line>417</line>
+          <option name="timeStamp" value="321" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

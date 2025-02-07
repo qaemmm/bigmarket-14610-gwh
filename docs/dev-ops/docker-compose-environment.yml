@@ -154,7 +154,7 @@ services:
       - 2181:2181
     environment:
       ZOO_MY_ID: 1
-      ZOO_SERVERS: server.1=zookeeper:2888:3888;2181
+      ZOO_SERVERS: server.1=172.24.58.32:2181
     networks:
       - my-network
 
@@ -252,9 +252,9 @@ services:
     container_name: prometheus
     restart: always
     ports:
-      - 9095:9095
-    volumes:
-      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+      - 9099:9090
+#    volumes:
+#      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
     networks:
       - my-network
 
@@ -264,7 +264,7 @@ services:
     container_name: grafana
     restart: always
     ports:
-      - 4000:4000
+      - "4000:4000"
     depends_on:
       - prometheus
     volumes:

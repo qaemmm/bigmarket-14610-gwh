@@ -6,7 +6,7 @@ mkdir "github"
 
 ## 构建后端镜像
 cd /dev-ops/github/
-git clone -b docker-images-v4.0 https://gitcode.net/KnowledgePlanet/big-market/big-market.git
+git clone -b docker-images-v4.0 git@gitcode.net:CreativeAlliance/bigmarket-14610-gwh.git
 
 git checkout -b docker-images-v4.0
 

@@ -6,7 +6,7 @@ scrape_configs:
     metrics_path: '/actuator/prometheus'
     static_configs:
       - targets:
-          - 'big-market-app-01:8091'
-          - 'big-market-app-02:8092'
+          - '172.24.58.32:8091'
+          - '172.24.58.32:8092'
         labels:
           app: 'big-market-app'
