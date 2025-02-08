@@ -74,8 +74,10 @@ public class RaffleActivityPartakeService extends AbstractRaffleActivityPartake{
             activityAccountMonthEntity.setActivityId(activityId);
             activityAccountMonthEntity.setMonth(month);
             //todo 这一块如果activityAccountEntity为null的话，那么这个月额度也没有任何意义
-            activityAccountMonthEntity.setMonthCount(activityAccountEntity.getMonthCount());
-            activityAccountMonthEntity.setMonthCountSurplus(activityAccountEntity.getMonthCount());
+            if(activityAccountEntity!=null){
+                activityAccountMonthEntity.setMonthCount(activityAccountEntity.getMonthCount());
+                activityAccountMonthEntity.setMonthCountSurplus(activityAccountEntity.getMonthCount());
+            }
 
         }
         // 查询日账户额度
@@ -94,8 +96,10 @@ public class RaffleActivityPartakeService extends AbstractRaffleActivityPartake{
             activityAccountDayEntity.setActivityId(activityId);
             activityAccountDayEntity.setDay(day);
             //todo 这一块如果activityAccountEntity为null的话，那么这个日额度也没有任何意义
-            activityAccountDayEntity.setDayCount(activityAccountEntity.getDayCount());
-            activityAccountDayEntity.setDayCountSurplus(activityAccountEntity.getDayCount());
+            if(activityAccountEntity!=null){
+                activityAccountDayEntity.setDayCount(activityAccountEntity.getDayCount());
+                activityAccountDayEntity.setDayCountSurplus(activityAccountEntity.getDayCount());
+            }
         }
 
         CreatePartakeOrderAggregate createPartakeOrderAggregate = new CreatePartakeOrderAggregate();

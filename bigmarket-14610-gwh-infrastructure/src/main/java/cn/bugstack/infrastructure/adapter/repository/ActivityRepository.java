@@ -697,7 +697,7 @@ public class ActivityRepository implements IActivityRepository {
         RaffleActivityAccount raffleActivityAccountEntityReq = new RaffleActivityAccount();
         raffleActivityAccountEntityReq.setUserId(userId);
         raffleActivityAccountEntityReq.setActivityId(activityId);
-                RaffleActivityAccount raffleActivityAccountEntity = raffleActivityAccountDao.queryActivityAccount(raffleActivityAccountEntityReq);
+        RaffleActivityAccount raffleActivityAccountEntity = raffleActivityAccountDao.queryActivityAccount(raffleActivityAccountEntityReq);
         if (null == raffleActivityAccountEntity) {
             return null;
         }
