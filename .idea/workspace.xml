@@ -4,21 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4f64b9b-9926-43c6-9cf6-26b240c3c8dd" name="Changes" comment="第4-2阶段部署&lt;监控部署&gt;">
-      <change afterPath="$PROJECT_DIR$/docs/JVM (Micrometer)-1700987274886.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/SpringBoot APM Dashboard（中文版本）-1723962219162.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/大营销监控-1723963199697.json" afterDir="false" />
+    <list default="true" id="a4f64b9b-9926-43c6-9cf6-26b240c3c8dd" name="Changes" comment="job定时任务只能释放自己的锁">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/data/log/log_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/data/log/log_error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/data/log/log_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/data/log/log_info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/activity/service/quota/AbstractRaffleActivityAccountQuota.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/activity/service/quota/AbstractRaffleActivityAccountQuota.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/log/log_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/log/log_error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/log/log_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/log/log_info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/dev-ops.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/dev-ops/docker-compose-environment.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/docker-compose-environment.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/dev-ops/grafana/provisioning/datasources/datasource.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/grafana/provisioning/datasources/datasource.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/dev-ops/prometheus/prometheus.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/prometheus/prometheus.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/credit/service/CreditAdjustService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/credit/service/CreditAdjustService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-trigger/src/main/java/cn/bugstack/trigger/http/RaffleActivityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-trigger/src/main/java/cn/bugstack/trigger/http/RaffleActivityController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +83,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -102,55 +94,55 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Docker.dev-ops/docker-compose-app.yml.big-market-app-01: Compose 部署.executor": "Run",
-    "Docker.dev-ops/docker-compose-app.yml.big-market-app-02: Compose 部署.executor": "Run",
-    "Docker.dev-ops/docker-compose-app.yml.big-market-front-app: Compose 部署.executor": "Run",
-    "Docker.dev-ops/docker-compose-app.yml: Compose 部署.executor": "Run",
-    "Docker.dev-ops/docker-compose-environment-aliyun.yml.canal-adapter: Compose 部署.executor": "Run",
-    "Docker.dev-ops/docker-compose-environment-aliyun.yml.rabbitmq: Compose 部署.executor": "Run",
-    "Docker.dev-ops/docker-compose-environment-aliyun.yml.xxl-job-admin: Compose 部署.executor": "Run",
-    "Docker.dev-ops/docker-compose-environment-aliyun.yml: Compose 部署.executor": "Run",
-    "Docker.dev-ops/docker-compose-environment-private.yml.xxl-job-admin: Compose 部署.executor": "Run",
-    "Docker.dev-ops/docker-compose-environment.yml.grafana: Compose 部署.executor": "Run",
-    "Docker.dev-ops/docker-compose-environment.yml.nginx: Compose 部署.executor": "Run",
-    "Docker.dev-ops/docker-compose-environment.yml.prometheus: Compose 部署.executor": "Run",
-    "Docker.dev-ops/docker-compose-environment.yml.redis: Compose 部署.executor": "Run",
-    "Docker.dev-ops/docker-compose-environment.yml.xxl-job-admin: Compose 部署.executor": "Run",
-    "Docker.dev-ops/docker-compose-environment.yml.zookeeper: Compose 部署.executor": "Run",
-    "Docker.dev-ops/docker-compose-environment.yml: Compose 部署.executor": "Run",
-    "JUnit.RaffleActivityControllerTest.test_calendarSignRebate.executor": "Run",
-    "JUnit.RaffleActivityControllerTest.test_draw.executor": "Run",
-    "JUnit.RaffleActivityControllerTest.test_isCalendarSignRebate.executor": "Run",
-    "Maven.bigmarket-14610-gwh [clean].executor": "Run",
-    "Maven.bigmarket-14610-gwh [install].executor": "Run",
-    "Maven.bigmarket-14610-gwh-app [clean].executor": "Run",
-    "Maven.bigmarket-14610-gwh-app [install].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Spring Boot.Application.executor": "Debug",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "docker-images-v4.0",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/JavaProject/dynamic-thread-pool",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "11bd33745d71053b7373c897cbccfd2a",
-    "ts.external.directory.path": "D:\\JavaProject\\big_market\\bigmarket-14610-gwh\\big-market-front\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.dev-ops/docker-compose-app.yml.big-market-app-01: Compose 部署.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.dev-ops/docker-compose-app.yml.big-market-app-02: Compose 部署.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.dev-ops/docker-compose-app.yml.big-market-front-app: Compose 部署.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.dev-ops/docker-compose-app.yml: Compose 部署.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.dev-ops/docker-compose-environment-aliyun.yml.canal-adapter: Compose 部署.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.dev-ops/docker-compose-environment-aliyun.yml.rabbitmq: Compose 部署.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.dev-ops/docker-compose-environment-aliyun.yml.xxl-job-admin: Compose 部署.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.dev-ops/docker-compose-environment-aliyun.yml: Compose 部署.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.dev-ops/docker-compose-environment-private.yml.xxl-job-admin: Compose 部署.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.dev-ops/docker-compose-environment.yml.grafana: Compose 部署.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.dev-ops/docker-compose-environment.yml.nginx: Compose 部署.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.dev-ops/docker-compose-environment.yml.prometheus: Compose 部署.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.dev-ops/docker-compose-environment.yml.redis: Compose 部署.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.dev-ops/docker-compose-environment.yml.xxl-job-admin: Compose 部署.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.dev-ops/docker-compose-environment.yml.zookeeper: Compose 部署.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.dev-ops/docker-compose-environment.yml: Compose 部署.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RaffleActivityControllerTest.test_calendarSignRebate.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RaffleActivityControllerTest.test_draw.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RaffleActivityControllerTest.test_isCalendarSignRebate.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.bigmarket-14610-gwh [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.bigmarket-14610-gwh [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.bigmarket-14610-gwh-app [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.bigmarket-14610-gwh-app [install].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.Application.executor&quot;: &quot;Debug&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;docker-images-v4.0&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/JavaProject/dynamic-thread-pool&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;11bd33745d71053b7373c897cbccfd2a&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\JavaProject\\big_market\\bigmarket-14610-gwh\\big-market-front\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -432,7 +424,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738727763222</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="job定时任务只能释放自己的锁">
+      <option name="closed" value="true" />
+      <created>1738978881634</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1738978881634</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -472,7 +472,8 @@
     <MESSAGE value="营销服务 第33节：xxl-job分布式任务调度" />
     <MESSAGE value="第4-1阶段部署&lt;分布式部署&gt;" />
     <MESSAGE value="第4-2阶段部署&lt;监控部署&gt;" />
-    <option name="LAST_COMMIT_MESSAGE" value="第4-2阶段部署&lt;监控部署&gt;" />
+    <MESSAGE value="job定时任务只能释放自己的锁" />
+    <option name="LAST_COMMIT_MESSAGE" value="job定时任务只能释放自己的锁" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -574,7 +575,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-trigger/src/main/java/cn/bugstack/trigger/http/RaffleActivityController.java</url>
-          <line>417</line>
+          <line>421</line>
           <option name="timeStamp" value="321" />
         </line-breakpoint>
       </breakpoints>
