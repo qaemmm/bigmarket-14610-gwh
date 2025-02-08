@@ -7,7 +7,6 @@ import io.micrometer.core.annotation.Timed;
 import lombok.extern.slf4j.Slf4j;
 import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
@@ -17,8 +16,8 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @author fuzhouling
- * @date 2024/09/10
- * @program bigmarket-14610-gwh
+ * &#064;date  2024/09/10
+ * &#064;program  bigmarket-14610-gwh
  * @description 更新活动sku库存任务
  **/
 @Slf4j
