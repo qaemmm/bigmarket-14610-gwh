@@ -108,6 +108,10 @@ public class RaffleActivityController implements IRaffleActivityService {
         try{
             log.info("活动装配，数据预热，开始 activityId:{}", activityId);
             //活动装配-activitySkuEntity
+            // 0. 参数校验
+            if (null == activityId) {
+                throw new AppException(ResponseCode.ILLEGAL_PARAMETER.getCode(), ResponseCode.ILLEGAL_PARAMETER.getInfo());
+            }
             activityArmory.assembleActivityByActivityId(activityId);
             //策略装配-StrategyAwardEntity
             strategyArmory.assembleLotteryStrategyByActivityId(activityId);
