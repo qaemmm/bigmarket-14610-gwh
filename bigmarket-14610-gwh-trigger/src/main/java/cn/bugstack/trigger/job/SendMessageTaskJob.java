@@ -79,7 +79,7 @@ public class SendMessageTaskJob {
             log.error("定时任务，扫描mq任务表发送消息失败", e);
         }finally {
             dbRouter.clear();
-            if (!isLocked) {
+            if (!isLocked && lock.isHeldByCurrentThread()) {
                 lock.unlock();
             }
         }
@@ -117,7 +117,7 @@ public class SendMessageTaskJob {
             log.error("定时任务，扫描MQ任务表发送消息失败。", e);
         } finally {
             dbRouter.clear();
-            if (isLocked) {
+            if (isLocked && lock.isHeldByCurrentThread()) {
                 lock.unlock();
             }
         }

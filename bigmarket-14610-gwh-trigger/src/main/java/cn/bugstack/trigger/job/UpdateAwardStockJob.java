@@ -63,7 +63,7 @@ public class UpdateAwardStockJob {
        }catch (Exception e){
            log.error("定时任务，更新数据库奖品库存异常",e);
        }finally {
-          if (isLocked) {
+          if (isLocked && lock.isHeldByCurrentThread()) {
               lock.unlock();
           }
         }

@@ -64,7 +64,7 @@ public class UpdateActivitySkuStockJob {
         } catch (Exception e) {
             log.error("定时任务，更新活动sku库存失败", e);
         } finally {
-            if (isLocked) {
+            if (isLocked && lock.isHeldByCurrentThread()) {
                 lock.unlock();
             }
         }
