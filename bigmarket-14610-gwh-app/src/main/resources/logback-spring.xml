@@ -102,7 +102,7 @@
         <logger name="com.nmys.view" level="debug"/>
     </springProfile>
 
-    <root level="info">
+    <root level="warn">
         <appender-ref ref="CONSOLE"/>
         <!-- 异步日志-INFO -->
         <appender-ref ref="ASYNC_FILE_INFO"/>

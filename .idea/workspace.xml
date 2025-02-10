@@ -6,14 +6,32 @@
   <component name="ChangeListManager">
     <list default="true" id="a4f64b9b-9926-43c6-9cf6-26b240c3c8dd" name="Changes" comment="feat:補全參數">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/data/log/log_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/data/log/log_error.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/data/log/log_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/data/log/log_info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/data/log/log-error-2024-10-08.0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/data/log/log-error-2024-10-12.0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/data/log/log-error-2024-10-15.0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/data/log/log-error-2024-11-26.0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/data/log/log-error-2024-11-27.0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/data/log/log-error-2024-11-28.0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/data/log/log-error-2024-11-28.1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/data/log/log-info-2024-09-30.0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/data/log/log-info-2024-10-08.0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/data/log/log_error.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/data/log/log_info.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/main/resources/mybatis/mapper/mysql/daily_behavior_rebate_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/main/resources/mybatis/mapper/mysql/daily_behavior_rebate_mapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/main/resources/mybatis/mapper/mysql/user_award_record_mapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/main/resources/mybatis/mapper/mysql/user_award_record_mapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/test/java/cn/bugstack/test/ApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-app/src/test/java/cn/bugstack/test/ApiTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/activity/service/partake/RaffleActivityPartakeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/activity/service/partake/RaffleActivityPartakeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/adapter/repository/ActivityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/adapter/repository/ActivityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/dao/IRaffleActivityAccountDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/dao/IRaffleActivityAccountDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/strategy/service/raffle/DefaultRaffleStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/strategy/service/raffle/DefaultRaffleStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/adapter/repository/AwardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/adapter/repository/AwardRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/dao/IUserAwardRecordDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/dao/IUserAwardRecordDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigmarket-14610-gwh-trigger/src/main/java/cn/bugstack/trigger/listener/SendAwardCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/bigmarket-14610-gwh-trigger/src/main/java/cn/bugstack/trigger/listener/SendAwardCustomer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/log/log_error.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/log/log_error.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/log/log_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/log/log_info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dev-ops/canal-adapter/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/canal-adapter/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dev-ops/docker-compose-app.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/docker-compose-app.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dev-ops/docker-compose-environment.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/docker-compose-environment.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/dev-ops/prometheus/prometheus.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docs/dev-ops/prometheus/prometheus.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +136,11 @@
     "Docker.dev-ops/docker-compose-environment.yml.xxl-job-admin: Compose 部署.executor": "Run",
     "Docker.dev-ops/docker-compose-environment.yml.zookeeper: Compose 部署.executor": "Run",
     "Docker.dev-ops/docker-compose-environment.yml: Compose 部署.executor": "Run",
+    "JUnit.ApiTest.executor": "Run",
     "JUnit.ApiTest.insert_user_account.executor": "Run",
+    "JUnit.ApiTest.test_DelayQueue.executor": "Run",
+    "JUnit.ApiTest.test_raffle_account.executor": "Run",
+    "JUnit.ApiTest.test_userAwardRecord.executor": "Run",
     "JUnit.RaffleActivityControllerTest.test_calendarSignRebate.executor": "Run",
     "JUnit.RaffleActivityControllerTest.test_draw.executor": "Run",
     "JUnit.RaffleActivityControllerTest.test_isCalendarSignRebate.executor": "Run",
@@ -138,7 +160,7 @@
     "git-widget-placeholder": "docker-images-v4.0",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/JavaProject/dynamic-thread-pool",
+    "last_opened_file_path": "D:/JavaProject/xfg-dev-tech-grafana",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -193,6 +215,54 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ApiTest.test_DelayQueue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bigmarket-14610-gwh-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.bugstack.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.bugstack.test" />
+      <option name="MAIN_CLASS_NAME" value="cn.bugstack.test.ApiTest" />
+      <option name="METHOD_NAME" value="test_DelayQueue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiTest.test_raffle_account" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bigmarket-14610-gwh-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.bugstack.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.bugstack.test" />
+      <option name="MAIN_CLASS_NAME" value="cn.bugstack.test.ApiTest" />
+      <option name="METHOD_NAME" value="test_raffle_account" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiTest.test_userAwardRecord" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bigmarket-14610-gwh-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.bugstack.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.bugstack.test" />
+      <option name="MAIN_CLASS_NAME" value="cn.bugstack.test.ApiTest" />
+      <option name="METHOD_NAME" value="test_userAwardRecord" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="bigmarket-14610-gwh-app" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.bugstack.Application" />
@@ -213,65 +283,26 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="dev-ops/docker-compose-environment.yml.grafana: Compose 部署" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker2">
+    <configuration name="dev-ops/docker-compose-app.yml.big-market-app-01: Compose 部署" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker2">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="services">
             <list>
-              <option value="grafana" />
+              <option value="big-market-app-01" />
             </list>
           </option>
-          <option name="sourceFilePath" value="docs/dev-ops/docker-compose-environment.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="dev-ops/docker-compose-environment.yml.prometheus: Compose 部署" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker2">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="prometheus" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docs/dev-ops/docker-compose-environment.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="dev-ops/docker-compose-environment.yml.xxl-job-admin: Compose 部署" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker2">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="xxl-job-admin" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docs/dev-ops/docker-compose-environment.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="dev-ops/docker-compose-environment.yml.zookeeper: Compose 部署" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker2">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="zookeeper" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docs/dev-ops/docker-compose-environment.yml" />
+          <option name="sourceFilePath" value="docs/dev-ops/docker-compose-app.yml" />
         </settings>
       </deployment>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ApiTest.test_raffle_account" />
         <item itemvalue="JUnit.ApiTest.insert_user_account" />
-        <item itemvalue="Docker.dev-ops/docker-compose-environment.yml.zookeeper: Compose 部署" />
-        <item itemvalue="Docker.dev-ops/docker-compose-environment.yml.grafana: Compose 部署" />
-        <item itemvalue="Docker.dev-ops/docker-compose-environment.yml.prometheus: Compose 部署" />
-        <item itemvalue="Docker.dev-ops/docker-compose-environment.yml.xxl-job-admin: Compose 部署" />
+        <item itemvalue="JUnit.ApiTest.test_userAwardRecord" />
+        <item itemvalue="JUnit.ApiTest.test_DelayQueue" />
+        <item itemvalue="Docker.dev-ops/docker-compose-app.yml.big-market-app-01: Compose 部署" />
       </list>
     </recent_temporary>
   </component>
@@ -355,6 +386,11 @@
       <workItem from="1738839717628" duration="1343000" />
       <workItem from="1738898680325" duration="7521000" />
       <workItem from="1738985743562" duration="17226000" />
+      <workItem from="1739031537553" duration="5294000" />
+      <workItem from="1739069815556" duration="7047000" />
+      <workItem from="1739083651004" duration="10863000" />
+      <workItem from="1739130657444" duration="1147000" />
+      <workItem from="1739132568060" duration="10895000" />
     </task>
     <task id="LOCAL-00001" summary="合并代码">
       <option name="closed" value="true" />
@@ -504,11 +540,6 @@
           <option name="timeStamp" value="170" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/strategy/service/rule/tree/factory/engine/impl/DecisionTreeEngine.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="199" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/persistent/repository/BehaviorRebateRepository.java</url>
           <line>55</line>
           <option name="timeStamp" value="228" />
@@ -564,11 +595,6 @@
           <option name="timeStamp" value="279" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/event/EventPublisher.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="286" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-domain/src/main/java/cn/bugstack/domain/strategy/service/armory/StrategyArmoryDispatch.java</url>
           <line>133</line>
           <option name="timeStamp" value="296" />
@@ -592,6 +618,11 @@
           <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-trigger/src/main/java/cn/bugstack/trigger/http/RaffleActivityController.java</url>
           <line>421</line>
           <option name="timeStamp" value="321" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/bigmarket-14610-gwh-infrastructure/src/main/java/cn/bugstack/infrastructure/adapter/repository/AwardRepository.java</url>
+          <line>168</line>
+          <option name="timeStamp" value="323" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

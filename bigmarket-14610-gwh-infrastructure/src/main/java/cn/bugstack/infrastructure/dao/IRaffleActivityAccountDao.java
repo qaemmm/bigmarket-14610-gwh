@@ -14,6 +14,7 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 //@DBRouterStrategy(splitTable = true)
 public interface IRaffleActivityAccountDao {
+    @DBRouter
     int updateAccountQuota(RaffleActivityAccount raffleActivityAccount);
 
     @DBRouter

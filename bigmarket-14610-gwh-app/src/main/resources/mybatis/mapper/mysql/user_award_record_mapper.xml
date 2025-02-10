@@ -27,5 +27,8 @@
         update user_award_record set award_state = 'completed'
         where user_id = #{userId} and order_id = #{orderId} and award_state = 'create'
     </update>
+    <select id="queryUserAwardRecord" parameterType="cn.bugstack.infrastructure.dao.po.UserAwardRecord" resultMap="dataMap">
+        select * from user_award_record  where user_id = #{userId} and order_id = #{orderId}
+    </select>
 
 </mapper>

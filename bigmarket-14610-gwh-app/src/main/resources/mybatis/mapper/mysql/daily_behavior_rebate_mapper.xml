@@ -14,7 +14,7 @@
     </resultMap>
     <select id="queryDailyRebateByBehaviorType" resultMap="dataMap"
             parameterType="java.lang.String">
-        select * from daily_behavior_rebate where behavior_type = #{behaviorType}
+        select * from daily_behavior_rebate where behavior_type = #{behaviorType} and state = 'open'
     </select>
 
 
