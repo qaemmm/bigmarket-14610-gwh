@@ -87,6 +87,8 @@ public class ApiTest {
         raffleActivityAccountEntityReq.setActivityId(100301L);
         RaffleActivityAccount raffleActivityAccountEntity = raffleActivityAccountDao.queryActivityAccount(raffleActivityAccountEntityReq);
         System.out.println("hello--"+raffleActivityAccountEntity.toString());
+
+        System.out.println("hello");
     }
 
     @Test

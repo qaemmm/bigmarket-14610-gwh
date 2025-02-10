@@ -15,6 +15,6 @@ public interface IUserRaffleOrderDao {
     @DBRouter
     UserRaffleOrder queryNoUsedRaffleOrder(UserRaffleOrder userRaffleOrderReq);
 
-
+    @DBRouter
     int updateUserRaffleOrderStateUsed(@Param("userRaffleOrder")UserRaffleOrder userRaffleOrder);
 }
