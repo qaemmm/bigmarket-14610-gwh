@@ -48,11 +48,11 @@ public class ApiTest {
     @Test
     public void insert_user_account(){
 
-        for (int i = 1; i <= 10000; i++) {
+        for (int i = 1; i <= 100000; i++) {
             int finalI = i;
             executor.execute(() -> {
                 try {
-                    String userId = "xfg" + finalI;
+                    String userId = "lubenwei" + finalI;
                     RaffleActivityAccount raffleActivityAccount = new RaffleActivityAccount();
                     raffleActivityAccount.setUserId(userId);
                     raffleActivityAccount.setActivityId(100301L);
@@ -62,7 +62,7 @@ public class ApiTest {
                     raffleActivityAccount.setMonthCountSurplus(100000);
                     raffleActivityAccount.setDayCount(100000);
                     raffleActivityAccount.setDayCountSurplus(100000);
-//                    raffleActivityAccountDao.insert(raffleActivityAccount);
+                    raffleActivityAccountDao.insert(raffleActivityAccount);
 //                    raffleActivityAccountDao.updateAccountQuota(raffleActivityAccount);
                 } catch (Exception e) {
                     log.error(e.getMessage());
