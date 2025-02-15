@@ -100,10 +100,15 @@ public class StrategyRepository implements IStrategyRepository {
     public int getRateRange(String key) {
         String cacheKey = Constants.RedisKey.STRATEGY_RATE_RANGE_KEY + key;
         //在通过缓存获取抽奖范围值时，如果忘记初始化策略到缓存中会抛异常。所以新增加了判断代码，增强健壮性。
-        if (!redisService.isExists(Constants.RedisKey.STRATEGY_RATE_RANGE_KEY + key)) {
+        Object value = redisService.getValue(Constants.RedisKey.STRATEGY_RATE_RANGE_KEY + key);
+        if(null==value){
             throw new AppException(ResponseCode.UN_ASSEMBLED_STRATEGY_ARMORY.getCode(), cacheKey + Constants.COLON + ResponseCode.UN_ASSEMBLED_STRATEGY_ARMORY.getInfo());
         }
-        return redisService.getValue(Constants.RedisKey.STRATEGY_RATE_RANGE_KEY + key);
+        return (Integer) value;
+//        if (!redisService.isExists(Constants.RedisKey.STRATEGY_RATE_RANGE_KEY + key)) {
+//            throw new AppException(ResponseCode.UN_ASSEMBLED_STRATEGY_ARMORY.getCode(), cacheKey + Constants.COLON + ResponseCode.UN_ASSEMBLED_STRATEGY_ARMORY.getInfo());
+//        }
+//        return redisService.getValue(Constants.RedisKey.STRATEGY_RATE_RANGE_KEY + key);
     }
 
     @Override
