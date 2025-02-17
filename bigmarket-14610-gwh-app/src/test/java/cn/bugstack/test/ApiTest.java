@@ -62,8 +62,8 @@ public class ApiTest {
                     raffleActivityAccount.setMonthCountSurplus(100000);
                     raffleActivityAccount.setDayCount(100000);
                     raffleActivityAccount.setDayCountSurplus(100000);
-                    raffleActivityAccountDao.insert(raffleActivityAccount);
-//                    raffleActivityAccountDao.updateAccountQuota(raffleActivityAccount);
+//                    raffleActivityAccountDao.insert(raffleActivityAccount);
+                    raffleActivityAccountDao.updateAccountQuota(raffleActivityAccount);
                 } catch (Exception e) {
                     log.error(e.getMessage());
                     e.printStackTrace();  // 记录异常日志
